@@ -1,0 +1,271 @@
+#!/bin/bash
+
+set -e
+
+# Read in the user's configuration file, should it exist.
+[[ -f ~/.dpatch.conf ]] && . ~/.dpatch.conf
+
+# Populate configuration variables. First check for a pre-existing environment
+# variable which we support; that should override the configuration variable,
+# which in turn overrides the default. CLI option parsing comes later, and
+# will blindly set it to the option given therein; CLI options trump all.
+VERBOSITY=0
+DPEP_SOURCEDIR="${DPEP_SOURCEDIR:-${conf_sourcedir:-$(pwd)}}"
+DPEP_OUTDIR="${DPEP_OUTDIR:-${conf_outdir:-$DPEP_SOURCEDIR/debian/patches}}"
+DPEP_TMPDIR="${DPEP_TMPDIR:-${conf_tmpdir:-${TMPDIR:-/tmp}}}"
+DPEP_SHELL="${DPEP_SHELL:-${conf_shell:-${SHELL:-$(getent passwd $(id -un) | cut -f7- -d:)}}}"
+DPEP_KEEPTEMP="${DPEP_KEEPTEMP:-${conf_keeptemp:-0}}"
+DPEP_DESC="${DPEP_NEWDESC:-${conf_newdesc:-No description.}}"
+DPEP_TEMPLATE="${DPEP_TEMPLATE:-${conf_template:-$DPEP_SOURCEDIR/debian/patches/00template}}"
+# We special-case $DPEP_ROOTCMD later, after dpep_parse_options()
+
+# Import functions dpep_usage(), dpep_template(), dpep_parse_options(),
+# dpep_message(), dpep_parse_longopt_value() 
+. /usr/share/dpatch/dpatch-edit-patch.functions
+
+dpep_parse_options "$@" || true
+
+# We special-case $DPEP_ROOTCMD here; if fakeroot doesn't exist and we haven't
+# been told explicitly what it should be, error out. (I refuse to use sudo as
+# any kind of default, even a fallback if fakeroot doesn't exist - way too
+# dangerous). We do this after option parsing, to ensure that they can supply a
+# ROOTCMD on the CLI.
+if [[ -z "$DPEP_ROOTCMD" ]]; then
+    # We're only here if $DPEP_ROOTCMD hasn't already been set via either a CLI
+    # argument or the environment variable itself.
+    if [[ ! -z "$conf_rootcmd" ]]; then
+	# If we're here, the configuration variable has been set
+	DPEP_ROOTCMD="$conf_rootcmd"
+    elif command -v fakeroot > /dev/null 2>&1; then
+	# If we're here, nothing's been set, but fakeroot exists.
+	DPEP_ROOTCMD="fakeroot"
+    else
+	# We're here, nothing's set, fakeroot's not found. Bail.
+	dpep_message error " "
+	printf "fakeroot is not installed, nor has the option --rootcmd been given, nor has the\n"
+	printf "environment variable \$DPEP_ROOTCMD been set, nor has the configuration file\n"
+	printf "variable conf_rootcmd been set. Please see the manual page for more details.\n"
+	exit 1
+    fi
+fi
+
+# All argument and option parsing has been done. Time to accomplish something.
+# Change to source directory
+cd "$DPEP_SOURCEDIR"
+
+# $PWD: $DPEP_SOURCEDIR
+if [[ ! -e "debian/rules" ]]; then
+# Check to make sure we're in the toplevel directory of a Debian package;
+# if not, error out.
+    dpep_message error "\"$DPEP_SOURCEDIR\" is not the toplevel directory of a Debian package, aborting."
+    exit 1
+fi
+
+# Check to see whether or not $DPEP_PATCH ends with .dpatch
+if [[ "${DPEP_PATCH}" = "${DPEP_PATCH%%.dpatch}" ]]; then
+    # If it doesn't have .dpatch, append it.
+    DPEP_PATCH="${DPEP_PATCH}.dpatch"
+fi
+
+# $PWD: $DPEP_SOURCEDIR
+if [[ -e "$DPEP_OUTDIR/$DPEP_PATCH" ]]; then
+# Check to see if the patch we're told to edit exists; if not, we'll be
+# creating it.
+    # The patch does already exist, let them know this.
+    dpep_message norm "* $DPEP_OUTDIR/$DPEP_PATCH exists, this patch will be updated."
+    # Also set this ... later on, we'll need to differentiate between editing
+    # an existing patch, and creating a new one.
+    DPEP_EDITPATCH=1
+    if [[ ! -z "$DPEP_BASEPATCH" ]]; then
+	# Even though we're editing an already-existing patch, the user has
+	# supplied a base-patch. Warn them that we will be ignoring this.
+	dpep_message warn "We are editing an already-existing patch, but a base-patch of $DPEP_BASEPATCH has been supplied - ignoring."
+	# We patch up to $DPEP_BASEPATCH in the workdir later, so we assign to
+	# it the patch we'll be editing
+	DPEP_BASEPATCH="$DPEP_PATCH"
+    else
+	# They haven't supplied a base-patch, which is nice and sane, so we
+	# assign to it the patch we'll be editing, for the same reason as
+	# above; we'll be applying it to the working directory.
+	DPEP_BASEPATCH="$DPEP_PATCH"
+    fi
+else
+    # Patch doesn't exist, we aren't editing it.
+    DPEP_EDITPATCH=0
+    dpep_message norm "* $DPEP_OUTDIR/$DPEP_PATCH does not exist, it will be created as a new dpatch."
+    # Check to ensure that, if we've been given a base-patch, it exists;
+    # otherwise we really need to abort. If we haven't been supplied one,
+    # that's fine
+    if [[ ! -z "$DPEP_BASEPATCH" ]]; then
+	if [[ "$DPEP_BASEPATCH" = "${DPEP_BASEPATCH%%.dpatch}" ]]; then
+	    # The user didn't supply a .dpatch extension, so we supply it.
+	    DPEP_BASEPATCH="$DPEP_BASEPATCH.dpatch"
+	fi
+	if [[ ! -e "debian/patches/$DPEP_BASEPATCH" ]]; then
+	    dpep_message error "Base-patch $(pwd)/debian/patches/$DPEP_BASEPATCH does not exist, aborting."
+	fi
+    fi
+fi
+
+# Start preparing the working copy.
+# $PWD: $DPEP_SOURCEDIR
+# Sanity checking to ensure that our temporary directory exists and is
+# writable.
+if [[ ! -d "$DPEP_TMPDIR" ]]; then
+    dpep_message error "Temporary directory $DPEP_TMPDIR does not exist, aborting."
+    exit 1
+elif [[ ! -w "$DPEP_TMPDIR" ]]; then
+    dpep_message error "Temporary directory $DPEP_TMPDIR is not writable, aborting."
+    exit 1
+fi
+
+# $PWD: $DPEP_SOURCEDIR
+# Hopefully mktemp(1), part of debianutils, does the Right Thing :) We're
+# pretty sure it does :)
+WORKDIR="$(TMPDIR=$DPEP_TMPDIR mktemp -d -p /tmp dpep.XXXXXX)"
+dpep_message debug1 "Working directory is $WORKDIR"
+
+# $PWD: $DPEP_SOURCEDIR
+# Copy, clean, and clone $DPEP_SOUREDIR
+dpep_message norm "* Cleaning $DPEP_SOURCEDIR"
+cd "$DPEP_SOURCEDIR"
+$DPEP_ROOTCMD debian/rules clean unpatch
+
+if [[ ! -z "$DPEP_BASEPATCH" ]]; then
+    if ! egrep "[[:space:]]*(${DPEP_BASEPATCH}|${DPEP_BASEPATCH%%.dpatch})[[:space:]]*" debian/patches/00list > /dev/null 2>&1; then
+	if [[ "$DPEP_EDITPATCH" = 1 ]]; then
+	    dpep_message warn "$DPEP_PATCH is not listed in debian/patches/00list, no other patches will be applied to the working directory."
+	else
+	    dpep_message error "Base-patch is not listed in debian/patches/00list, aborting."
+	    exit 1
+	fi
+    else
+	dpep_message norm "* Applying patches"
+	LASTPATCHDONE=0
+	for patch in $(cat debian/patches/00list | grep -v ^\#); do
+	    # Check to see if we're editing a patch; if we are, we don't want to
+	    # apply it in the clean directory which won't be edited. If we did
+	    # apply it, we would only pick up differences that they *just* made,
+	    # as opposed to updating the enire patch.
+	    [[ "$DPEP_EDITPATCH" = "1" && "${patch%%.dpatch}.dpatch" = "$DPEP_PATCH" ]] && LASTPATCHDONE=1
+	    [[ "$LASTPATCHDONE" = "1" ]] && break
+	    printf "$(basename $0): ** Applying patch ${patch%%.dpatch}.dpatch ... "
+	    APPLY_PATCHDIR="$(dirname "${patch%%.dpatch}.dpatch")"
+	    stamp="debian/patched/${patch%%.dpatch}.dpatch"
+	    [[ ! -d "debian/patched/$APPLY_PATCHDIR" ]] && mkdir -p "debian/patched/$APPLY_PATCHDIR"
+	    chmod +x "debian/patches/${patch%%.dpatch}.dpatch"
+	    if ! "debian/patches/${patch%%.dpatch}.dpatch" -patch > "$stamp.new" 2>&1; then
+		printf "failed.\n"
+		dpep_message error "Patch debian/patches/${patch%%.dpatch}.dpatch did not apply cleanly, aborting."
+		exit 1
+	    else
+		mv "$stamp.new" "$stamp"
+		touch "$stamp"
+		printf "applied cleanly.\n"
+	    fi
+	    if [[ "$DPEP_BASEPATCH" = "${patch%%.dpatch}.dpatch" ]]; then
+		LASTPATCHDONE=1
+	    fi
+	done
+    fi
+else
+    dpep_message warn "* No base-patch supplied, not applying any patches."
+fi
+
+dpep_message norm "* Copying $DPEP_SOURCEDIR to work directory."
+cd "$WORKDIR"
+cp -a "$DPEP_SOURCEDIR" "$(basename $DPEP_SOURCEDIR)"
+
+
+# Change to the workdirectory, apply the patch we're editing if we're
+# editing one, and launch an interactive shell.
+cd "$WORKDIR/$(basename $DPEP_SOURCEDIR)"
+if [[ "$DPEP_EDITPATCH" = "1" ]]; then
+    dpep_message norm "* Applying current $DPEP_PATCH for editing."
+    chmod +x debian/patches/$DPEP_PATCH
+    if ! debian/patches/$DPEP_PATCH -patch > /dev/null; then
+	dpep_message warn "Could not apply the patch we want to edit -- not aborting, as you may want to work with the .rejs."
+    fi
+fi
+cat <<EOF
+
+$(basename $0):
+
+Now launching an interactive shell in your work directory. Edit your files.
+When you are done, exit the shell. When you exit the shell, your patch will be
+automatically updated based on the changes in your work directory.
+
+If you wish to abort the process, exit the shell such that it returns an exit
+code of "230". This is typically done by exiting the shell with the command
+'exit 230'.
+EOF
+$DPEP_SHELL; EXITVAL="$?"
+if [[ "$EXITVAL" = "230" ]]; then
+    dpep_message error "Shell exited with an exit value of 230, aborting."
+    dpep_cleanup
+    exit 1
+elif [[ "$EXITVAL" != "0" ]]; then
+    dpep_message warn "Shell exited with an exit value other than 0."
+fi
+cd "$WORKDIR"
+
+# Okay, they've exited the shell in a reasonable manner, and as such we're
+# free to create or update the patch.
+DIFFHOLDER="$(tempfile -d "$WORKDIR" -p "dpep." -s ".diff")"
+dpep_message debug1 "Diff temporary file is $DIFFHOLDER"
+diff -urNad "$DPEP_SOURCEDIR" "$(basename "$DPEP_SOURCEDIR")" > "$DIFFHOLDER" || true
+
+# Diff created, let's switch back to the original directory, and start the
+# process of updating or creating the patch.
+cd "$DPEP_SOURCEDIR"
+if [[ "$DPEP_EDITPATCH" = "0" ]]; then
+    # We're creating a new patch, so this is relatively easy.
+    dpep_message norm "* Creating new patch $DPEP_OUTDIR/$DPEP_PATCH"
+    # We don't know for sure that any directories are created, so let's create
+    # them now.
+
+    PATCHDIR="$DPEP_OUTDIR/$(dirname "$DPEP_PATCH")"
+    NEWPATCH="$DPEP_OUTDIR/$DPEP_PATCH"
+
+    [[ ! -d "$PATCHDIR" ]] && mkdir -p "$PATCHDIR"
+    if [[ ! -f "$DPEP_TEMPLATE" ]]; then
+	dpep_message warn "$template does not exist, using hardcoded default."
+	dpep_template_hardcoded "$NEWPATCH"
+    else
+	dpep_message norm "Using template $template"
+	dpep_template_apply "$DPEP_TEMPLATE" "$NEWPATCH" "$DPEP_DESC"
+    fi
+    # Okay, headers and shell snippets all set up. Now copy the actual patch text.
+    cat "$DIFFHOLDER" >> "$NEWPATCH"
+    dpep_message norm "$NEWPATCH created."
+else
+    # Damnit, we're editing a patch. This is _never_ fun :)
+    OLDPATCH="$DPEP_OUTDIR/$DPEP_PATCH"
+    dpep_message norm "Updating patch $OLDPATCH"
+    # Need another temporary file.
+    NEWPATCH="$(tempfile -d "$WORKDIR")"
+    DPEP_TAGLINENUM="$(grep -n '^@DPATCH@$' "$OLDPATCH" | head -1 | cut -f1 -d:)"
+    if [ "$DPEP_TAGLINENUM" ]; then
+	# They have our tag, so we can preserve their headers.
+	dpep_message norm "@DPATCH@ tag found, preserving dpatch header."
+	head -n "$DPEP_TAGLINENUM" "$OLDPATCH" > "$NEWPATCH"
+    elif [[ -e "$DPEP_TEMPLATE" ]]; then
+	# Okay, they don't have a tag - damn them. But they at least have a
+	# template.
+	dpep_message warn "@DPATCH@ tag not found, using $DPEP_TEMPLATE"
+	dpep_template_apply "$DPEP_TEMPLATE" "$OLDPATCH" "$DPEP_DESC"
+    else
+	# They have neither a @DPATCH@ tag, *NOR* a template. Damn, they just suck.
+	dpep_message warn "@DPATCH@ tag not found, $DPEP_TEMPLATE not found. Using hardcoded default."
+	dpep_template_hardcoded "$NEWPATCH"
+    fi
+    # Okay, the headers and shell snippets are in place. Move the diff there now.
+    cat "$DIFFHOLDER" >> "$NEWPATCH"
+    mv "$NEWPATCH" "$OLDPATCH"
+    dpep_message norm "$OLDPATCH updated."
+fi
+# chmod +x the dpatch, just in case.
+chmod +x "$DPEP_OUTDIR/$DPEP_PATCH"
+
+# Okay, we're all done. Do the cleanup.
+dpep_cleanup

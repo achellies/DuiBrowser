@@ -1,0 +1,11 @@
+contrib/dirtystrings/core/source/common/lobbylogin/lobbyloginerr_en.c 
+core/source/buddy/buddyapi.c
+core/source/buddy/hlbudapi.c
+core/source/dirtysock/dirtyaddr.c
+core/source/dirtysock/unix/dirtyunix.c 
+core/source/game/connapi.c
+core/source/misc/qosapi.c
+core/source/proto/protofilter.c
+core/source/proto/protomangle.c
+core/source/proto/protoping.c
+core/source/voip/voiptunnel.c

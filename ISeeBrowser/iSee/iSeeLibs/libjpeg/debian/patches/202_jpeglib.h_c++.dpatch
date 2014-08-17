@@ -1,0 +1,38 @@
+#! /bin/sh -e
+
+# DP: Add extern "C" to jpeglib.h
+
+case "$1" in
+    -patch) patch -f --no-backup-if-mismatch -p1 < $0;;
+    -unpatch) patch -f --no-backup-if-mismatch -R -p1 < $0;;
+    *)
+        echo >&2 "`basename $0`: script expects -patch|-unpatch as argument"
+        exit 1
+esac
+exit 0
+@DPATCH@
+diff -ur -x debian/* jpeg-6b/jpeglib.h libjpeg6b-6b/jpeglib.h
+--- jpeg-6b/jpeglib.h	Sat Feb 21 20:48:14 1998
++++ libjpeg6b-6b/jpeglib.h	Wed Feb 26 01:04:42 2003
+@@ -13,6 +13,10 @@
+ #ifndef JPEGLIB_H
+ #define JPEGLIB_H
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ /*
+  * First we include the configuration files that record how this
+  * installation of the JPEG library is set up.  jconfig.h can be
+@@ -1091,6 +1095,10 @@
+ #ifdef JPEG_INTERNALS
+ #include "jpegint.h"		/* fetch private declarations */
+ #include "jerror.h"		/* fetch error codes too */
++#endif
++
++#ifdef __cplusplus
++}
+ #endif
+ 
+ #endif /* JPEGLIB_H */

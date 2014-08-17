@@ -1,0 +1,37 @@
+Source: libjpeg6b
+Maintainer: Bill Allombert <ballombe@debian.org>
+Section: graphics
+Priority: optional
+Build-Depends: debhelper, autotools-dev, libtool, sharutils
+Standards-Version: 3.6.1
+
+Package: libjpeg62
+Architecture: any
+Section: libs
+Description: The Independent JPEG Group's JPEG runtime library
+ The Independent JPEG Group's JPEG library is a library for handling
+ JPEG files.
+ .
+ This package contains the shared library.
+Depends: ${shlibs:Depends}
+
+Package: libjpeg62-dev
+Architecture: any
+Section: libdevel
+Description: Development files for the IJG JPEG library
+ The Independent JPEG Group's JPEG library is a library for handling
+ JPEG files.
+ .
+ This package contains the static library, headers and documentation.
+Provides: libjpeg-dev
+Depends: libjpeg62 (=${Source-Version}), libc-dev
+
+Package: libjpeg-progs
+Architecture: any
+Description: Programs for manipulating JPEG files
+ This package contains programs for manipulating JPEG files:
+  cjpeg/djpeg: convert to/from the JPEG file format
+  rdjpgcom/wrjpgcom: read/write comments in JPEG files
+  jpegtran: lossless transformations of JPEG files
+  jpegexiforient/exifautotran: manipulate EXIF orientation tag
+Depends: ${shlibs:Depends}

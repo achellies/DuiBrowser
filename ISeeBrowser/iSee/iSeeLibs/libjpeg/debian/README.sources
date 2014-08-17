@@ -1,0 +1,23 @@
+libjpeg6b patch system
+----------------------
+
+libjpeg use dpatch for managing the patches applied to the upstream 
+sources. However all the patches are already applied in the .diff.gz
+so you can modify the source directly, just as before. 
+
+Extra files:
+debian/patch.mk: A local copy of /usr/share/dpatch/dpatch.make.
+
+debian/check-pristine: a shell script to check if unpatched source 
+is pristine.
+
+debian/edit-patch: a copy of dpath-edit-patch that do not assume
+  debian/rules clean unpatch the sources.
+
+Patches zone:
+100-199: Upstream patch or otherwise non-Debian issued.
+200-299: Debian patch, non Debian specific (should be forwarded upstream).
+300-399: Debian specific patch.
+
+--
+Bill Allombert <ballombe@debian.org>  Fri, 30 May 2003 23:46:27 +0200

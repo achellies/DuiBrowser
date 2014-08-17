@@ -1,0 +1,203 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 非特定语言(系统默认值) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MENU                BITMAP                  "Cmdbar.bmp"
+IDB_GOTO                BITMAP                  "Gotobar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ISEE                ICON                    "iSee.ico"
+IDI_ALERT               ICON                    "Alert.ico"
+IDI_CONFIRM             ICON                    "Confirm.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_ISEE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",                        IDM_NEW
+        MENUITEM "&Close",                      IDM_CLOSE
+        MENUITEM "Enable &Proxy",               IDM_PROXY
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh",                    IDM_REFRESH
+        MENUITEM "&Stop",                       IDM_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&Forword",                    IDM_FORWARD
+        MENUITEM "&Backword",                   IDM_BACKWARD
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "New Page1",                   IDM_TAB_WINDOW
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_ISEE ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 230, 53
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About iSee"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    ICON            IDI_ISEE,IDC_STATIC_1,14,9,21,21
+    LTEXT           "iSee Browser(Based WEBKIT) V0.1",IDC_STATIC_2,49,10,137,12,SS_NOPREFIX
+    LTEXT           "Programed by Wangwei, 2008.8",IDC_STATIC_4,49,20,137,12
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+END
+
+IDD_ALERT DIALOG  0, 0, 159, 69
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "iSee Browser"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,55,48,50,14
+    LTEXT           "",IDC_TITLE_TEXT,33,7,119,33
+    ICON            IDI_ALERT,IDC_STATIC,6,11,20,20
+END
+
+IDD_CONFIRM DIALOG  0, 0, 159, 77
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "iSee Browser"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,27,56,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,82,56,50,14
+    LTEXT           "",IDC_TITLE_TEXT,36,7,116,42
+    ICON            IDI_CONFIRM,IDC_STATIC,7,11,20,20
+END
+
+IDD_PROMPT DIALOG  0, 0, 159, 69
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "iSee Browser"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_PROMPT_TEXT,7,24,145,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,26,48,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,83,48,50,14
+    LTEXT           "",IDC_PROMPT_TITLE,7,7,145,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "iSee Browser"
+    IDC_ISEE                "ISEE"
+END
+
+#endif    // 非特定语言(系统默认值) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

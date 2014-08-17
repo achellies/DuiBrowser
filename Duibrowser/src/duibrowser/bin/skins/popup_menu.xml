@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true">
+  <VerticalLayout bordersize="0"  bordercolor="#FF000000" bkimage="file='menu_bk.png' corner='40,8,8,8'" hole="false">
+    <List name="menu" header="hidden" inset="8,8,8,8" itemhotimage="file='menu_hot_bk.png' corner='2,2,2,2'" itemdisabledbkcolor="#20000000">
+    </List>
+  </VerticalLayout>
+</Window>

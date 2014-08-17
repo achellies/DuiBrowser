@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement height="24">
+    <VerticalLayout>
+      <VerticalLayout height="20">
+        <HorizontalLayout>
+          <Container name="image" padding="4,0,0,0" bordersize="0" width="16" height="16" textcolor="#FF000000" align="center" />
+          <Label name="title" text="菜单项" textpadding="16,0,0,0" textcolor="#FF000000" disabledtextcolor="#FF808080"/>
+        </HorizontalLayout>
+      </VerticalLayout>
+      <VerticalLayout>
+        <Control name="underline" visible="false" bkcolor="#FFAAAAAA" padding="4,0,0,0" height="1"/>
+      </VerticalLayout>
+    </VerticalLayout>
+  </ListContainerElement>
+</Window>

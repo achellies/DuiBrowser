@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,36" roundcorner="5,5" size="600,800" sizebox="6,6,6,6" mininfo="80,60">
+  <Font name="微软雅黑" size="18" bold="false" default="true"/>
+  <Font name="微软雅黑" size="18"/>
+  <Default name="VScrollBar" value="button1normalimage=&quot;file='$scroll.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='$scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='$scroll.png' source='0,16,16,32' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='$scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='$scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='$scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='$scroll.png' source='0,48,16,64' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='$scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='$scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='$scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='$scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='$scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='$scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='$scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='$scroll.png' source='0,96,16,112' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='$scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='$scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='$scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='$scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='$scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+  <VerticalLayout bkcolor="#FFFFFFFF" bordersize="2" bordercolor="#FF0934DA">
+
+    <HorizontalLayout name="header" height="36" bkcolor="#FF4775CC">
+      <HorizontalLayout>
+        <Container name="logo" padding="7,2,0,0" width="32" height="32"  bkimage="file='$logo.png' source='0,0,64,64'"/>
+        <Label name="apptitle" text="Duibrowser --- produced by Duilib Develop Group, Inc." font="1" textcolor="#FFFFFFFF" />
+      </HorizontalLayout>
+      <HorizontalLayout height="25" width="96">
+        <Button name="minbtn" tooltip="最小化" height="18" width="26" normalimage="file='minimize.png'" hotimage="file='minimize_h.png'" pushedimage="file='minimize_p.png'"/>
+        <Button name="maxbtn" tooltip="最大化" height="18" width="25" normalimage="file='maximize.png'" hotimage="file='maximize_h.png'" pushedimage="file='maximize_p.png'"/>
+        <Button name="restorebtn" visible="false" tooltip="恢复" height="18" width="25" normalimage="file='restore.png'" hotimage="file='restore_h.png'" pushedimage="file='restore_p.png'"/>
+        <Button name="closebtn" tooltip="关闭" height="18" width="43" normalimage="file='close.png'" hotimage="file='close_h.png'" pushedimage="file='close_p.png'"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+
+    <HorizontalLayout padding="2,0,2,2" bkcolor="#FFF8F8F8" bkcolor2="#FFE4E4E4" height="50" inset="0,1,0,4">
+      <HorizontalLayout height="29" width="112" padding="0,8,0,0">
+        <Control width="4"/>
+        <Button name="backbtn" width="27" tooltip="后退" normalimage="file='back.png'" hotimage="file='back_h.png'" pushedimage="file='back_p.png'" disabledimage="file='back_d.png'"/>
+        <Button name="forwardbtn" width="27" tooltip="向前" normalimage="file='forward.png'" hotimage="file='forward_h.png'" pushedimage="file='forward_p.png'" disabledimage="forward_d.png"/>
+        <Button name="refreshbtn" width="27" tooltip="刷新" normalimage="file='reload.png'" hotimage="file='reload_h.png'" pushedimage="file='reload_p.png'"/>
+        <Button name="stopbtn" visible="false" width="27" tooltip="停止" normalimage="file='stop.png'" hotimage="file='stop_h.png'" pushedimage="file='stop_p.png'" disabledimage="file='stop_d.png'"/>
+        <Button name="homebtn" width="27" tooltip="停止" normalimage="file='home.png'" hotimage="file='home_h.png'" pushedimage="file='home_p.png'"/>
+      </HorizontalLayout>
+      <Control width="4"/>
+      <Edit name="addresedt" font="1" padding="0,4,0,0" bkcolor="#FFFFFFFF" height="36" textpadding="30,6,7,6" bordersize="0" bkimage="file='$WebB_Address.png' corner='30,6,7,6' hole='true'"/>
+      <HorizontalLayout height="29" width="36" padding="0,8,0,0">
+        <Control width="4"/>
+        <Button name="toolbtn" width="27" tooltip="工具" normalimage="file='tools.png'" hotimage="file='tools_h.png'" pushedimage="file='tools_p.png'"/>
+        <Control width="4"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+
+    <VerticalLayout name="body" padding="2,0,2,2">
+      <Webkit name="webkit"/>
+    </VerticalLayout>
+
+  </VerticalLayout>
+</Window>

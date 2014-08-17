@@ -1,0 +1,73 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EAWebkit", "..\EAWebkit.vcproj", "{90DF8634-248F-9B6A-FF72-3B20A0C510C4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A89A65D0-5555-2C13-4EF1-6B1F46177BC9} = {A89A65D0-5555-2C13-4EF1-6B1F46177BC9}
+		{299D4078-5BB3-23AA-A876-C2A40BC812AD} = {299D4078-5BB3-23AA-A876-C2A40BC812AD}
+		{8D18311A-510E-B900-8D5B-017215BB9F76} = {8D18311A-510E-B900-8D5B-017215BB9F76}
+		{537B0895-A4A8-EA43-FA54-1B64A1E188F2} = {537B0895-A4A8-EA43-FA54-1B64A1E188F2}
+		{A26C9DC8-03A1-EFE6-1436-277FDCB9757B} = {A26C9DC8-03A1-EFE6-1436-277FDCB9757B}
+		{1897D99C-A19E-A4AD-280D-BC5CAB5814D5} = {1897D99C-A19E-A4AD-280D-BC5CAB5814D5}
+		{F0277EC7-71AA-6961-241E-0184FBD0F95B} = {F0277EC7-71AA-6961-241E-0184FBD0F95B}
+		{BE4A9903-B157-7C4D-896F-62AEE8658914} = {BE4A9903-B157-7C4D-896F-62AEE8658914}
+		{5D41722B-AD9D-070B-6A83-FC7612921224} = {5D41722B-AD9D-070B-6A83-FC7612921224}
+		{FC019A03-151E-13A3-FBEF-F672B5606B80} = {FC019A03-151E-13A3-FBEF-F672B5606B80}
+		{C6EC8537-D1FA-8202-174E-4BA55594CD7A} = {C6EC8537-D1FA-8202-174E-4BA55594CD7A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UTFXmlEAWebKit", "..\..\..\UTFXmlEAWebKit\local\UTFXmlEAWebKit.vcproj", "{FC019A03-151E-13A3-FBEF-F672B5606B80}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EAIOEAWebKit", "..\..\..\EAIOEAWebKit\local\EAIOEAWebKit.vcproj", "{537B0895-A4A8-EA43-FA54-1B64A1E188F2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EASTLEAWebKit", "..\..\..\EASTLEAWebKit\local\EASTLEAWebKit.vcproj", "{299D4078-5BB3-23AA-A876-C2A40BC812AD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlibEAWebKit", "..\..\..\zlibEAWebKit\local\zlibEAWebKit.vcproj", "{BE4A9903-B157-7C4D-896F-62AEE8658914}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EAAssertEAWebKit", "..\..\..\EAAssertEAWebKit\local\EAAssertEAWebKit.vcproj", "{A89A65D0-5555-2C13-4EF1-6B1F46177BC9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EATextEAWebKit", "..\..\..\EATextEAWebKit\local\EATextEAWebKit.vcproj", "{8D18311A-510E-B900-8D5B-017215BB9F76}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dirtysock", "..\..\..\DirtySDKEAWebKit\local\dirtysock.vcproj", "{C6EC8537-D1FA-8202-174E-4BA55594CD7A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PPMallocEAWebKit", "..\..\..\PPMallocEAWebKit\local\PPMallocEAWebKit.vcproj", "{A26C9DC8-03A1-EFE6-1436-277FDCB9757B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjpegEAWebKit", "..\..\..\libjpegEAWebKit\local\libjpegEAWebKit.vcproj", "{1897D99C-A19E-A4AD-280D-BC5CAB5814D5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpngEAWebKit", "..\..\..\libpngEAWebKit\local\libpngEAWebKit.vcproj", "{F0277EC7-71AA-6961-241E-0184FBD0F95B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FreeTypeEAWebKit", "..\..\..\FreeTypeEAWebKit\local\FreeTypeEAWebKit.vcproj", "{5D41722B-AD9D-070B-6A83-FC7612921224}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		pc-vc-dev-opt|Win32 = pc-vc-dev-opt|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90DF8634-248F-9B6A-FF72-3B20A0C510C4}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{90DF8634-248F-9B6A-FF72-3B20A0C510C4}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+		{FC019A03-151E-13A3-FBEF-F672B5606B80}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{FC019A03-151E-13A3-FBEF-F672B5606B80}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+		{537B0895-A4A8-EA43-FA54-1B64A1E188F2}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{537B0895-A4A8-EA43-FA54-1B64A1E188F2}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+		{299D4078-5BB3-23AA-A876-C2A40BC812AD}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{299D4078-5BB3-23AA-A876-C2A40BC812AD}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+		{BE4A9903-B157-7C4D-896F-62AEE8658914}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{BE4A9903-B157-7C4D-896F-62AEE8658914}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+		{A89A65D0-5555-2C13-4EF1-6B1F46177BC9}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{A89A65D0-5555-2C13-4EF1-6B1F46177BC9}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+		{8D18311A-510E-B900-8D5B-017215BB9F76}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{8D18311A-510E-B900-8D5B-017215BB9F76}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+		{C6EC8537-D1FA-8202-174E-4BA55594CD7A}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{C6EC8537-D1FA-8202-174E-4BA55594CD7A}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+		{A26C9DC8-03A1-EFE6-1436-277FDCB9757B}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{A26C9DC8-03A1-EFE6-1436-277FDCB9757B}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+		{1897D99C-A19E-A4AD-280D-BC5CAB5814D5}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{1897D99C-A19E-A4AD-280D-BC5CAB5814D5}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+		{F0277EC7-71AA-6961-241E-0184FBD0F95B}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{F0277EC7-71AA-6961-241E-0184FBD0F95B}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+		{5D41722B-AD9D-070B-6A83-FC7612921224}.pc-vc-dev-opt|Win32.ActiveCfg = pc-vc-dev-opt|Win32
+		{5D41722B-AD9D-070B-6A83-FC7612921224}.pc-vc-dev-opt|Win32.Build.0 = pc-vc-dev-opt|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

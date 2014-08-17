@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+#  Tests for the Debian libjpeg packages. To use, simply run this script from
+#  the shell prompt. If successful, it will say so, otherwise it
+#  will state which file was not created correctly.
+
+set -e
+
+SRCDIR=.
+TESTDIR=testjpg
+LD_LIBRARY_PATH=`pwd`
+test -d $TESTDIR || mkdir $TESTDIR
+cp test*.* $TESTDIR
+uudecode -o $TESTDIR/testimg.gif $TESTDIR/testimg.uu
+
+echo "Testing libjpeg:"
+./djpeg -dct int -ppm -outfile $TESTDIR/testout.ppm  $TESTDIR/testorig.jpg
+./djpeg -dct int -gif -outfile $TESTDIR/testout.gif  $TESTDIR/testorig.jpg
+./cjpeg -dct int -outfile $TESTDIR/testout.jpg  $TESTDIR/testimg.ppm
+./djpeg -dct int -ppm -outfile $TESTDIR/testoutp.ppm $TESTDIR/testprog.jpg
+./cjpeg -dct int -progressive -opt -outfile $TESTDIR/testoutp.jpg $TESTDIR/testimg.ppm
+./jpegtran -outfile $TESTDIR/testoutt.jpg $TESTDIR/testprog.jpg
+cmp $TESTDIR/testimg.ppm $TESTDIR/testout.ppm 
+cmp $TESTDIR/testimg.gif $TESTDIR/testout.gif 
+cmp $TESTDIR/testimg.jpg $TESTDIR/testout.jpg 
+cmp $TESTDIR/testimg.ppm $TESTDIR/testoutp.ppm 
+cmp $TESTDIR/testimgp.jpg $TESTDIR/testoutp.jpg 
+cmp $TESTDIR/testorig.jpg $TESTDIR/testoutt.jpg 
+echo "The test was successful"

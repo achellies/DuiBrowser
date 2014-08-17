@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioProject ProjectType="Visual C++" Version="8.00" Name="zlibEAWebKit" ProjectGUID="{BE4A9903-B157-7C4D-896F-62AEE8658914}" Keyword="Win32Proj">
+  <Platforms>
+    <Platform Name="Win32" />
+  </Platforms>
+  <ToolFiles />
+  <Configurations>
+    <Configuration Name="pc-vc-dev-debug|Win32" OutputDirectory=".\zlibEAWebKit" IntermediateDirectory=".\zlibEAWebKit\vcproj" CharacterSet="2" ConfigurationType="4">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="MASM" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" PreprocessorDefinitions="WIN32;_SECURE_SCL=1;EA_DEBUG;_DEBUG;_WIN32_WINNT=0x0501;WINVER=0x501" AdditionalIncludeDirectories="&quot;..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\include&quot;;&quot;..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\ATLMFC\INCLUDE&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\INCLUDE&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\include&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\INCLUDE&quot;" AdditionalOptions="-Wall " MinimalRebuild="FALSE" BufferSecurityCheck="FALSE" Optimization="0" CompileOnly="TRUE" BasicRuntimeChecks="3" WarnAsError="TRUE" CompileAs="0" RuntimeLibrary="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" DisableSpecificWarnings="4365; 4255; 4244; 4242; 4131; 4127; 4996; 4692; 4826; 4819; 4826; 4820; 4738; 4711; 4710; 4668; 4640; 4514; 4619; 4324; 4100; 4062; 4061; " WarningLevel="4" ForceConformanceInForLoopScope="TRUE" ExceptionHandling="0" RuntimeTypeInfo="FALSE" ProgramDataBaseFileName="..\..\..\..\..\..\projects\VS2005-SP1\zlibEAWebKit\local/pc-vc-dev-debug/lib\\zlibEAWebKit.pdb" />
+      <Tool Name="VCLibrarianTool" OutputFile="..\..\..\..\..\..\projects\VS2005-SP1\zlibEAWebKit\local\pc-vc-dev-debug\lib\zlibEAWebKit.lib" AdditionalDependencies="" SuppressStartupBanner="TRUE" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+  </Configurations>
+  <References>
+  </References>
+  <Files>
+    <Filter Name="include" Filter="">
+      <Filter Name="zlib" Filter="">
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\include\zlib\zconf.h">
+        </File>
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\include\zlib\zlib.h">
+        </File>
+      </Filter>
+    </Filter>
+    <Filter Name="source" Filter="">
+      <Filter Name="library" Filter="">
+        <Filter Name="zlib64" Filter="">
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\adler32.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\crc32.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\deflate.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\deflate.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\gvmat32c.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\infblock.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\infblock.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\infcodes.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\infcodes.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\inffast.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\inffast.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\inffixed.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\inflate.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\inflate.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\inftrees.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\inftrees.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\infutil.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\infutil.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\trees.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\trees.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\trees64.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\zconf.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\zcrypt.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\zlib.h">
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\zutil.cpp">
+            <FileConfiguration Name="pc-vc-dev-debug|Win32">
+              <Tool Name="VCCLCompilerTool" ObjectFile=".\zlibEAWebKit\vcproj\zlib64\" />
+            </FileConfiguration>
+          </File>
+          <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\source\library\zlib64\zutil.h">
+          </File>
+        </Filter>
+      </Filter>
+    </Filter>
+  </Files>
+  <Globals>
+    <Global Name="vc-compiler" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\cl.exe" />
+    <Global Name="vc-linker" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\link.exe" />
+    <Global Name="vc-asm" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\ml.exe" />
+    <Global Name="vc-librarian" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\lib.exe" />
+    <Global Name="vc-postlink.program" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\mt.exe" />
+    <Global Name="build.env.PATH" Value="C:\Program Files\Microsoft Visual Studio 8\\Common7\IDE" />
+  </Globals>
+</VisualStudioProject>

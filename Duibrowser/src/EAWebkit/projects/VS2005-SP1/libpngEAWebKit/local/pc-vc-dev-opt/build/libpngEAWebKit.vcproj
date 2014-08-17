@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioProject ProjectType="Visual C++" Version="8.00" Name="libpngEAWebKit" ProjectGUID="{F0277EC7-71AA-6961-241E-0184FBD0F95B}" Keyword="Win32Proj">
+  <Platforms>
+    <Platform Name="Win32" />
+  </Platforms>
+  <ToolFiles />
+  <Configurations>
+    <Configuration Name="pc-vc-dev-opt|Win32" OutputDirectory=".\libpngEAWebKit" IntermediateDirectory=".\libpngEAWebKit\vcproj" CharacterSet="2" ConfigurationType="4">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="MASM" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" RuntimeTypeInfo="FALSE" RuntimeLibrary="2" AdditionalIncludeDirectories="&quot;..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\include\libpng12&quot;;&quot;..\..\..\..\..\..\EAWebKitSupportPackages\zlibEAWebKit\local\include&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\ATLMFC\INCLUDE&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\INCLUDE&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\include&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\INCLUDE&quot;" DebugInformationFormat="3" ExceptionHandling="0" WarningLevel="0" CompileAs="0" MinimalRebuild="FALSE" ForceConformanceInForLoopScope="TRUE" ProgramDataBaseFileName="..\..\..\..\..\..\projects\VS2005-SP1\libpngEAWebKit\local/pc-vc-dev-opt/lib\\libpngEAWebKit.pdb" CompileOnly="TRUE" Optimization="1" PreprocessorDefinitions="WIN32;_SECURE_SCL=0;NDEBUG;WIN32;PNG_NO_MMX_CODE;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0501;WINVER=0x501" SuppressStartupBanner="TRUE" BufferSecurityCheck="FALSE" WarnAsError="TRUE" />
+      <Tool Name="VCLibrarianTool" OutputFile="..\..\..\..\..\..\projects\VS2005-SP1\libpngEAWebKit\local\pc-vc-dev-opt\lib\libpngEAWebKit.lib" AdditionalDependencies="" SuppressStartupBanner="TRUE" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+  </Configurations>
+  <References>
+  </References>
+  <Files>
+    <Filter Name="include" Filter="">
+      <Filter Name="libpng12" Filter="">
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\include\libpng12\png.h">
+        </File>
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\include\libpng12\pngconf.h">
+        </File>
+      </Filter>
+    </Filter>
+    <Filter Name="source" Filter="">
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\png.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngerror.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngget.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngmem.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngpread.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngread.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngrio.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngrtran.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngrutil.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngset.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngtrans.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngwio.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngwrite.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngwtran.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libpngEAWebKit\local\source\pngwutil.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libpngEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+    </Filter>
+  </Files>
+  <Globals>
+    <Global Name="vc-compiler" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\cl.exe" />
+    <Global Name="vc-linker" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\link.exe" />
+    <Global Name="vc-asm" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\ml.exe" />
+    <Global Name="vc-librarian" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\lib.exe" />
+    <Global Name="vc-postlink.program" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\mt.exe" />
+    <Global Name="build.env.PATH" Value="C:\Program Files\Microsoft Visual Studio 8\\Common7\IDE" />
+  </Globals>
+</VisualStudioProject>

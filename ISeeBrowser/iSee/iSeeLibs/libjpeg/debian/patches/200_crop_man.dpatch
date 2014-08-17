@@ -1,0 +1,68 @@
+#! /bin/sh -e
+
+# DP: Manpage update for jpegtran -crop
+
+case "$1" in
+    -patch) patch -f --no-backup-if-mismatch -p1 < $0;;
+    -unpatch) patch -f --no-backup-if-mismatch -R -p1 < $0;;
+    *)
+        echo >&2 "`basename $0`: script expects -patch|-unpatch as argument"
+        exit 1
+esac
+exit 0
+@DPATCH@
+diff -urNad /home/bill/debian/libjpeg/libjpeg6b-6b/jpegtran.1 libjpeg6b-6b/jpegtran.1
+--- /home/bill/debian/libjpeg/libjpeg6b-6b/jpegtran.1	2003-09-22 18:46:08.000000000 +0200
++++ libjpeg6b-6b/jpegtran.1	2003-09-22 18:49:06.000000000 +0200
+@@ -131,6 +131,40 @@
+ .B \-rot 180 -trim
+ trims both edges.
+ .PP
++If you are only interested by perfect transformation, add the
++.B \-perfect
++switch:
++.TP
++.B \-perfect
++Fails with an error if the transformation is not perfect. For example
++you may want to do
++.TP
++.B (jpegtran \-rot 90 -perfect foo.jpg || djpeg foo.jpg| pnmflip \-r90 | cjpeg)
++to do a perfect rotation if available or an approximated one if
++not.
++.PP
++We also offer a lossless-crop option, which discards data outside a given
++image region but losslessly preserves what is inside.  Like the rotate and
++flip transforms, lossless crop is restricted by the JPEG format: the upper
++left corner of the selected region must fall on an iMCU boundary.  If this
++does not hold for the given crop parameters, we silently move the upper left
++corner up and/or left to make it so, simultaneously increasing the region
++dimensions to keep the lower right crop corner unchanged.  (Thus, the
++output image covers at least the requested region, but may cover more.)
++
++Note: 
++.B \-perfect
++and
++.B lossless-crop
++are enhancements from http://sylvana.net/jpegcrop/ that may not be available on
++non-Debian systems.
++
++The image can be losslessly cropped by giving the switch:
++.TP
++.B \-crop WxH+X+Y
++Crop to a rectangular subarea of width W, height H starting at point X,Y.
++.PP
++.PP
+ Another not-strictly-lossless transformation switch is:
+ .TP
+ .B \-grayscale
+@@ -231,7 +265,9 @@
+ .PP
+ The transform options can't transform odd-size images perfectly.  Use
+ .B \-trim
+-if you don't like the results without it.
++or
++.B \-perfect
++if you don't like the results.
+ .PP
+ The entire image is read into memory and then written out again, even in
+ cases where this isn't really necessary.  Expect swapping on large images,

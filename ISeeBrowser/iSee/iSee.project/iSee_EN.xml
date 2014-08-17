@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<ISEE>
+	<!-- 基本配置信息 -->
+	<BASE>
+		<HOMEURL VALUE="" /> <!-- 为空字符串时，则显示空白页 -->
+		<ENCODING VALUE="gbk" /> <!-- 缺省网页语言编码，如gb2312、gbk、big5 -->
+		<CACHESIZE VALUE="16M" /> <!-- 缓冲在内存中的图片占用的内存，单位为兆bytes(M) -->
+		<OPENWINDOW VALUE="false" /> <!-- 是否允许打开弹出窗口 -->
+	</BASE>
+	
+	<!-- 应用程序使用的界面文字 -->
+	<UI>
+		<DIALOG OK="OK" CANCEL="Cancel" /> <!-- JavaScript对话框按钮标题文字 -->
+		<FAVORITE DIALOG="Manage Favorites" DELETE="Delete" CLOSE="Close" TITLE="Title" URL="URL" /> <!-- 收藏夹对话框资源 -->
+	</UI>
+	
+	<!-- 字体文件信息，BOLD/ITALIC的值为：true/false/all，all表示两种字体都支持。
+	     INDEX：如果字体文件中包含多个字体，INDEX指明某种字体在文件的索引（从0开始）
+	     DEFAULT选取字体列表中的一个，如果FACE没有找到或者没有DEFAULT选项则选择
+	     字体列表中的第一个，SIZE缺省为14。
+		FILE=""标明字体文件是和应用程序在同一目录下的sunglobe.ttf
+	-->
+	<FONT>
+		<DEFAULT FACE="Tahoma" SIZE="14" />
+		<FACE ALIAS="Tahoma" INDEX="0" BOLD="false" ITALIC="false" FILE="" />
+	</FONT>
+	
+	<!-- 菜单显示资源配置 -->
+	<MENU>
+		<TOOL VALUE="Tools">
+			<New VALUE="New Window" />
+			<Close VALUE="Close Window" />
+			<FullScreen VALUE="Full Screen" />
+			<EnableProxy VALUE="Enable Proxy" />
+			<Refresh VALUE="Refresh" />
+			<Stop VALUE="Stop" />
+			<Back VALUE="Backward" />
+			<Forward VALUE="Forward" />
+			<AddFavorite VALUE="Add Favorites" />
+			<ManageFavorites VALUE="Manage Favorites" />
+			<GoFavorite VALUE="Go Favorite..." />
+			<Options VALUE="Options" />
+			<About VALUE="About..." />
+			<Exit VALUE="Exit" />
+		</TOOL>
+		<WINDOW VALUE="Windows" />
+	</MENU>
+	
+	<!-- 代理服务器配置 -->
+	<PROXY>
+		<ENABLE VALUE="false" />
+		<ADDRESS VALUE="10.0.0.172:80" />
+		<EXCEPTION VALUE="192.168.*;10.*" />
+	</PROXY>
+	
+	<!-- 载入错误信息 -->
+	<ERROR>
+		<TITLE VALUE="Load failed" />
+		<DISPLAY VALUE="Load the page file failed!" />
+	</ERROR>
+</ISEE>

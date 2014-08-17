@@ -1,0 +1,39 @@
+#! /bin/sh -e
+
+# DP: Fix config.{sub,guess} to use autotools-dev version.
+
+case "$1" in
+    -patch) patch -f --no-backup-if-mismatch -p1 < $0;;
+    -unpatch) patch -f --no-backup-if-mismatch -R -p1 < $0;;
+    *)
+        echo >&2 "`basename $0`: script expects -patch|-unpatch as argument"
+        exit 1
+esac
+exit 0
+@DPATCH@
+--- jpeg-6b/config.guess	Wed Mar 25 16:25:38 1998
++++ libjpeg6b-6b/config.guess	Wed Feb 26 01:04:42 2003
+@@ -1,4 +1,10 @@
+ #! /bin/sh
++# autotools-dev hack (<ballombe@debian.org>, Wed, 14 Nov 2001 10:13:10 +0100)
++if [ -x /usr/share/misc/config.guess ]; then
++   /usr/share/misc/config.guess $*
++   exit $?
++fi
++
+ # Attempt to guess a canonical system name.
+ #   Copyright (C) 1992, 93, 94, 95, 96, 1997 Free Software Foundation, Inc.
+ #
+--- jpeg-6b/config.sub	Wed Mar 25 16:25:39 1998
++++ libjpeg6b-6b/config.sub	Wed Feb 26 01:04:42 2003
+@@ -1,4 +1,10 @@
+ #! /bin/sh
++# autotools-dev hack (<ballombe@debian.org>, Wed, 14 Nov 2001 10:13:10 +0100)
++if [ -x /usr/share/misc/config.sub ]; then
++   /usr/share/misc/config.sub $*
++   exit $?
++fi
++
+ # Configuration validation subroutine script, version 1.1.
+ #   Copyright (C) 1991, 92, 93, 94, 95, 96, 1997 Free Software Foundation, Inc.
+ # This file is (in principle) common to ALL GNU software.

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiBrowser", "DuiBrowser-WINCE5-MIPSII.vcproj", "{664776D4-85D9-4C9B-ADF0-0AD9E1D7D7ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|STANDARDSDK_500 (MIPSII) = Debug|STANDARDSDK_500 (MIPSII)
+		Release|STANDARDSDK_500 (MIPSII) = Release|STANDARDSDK_500 (MIPSII)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{664776D4-85D9-4C9B-ADF0-0AD9E1D7D7ED}.Debug|STANDARDSDK_500 (MIPSII).ActiveCfg = Debug|STANDARDSDK_500 (MIPSII)
+		{664776D4-85D9-4C9B-ADF0-0AD9E1D7D7ED}.Debug|STANDARDSDK_500 (MIPSII).Build.0 = Debug|STANDARDSDK_500 (MIPSII)
+		{664776D4-85D9-4C9B-ADF0-0AD9E1D7D7ED}.Release|STANDARDSDK_500 (MIPSII).ActiveCfg = Release|STANDARDSDK_500 (MIPSII)
+		{664776D4-85D9-4C9B-ADF0-0AD9E1D7D7ED}.Release|STANDARDSDK_500 (MIPSII).Build.0 = Release|STANDARDSDK_500 (MIPSII)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

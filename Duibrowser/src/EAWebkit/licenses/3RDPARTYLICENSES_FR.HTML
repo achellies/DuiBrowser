@@ -1,0 +1,2581 @@
+<html>
+
+<body lang=EN-US link="#1F00FF" vlink=purple>
+
+<div class=Section1>
+
+<p><span lang=FR-CA 
+>Le logiciel inclus dans ce produit contient un logiciel protégé
+par droit d'auteur et distribué sous licence dans les versions 2.0 et 2.1 de la
+LGPL. Vous trouverez dans ce document les copies de ces licences. Vous pouvez
+obtenir le code source correspondant dans son intégralité pour une période de
+trois ans après notre dernier envoi du produit, lequel ne se produira pas avant
+le 1<sup>er</sup> novembre 2012, en nous envoyant un CD-R vierge dans une
+enveloppe pour CD rembourrée, pré-adressée et affranchie à :</span></p>
+
+<p><span 
+>Electronic Arts Customer
+Warranty<br>
+9001 North IH-35 Suite 110<br>
+  Austin, TX 78753 (É.-U.)</span></p>
+
+<p><span lang=FR-CA
+>Veuillez
+écrire lisiblement «&nbsp;EAWebkit&nbsp;» et le titre du produit sur le CD-R. Vous
+trouverez également une copie de la source sur http://gpl.ea.com/ Cette offre
+vaut pour quiconque a reçu cette information. </span></p>
+
+<p><b><span lang=FR-CA
+>Droit
+d'auteur et information sur l'octroi de licence pour WebKit </span></b></p>
+
+<p><span>
+Copyright (C) 2008, Alex Mathews<br>
+Copyright (C) 2002-2008, Alexander Kellett<br>
+Copyright (C) 1997-2009, Alexey Proskuryakov<br>
+Copyright (C) 1999-2008, Allan Sandfeld Jensen<br>
+Copyright (C) 2007-2008, Alp Toker<br>
+Copyright (C) 2005-2008, Anders Carlsson<br>
+Copyright (C) 1999-2003, 2006-2008, Andreas Schlapbach<br>
+Copyright (C) 1999-2001, 2003-2008, Andrew Wellington<br>
+Copyright (C) 1997-2008, Antti Koivisto<br>
+Copyright (C) 1997-2009, Apple Inc<br>
+Copyright (C) 1999-2000, 2004-2008, Bjoern Graf<br>
+Copyright (C) 1999-2008, Cameron Zwarich<br>
+Copyright (C) 2006-2008, Collabora Ltd<br>
+Copyright (C) 2002, 2007, Cyrus Patel<br>
+Copyright (C) 2000, 2003-2008, Daniel Molkentin<br>
+Copyright (C) 2000-2002, 2004, 2007, David Faure<br>
+Copyright (C) 1999, 2001, 2003-2008, David Smith<br>
+Copyright (C) 1997-2008, Dirk Mueller<br>
+Copyright (C) 2007-2008, Dirk Schulze<br>
+Copyright (C) 1999-2008, Eric Seidel<br>
+Copyright (C) 1999-2001, 2004-2008, Frederik Holljen<br>
+Copyright (C) 1999-2003, Free Software Foundation Inc<br>
+Copyright (C) 1998-2001, 2004-2007, George Staikos<br>
+Copyright (C) 1999-2005, 2007, Germain Garand<br>
+Copyright (C) 1998-2000, 2003-2008, Graham Dennis<br>
+Copyright (C) 1999-2001, 2004-2008, Gunnstein Lye<br>
+Copyright (C) 1998-2008, Harri Porten<br>
+Copyright (C) 2000, 2005-2009, Holger Hans Peter Freyther<br>
+Copyright (C) 2007, Id Software Inc<br>
+Copyright (C) 2000-2001, 2004-2008, James G Speth<br>
+Copyright (C) 2000, 2003-2008, Jon Shier<br>
+Copyright (C) 2004-2008, Julien Chaffraix<br>
+Copyright (C) 1997-2008, Lars Knoll<br>
+Copyright (C) 1999-2008, Maks Orlovich<br>
+Copyright (C) 1997-2001, 2003-2008, Martin Jones<br>
+Copyright (C) 2006-2007, Michael Emmel<br>
+Copyright (C) 2001-2006, mozilla.org<br>
+Copyright (C) 1998-2008, Netscape Communications Corporation<br>
+Copyright (C) 1999-2000, 2003-2008, Nicholas Shanks<br>
+Copyright (C) 1999-2008, Nikolas Zimmermann<br>
+Copyright (C) 2000, 2005-2009, Nokia Corporation<br>
+Copyright (C) 2004-2008, Oliver Hunt<br>
+Copyright (C) 1999-2009, Peter Kelly<br>
+Copyright (C) 1999-2008, Rob Buis<br>
+Copyright (C) 1997-2006, Sam Lantinga<br>
+Copyright (C) 1998-2009, Samuel Weinig<br>
+Copyright (C) 1998-2001, 2003-2008, Simon Hausmann<br>
+Copyright (C) 2007-2008, Staikos Computing Services Inc<br>
+Copyright (C) 1998-2001, 2003-2008, Stefan Schimanski<br>
+Copyright (C) 2002-2003, 2006 -2008, The Karbon Developers<br>
+Copyright (C) 2001, 2003-2008, Tobias Anton<br>
+Copyright (C) 1997-2001, 2003-2008, Torben Weis<br>
+Copyright (C) 2000, 2005-2009, Torch Mobile Inc<br>
+Copyright (C) 1997-2001, 2003-2008, Trolltech ASA<br>
+Copyright (C) 1997-2008, Waldo Bastian<br>
+Copyright (C) 2008, Xan Lopez<br>
+Copyright (C) 2004-2008, Zack Rusin
+</span></p>
+
+<p><b><span lang=FR>Licence Générale Publique Limitée GNU</span></b></p>
+
+<p><b><span lang=FR
+>Version
+2.1</span></b><span lang=FR 
+>, février 1999.</span></p>
+
+<p><b><span lang=FR
+>Copyright</span></b><span
+lang=FR 
+> (C) 1991, 1999 </span><i><span lang=EN 
+>Free Software Foundation,
+Inc.</span></i><span lang=FR 
+> — Tous droits réservés.<br>
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.<br>
+Chacun est autorisé à copier et distribuer des copies conformes de ce<br>
+document de licence, mais toute modification en est proscrite.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>[Ceci est la première
+version publiée de la «&nbsp;Licence Générale Publique Limitée&nbsp;» (LGPL).
+Elle compte en tant que successeur de la «&nbsp;Licence Générale Publique de
+Bibliothèque&nbsp;» GNU version 2, d’où le numéro de version 2.1.]</span></p>
+
+<p><b><span lang=FR
+>Traduction
+française</span></b><span lang=FR 
+> par Philippe Verdy <script language="JavaScript"  type="text/javascript">
+<!--
+a = '&#x40;'; p = '.'; z = 'fr'; h = 'wan&#x61;doo'; u = 'verdy&#x5f;p';
+document.write(' &lt;<a href="mai' + 'lto' + ':' + u + a + h + p + z + '">' +
+u + ' <em>(à)<\/em> ' + h + ' <em>(point)<\/em> ' + z + '<\/a>&gt;, ');
+//-->
+</script>&lt;<a href="mailto:verdy_p@wanadoo.fr">verdy_p <i>(à)</i> wanadoo <i>(point)</i>
+fr</a>&gt;, le 25 août 2005 (dernière correction le 8 janvier 2008).</span></p>
+
+<p><i><span lang=FR
+>La
+présente version corrige quelques fautes mineures de français ou imprécisions.</span></i></p>
+
+<p><b><span lang=FR
+>Avertissement
+important au sujet de cette traduction française.</span></b></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Ceci est une
+traduction en français de la licence </span><i><span lang=EN font-size:
+13.5pt;>“GNU Lesser General
+Public License”</span></i><span lang=FR font-family:
+"Times New Roman","serif";> (alias LGPL). Cette traduction est
+fournie ici dans l’espoir qu’elle facilitera sa compréhension, mais elle ne
+constitue pas une traduction officielle ou approuvée d’un point de vue
+juridique.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>La </span><i><span
+lang=EN 
+>Free Software Foundation</span></i><span lang=FR font-size:
+13.5pt;> (FSF) ne publie pas
+cette traduction et ne l’a pas approuvée en tant que substitut valide au plan
+légal pour la licence authentique </span><i><span lang=EN font-size:
+13.5pt;>“GNU Lesser General
+Public Licence”</span></i><span lang=FR font-family:
+"Times New Roman","serif";>. Cette traduction n’a pas encore été
+passée en revue attentivement par un juriste et donc le traducteur ne peut
+garantir avec certitude qu’elle représente avec exactitude la signification
+légale des termes de la licence authentique </span><i><span lang=EN
+>“GNU
+Lesser General Public License”</span></i><span lang=FR 
+> publiée en anglais.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Cette traduction
+n’établit légalement aucun des termes de distribution d’un logiciel utilisant
+la licence GNU LGPL&nbsp;— seul le texte original en anglais le fait. Si vous
+souhaitez être sûr que les activités que vous projetez seront autorisées par la
+</span><i><span lang=EN 
+>GNU Lesser General Public License</span></i><span lang=FR
+>,
+veuillez vous référer à la seule version anglaise authentique.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>La </span><i><span
+lang=EN 
+>Free Software Foundation</span></i><span lang=FR font-size:
+13.5pt;> vous recommande
+fermement de ne pas utiliser cette traduction en tant que termes officiels pour
+vos propres programmes&nbsp;; veuillez plutôt utiliser la version anglaise
+authentique telle que publiée par la </span><i><span lang=EN font-size:
+13.5pt;>Free Software
+Foundation.</span></i></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Si vous choisissez de
+publier cette traduction de licence en même temps qu’une bibliothèque sous
+licence LGPL, cela ne vous dispense pas de l’obligation de fournir en même
+temps une copie de la licence authentique en Anglais, et de conserver cet
+avertissement important en Français et sa traduction en Anglais ci-dessous.</span></p>
+
+<p><b><i><span lang=EN
+>Important
+Warning About This French Translation.</span></i></b></p>
+
+<p><i><span lang=EN
+>This
+is a translation of the GNU Lesser General Public License into French. This
+translation is distributed in the hope that it will facilitate understanding,
+but it is not an official or legally approved translation.</span></i></p>
+
+<p><i><span lang=EN
+>The
+Free Software Foundation is not the publisher of this translation and has not
+approved it as a legal substitute for the authentic GNU Lesser General Public
+License. The translation has not been reviewed carefully by lawyers, and
+therefore the translator cannot be sure that it exactly represents the legal
+meaning of the authentic GNU Lesser General Public License published in English.</span></i></p>
+
+<p><i><span lang=EN
+>This
+translation does not legally state the distribution terms for software that
+uses the GNU LGPL&nbsp;— only the original English text of the GNU LGPL does
+that. If you wish to be sure whether your planned activities are permitted by
+the GNU Lesser General Public License, please refer to the authentic English
+version.</span></i></p>
+
+<p><i><span lang=EN
+>The
+Free Software Foundation strongly urges you not to use this translation as the
+official distribution terms for your programs; instead, please use the
+authentic English version published by the Free Software Foundation.</span></i></p>
+
+<p><i><span lang=EN
+>If
+you choose to publish this translated licence with a library covered by the
+LGPL Licence, this does not remove your obligation to provide at the same time
+a copy of the authentic LGPL Licence in English, and you must keep this
+important warning in English and its French translation above.</span></i></p>
+
+<p><a name=SEC2></a><a
+href="http://org.rodage.com/lgpl.fr.html#TOC2"><b><span lang=FR
+>Préambule</span></b></a></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Les licences de la
+plupart des logiciels sont conçues pour vous ôter toute liberté de les partager
+et de les modifier. À l’opposé, les Licences Générales Publiques GNU ont pour
+but de vous garantir votre liberté de partager et modifier un logiciel libre —
+pour être sûr que le logiciel est bien libre pour tous les utilisateurs.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Cette licence, la
+«&nbsp;Licence Générale Publique Limitée&nbsp;» (</span><i><span lang=EN
+>“Lesser
+General Public License”</span></i><span lang=FR 
+>), s’applique à certains
+paquets logiciels désignés spécifiquement&nbsp;—&nbsp;typiquement des
+bibliothèques&nbsp;— de la </span><i><span lang=EN 
+>Free Software Foundation</span></i><span
+lang=FR 
+> et d’autres auteurs qui décident de l’utiliser. Vous pouvez
+l’utiliser aussi, mais nous vous suggérons de considérer d’abord si la présente
+licence ou la «&nbsp;Licence Générale Publique GNU&nbsp;» (</span><i><span
+lang=EN 
+>“GNU General Public License”</span></i><span lang=FR
+>)
+ordinaire est la meilleure stratégie à utiliser dans chaque cas particulier,
+suivant les explications données ci-dessous.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Quand nous parlons de
+logiciel libre, nous parlons de la liberté de l’utiliser, pas de son prix. Nos
+Licences Générales Publiques sont conçues pour s’assurer que vous disposerez de
+la liberté de distribuer des copies du logiciel libre (et de facturer ce
+service si vous le désirez)&nbsp;; que vous recevrez le code source ou pouvez
+l’obtenir chaque fois que vous le souhaitez&nbsp;; que vous pouvez modifier le
+logiciel et en utilisez tout ou partie dans de nouveaux programmes
+libres&nbsp;; et que vous êtes informés que vous pouvez faire tout ceci.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Pour protéger vos
+droits, nous devons émettre des restrictions qui interdisent aux distributeurs
+de vous refuser ces droits ou de vous demander d’abandonner ces droits. Ces
+restrictions se traduisent par certaines responsabilités pour vous si vous
+distribuez des copies de la bibliothèque ou si vous la modifiez.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Par exemple, si vous
+distribuez des copies de la bibliothèque, que ce soit à titre gratuit ou contre
+un paiement, vous devez donner aux concessionnaires tous les droits que nous
+vous avons concédés. Si vous liez d’autres codes avec la bibliothèque, vous
+devez fournir des fichiers objets complets aux concessionnaires, de sorte
+qu’ils peuvent les lier à nouveau avec la bibliothèque après l’avoir modifiée
+et recompilée. Et vous devez leur montrer ces termes de sorte qu’ils puissent
+connaître leurs droits.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Nous protégeons vos
+droits par une méthode en deux étapes&nbsp;: (1) nous libellons la Bibliothèque
+avec une notice de propriété intellectuelle (</span><i><span lang=EN
+>“copyright”</span></i><span
+lang=FR 
+>) et (2) nous vous offrons cette Licence, qui vous donne le droit
+de copier, distribuer ou modifier la bibliothèque.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Pour protéger chaque
+distributeur, nous voulons établir de façon très claire qu’il n’y a aucune
+garantie pour la Bibliothèque libre. Aussi, si la Bibliothèque est modifiée par
+quelqu’un d’autre qui la redistribue ensuite, ses concessionnaires devraient
+savoir que ce qu’ils ont n’est pas la version originale, de sorte que la
+réputation de l’auteur original ne sera pas affectée à cause de problèmes
+introduits par d’autres.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Enfin, les brevets
+logiciels constituent une menace constante contre l’existence même de tout
+logiciel libre. Nous voulons être sûr qu’une société ne peut pas effectivement
+restreindre les utilisateurs d’un programme libre en obtenant une licence
+restrictive d’un titulaire de brevet. Par conséquent, nous insistons pour que
+toute licence de brevet obtenue pour une version de la Bibliothèque soit
+cohérente avec sa pleine liberté d’utilisation spécifiée dans la présente
+Licence.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>La plupart des logiciels
+GNU, y compris certaines bibliothèques, sont couverts par la «&nbsp;Licence
+Générale Publique GNU&nbsp;» (</span><i><span lang=EN 
+>“GNU General Public License”</span></i><span
+lang=FR 
+>). La présente licence s’applique à certaines bibliothèques
+désignées et est assez différente de la «&nbsp;Licence Générale Publique&nbsp;».
+Nous utilisons la présente licence pour certaines bibliothèques afin de
+permettre de lier ces bibliothèques, sous certaines conditions, à des
+programmes non libres.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Quand un programme
+est lié avec une bibliothèque, que ce soit statiquement ou avec une
+bibliothèque partagée, la combinaison des deux constitue, en termes légaux, un
+«&nbsp;travail combiné&nbsp;», un «&nbsp;dérivé&nbsp;» de la bibliothèque
+originale. Il s’ensuit que la «&nbsp;Licence Générale Publique&nbsp;» ordinaire
+ne permet une telle liaison que si l’entière combinaison remplie ses critères
+et conditions de liberté. La «&nbsp;Licence Générale Publique Limitée&nbsp;»
+permet de desserrer les critères permettant de lier d’autres codes avec la
+bibliothèque.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Nous appelons cette
+licence la Licence Générale Publique «&nbsp;Limitée&nbsp;» (</span><i><span
+lang=EN 
+>“Lesser” General Public License</span></i><span lang=FR
+>)
+car elle offre en fait une protection plus limitée de la liberté de
+l’utilisateur que celle offerte par la «&nbsp;Licence Générale Publique&nbsp;»
+ordinaire. Elle offre aux autres développeurs de logiciels libres un avantage
+plus limité face aux programmes concurrents non libres. Ces désavantages sont
+la raison pour laquelle nous utilisons la «&nbsp;Licence Générale
+Publique&nbsp;» ordinaire pour de nombreuses bibliothèques. Cependant la
+licence limitée offre des avantages dans certaines circonstances spéciales.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Par exemple, en de
+rares occasions, il peut exister le besoin particulier d’encourager
+l’utilisation la plus large possible d’une certaine bibliothèque, afin qu’elle
+devienne un standard de facto. Pour arriver à cette fin, des programmes non
+libres doivent pouvoir être autorisés à utiliser la bibliothèque. Un cas plus
+fréquent est qu’une bibliothèque libre effectue les mêmes tâches que des
+bibliothèques non libres largement utilisées. Dans ce cas, il n’y a pas grand
+chose à gagner à limiter la bibliothèque libre aux seuls logiciels libres,
+aussi nous utilisons la Licence Générale Publique Limitée.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Dans d’autres cas,
+l’autorisation d’utiliser une bibliothèque particulière dans des programmes non
+libres permet à un plus grand nombre de personnes d’utiliser un corpus très
+large de logiciels libres. Par exemple, l’autorisation d’utiliser la
+bibliothèque C GNU dans des programmes non libres permet à plus de personnes
+d’utiliser le système d’exploitation GNU tout entier, de même que sa variante,
+le système d’exploitation GNU/Linux.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Bien que la
+«&nbsp;Licence Générale Publique Limitée&nbsp;» semble limiter la protection de
+la liberté de l’utilisateur, elle assure que l’utilisateur d’un programme lié
+avec la bibliothèque dispose de la liberté et du choix d’exécuter ce programme
+en utilisant une version modifiée de la bibliothèque.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Les termes et
+conditions précis concernant la copie, la distribution et la modification
+suivent. Prenez une attention tout particulière aux différences entre un
+«&nbsp;travail <b>basé</b> sur la Bibliothèque&nbsp;» et un «&nbsp;travail <b>utilisant</b>
+la Bibliothèque&nbsp;». Le premier contient du code dérivé de la bibliothèque,
+tandis que le second doit être combiné avec la bibliothèque afin de pouvoir
+être exécuté.</span></p>
+
+<p><a name=SEC3></a><a
+href="http://org.rodage.com/lgpl.fr.html#TOC3"><b><span lang=FR
+>TERMES
+ET CONDITIONS CONCERNANT LA COPIE, LA DISTRIBUTION ET LA MODIFICATION</span></b></a></p>
+
+<p><b><span lang=FR
+>0.</span></b><span
+lang=FR 
+> Cet Accord de Licence s’applique à toute bibliothèque logicielle
+ou tout programme contenant une notice placée par le titulaire de la
+réservation de droits (</span><i><span lang=EN 
+>“copyright”</span></i><span
+lang=FR 
+>) ou toute autre partie autorisée indiquant que ce logiciel peut
+être distribué suivant les termes de cette Licence Générale Publique Limitée
+(appelée ci-dessous «&nbsp;cette Licence&nbsp;»). Chacun des concessionnaires
+de cette Licence sera désigné en tant que «&nbsp;Vous&nbsp;».</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Une
+«&nbsp;bibliothèque&nbsp;» signifie une collection de fonctions logicielles ou
+de données préparées de façon à être liée facilement à des programmes
+applicatifs (utilisant tout ou partie de ces fonctions et données) afin de
+former des exécutables.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>La «&nbsp;Bibliothèque&nbsp;»,
+ci-dessous, se réfère à toute bibliothèque logicielle ou travail qui a été
+distribué suivant ces termes. Un «&nbsp;travail basé sur la Bibliothèque&nbsp;»
+signifie soit la Bibliothèque ou tout travail dérivé pouvant être soumis aux
+lois de propriété intellectuelle&nbsp;: c’est-à-dire un travail contenant la
+Bibliothèque ou une portion de celle-ci, soit en copie conforme, soit avec des
+modification ou traduit directement dans une autre langue. (Dans la suite
+ci-dessous, les traductions sont incluses sans limitation dans le terme
+«&nbsp;modification&nbsp;».)</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Le «&nbsp;code
+source&nbsp;» d’un travail signifie la forme préférée du travail permettant d’y
+effectuer des modifications. Pour une bibliothèque, le code source complet
+signifie tout le code source de tous les modules qu’elle contient, plus tous
+les fichiers de définition d’interface associés, plus les scripts utilisés pour
+contrôler la compilation et l’installation de la bibliothèque.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Les activités autres
+que la copie, la distribution et la modification ne sont pas couvertes par
+cette Licence&nbsp;; elles sont en dehors de son étendue. L’action d’exécuter
+un programme utilisant la Bibliothèque n’est pas restreinte et les résultats
+produits par un tel programme ne sont couverts que si leur contenu constitue un
+travail basé sur la Bibliothèque (indépendamment de l’utilisation de la
+Bibliothèque dans un outil utilisé pour l’écrire). Que ce soit ou non le cas
+dépend de ce que réalise la Bibliothèque, et de ce que fait le programme
+utilisant la Bibliothèque.</span></p>
+
+<p><b><span lang=FR
+>1.</span></b><span
+lang=FR 
+> Vous pouvez copier et distribuer des copies conformes du code
+source complet de la Bibliothèque que vous recevez, sur tout support, pourvu
+que vous publiiez scrupuleusement et de façon appropriée sur chaque copie la
+notice de réservation de droit (</span><i><span lang=EN 
+>“copyright”</span></i><span
+lang=FR 
+>) et un «&nbsp;déni de garantie&nbsp;»&nbsp;; gardez intactes
+toutes les notices qui se réfèrent à cette Licence et à l’absence de toute
+garantie&nbsp;; et distribuez une copie de cette Licence en même temps que la
+Bibliothèque.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Vous pouvez demander
+un paiement pour l’action physique de transfert d’une copie et vous pouvez à
+volonté offrir une protection de garantie en échange d’un paiement.</span></p>
+
+<p><b><span lang=FR
+>2.</span></b><span
+lang=FR 
+> Vous pouvez modifier votre ou vos copie(s) de la Bibliothèque ou
+toute portion de celle-ci et ainsi créer un travail basé sur la Bibliothèque et
+copier ou distribuer de telles modifications suivant les termes de la Section 1
+ci-dessus, pourvu que vous satisfassiez également à chacune de ces
+conditions&nbsp;:</span></p>
+
+<p class=MsoNormal margin-left:1.0in;text-indent:-.25in;
+><span lang=FR font-size:10.0pt;font-family:Symbol;>·<span
+font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=FR 
+>a)</span></b><span lang=FR font-family:
+"Times New Roman","serif";> Le travail modifié doit être lui-même
+une bibliothèque logicielle. </span></p>
+
+<p class=MsoNormal margin-left:1.0in;text-indent:-.25in;
+><span lang=FR font-size:10.0pt;font-family:Symbol;>·<span
+font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=FR 
+>b)</span></b><span lang=FR font-family:
+"Times New Roman","serif";> Vous devez assurer que les fichiers
+modifiés comportent des notices évidentes établissant que vous avez changé les
+fichiers et la date de ces changements. </span></p>
+
+<p class=MsoNormal margin-left:1.0in;text-indent:-.25in;
+><span lang=FR font-size:10.0pt;font-family:Symbol;>·<span
+font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=FR 
+>c)</span></b><span lang=FR font-family:
+"Times New Roman","serif";> Vous devez assurer que l’ensemble du
+travail pourra être licencié sans frais à toute tierce partie suivant les
+termes de cette Licence. </span></p>
+
+<p class=MsoNormal margin-left:1.0in;text-indent:-.25in;
+><span lang=FR font-size:10.0pt;font-family:Symbol;>·<span
+font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=FR 
+>d)</span></b><span lang=FR font-family:
+"Times New Roman","serif";> Si une facilité dans la bibliothèque
+modifiée se réfère à une fonction ou une table de données devant être fournie
+par une application utilisant la facilité, autre qu’un argument passé quand la
+facilité est invoquée, alors vous devez faire un effort en toute bonne foi pour
+vous assurer que, dans l’éventualité où une application ne fournirait pas une
+telle fonction ou table, la facilité restera opérationnelle et effectuera une
+partie quelconque de sa finalité de façon sensée. </span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>(Par exemple, une
+fonction dans une bibliothèque pour calculer des racines carrées a une finalité
+qui est totalement bien définie indépendamment de l’application. Par
+conséquent, la Sous-section 2d requiert que toute fonction fournie par
+l’application ou table utilisée par cette fonction doit être optionnelle&nbsp;:
+si l’application n’en fournit pas, la fonction racine carrée doit encore
+pouvoir calculer des racines carrées.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Ces obligations
+s’appliquent au travail modifié dans son entier. Si des sections identifiables
+de ce travail ne sont pas dérivées dans la Bibliothèque, et peuvent être
+raisonnablement considérées comme des travaux indépendants et séparés par
+eux-mêmes, alors cette Licence et ses termes, ne s’appliquent pas à ces
+sections, dès lors que vous les distribuez en tant que travaux séparés. Mais
+quand vous distribuez les mêmes sections en tant que composants d’un ensemble
+constituant un travail basé sur la Bibliothèque, la distribution de l’ensemble
+doit se faire suivant les termes de cette Licence, dont les autorisations accordées
+à d’autres obtenteurs de licences s’étendent à la totalité de l’ensemble et
+donc pour chacun des composants indépendamment de qui les a écrits.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Aussi, ce n’est pas
+l’intention de cette section de clamer des droits ou de contester vos droits
+sur des travaux écrits entièrement par vous&nbsp;; l’intention est plutôt
+d’exercer le droit de contrôler la distribution des travaux dérivés ou
+collectifs basés sur la Bibliothèque.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>De plus, la simple
+agrégation avec la Bibliothèque (ou avec un travail basé sur la Bibliothèque)
+d’un autre travail non basé sur la Bibliothèque sur un même volume de stockage
+ou un support de distribution n’amène pas cet autre travail dans le champ
+d’application de cette Licence.</span></p>
+
+<p><b><span lang=FR
+>3.</span></b><span
+lang=FR 
+> Vous pouvez choisir d’appliquer les termes de la Licence Générale
+Publique GNU ordinaire au lieu de ceux de cette Licence à une copie donnée de
+cette Bibliothèque. Pour le faire, vous devez modifier les notices qui se
+réfèrent à cette Licence, de sorte qu’ils se réfèrent plutôt à la Licence
+Générale Publique GNU version 2, au lieu de cette Licence. (Si une version
+officielle plus récente que la version 2 de la Licence Générale Publique GNU
+ordinaire a été publiée, alors vous pouvez spécifier plutôt cette version si
+vous le souhaitez.) N’effectuez aucun autre changement à ces notices.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Dès que ce changement
+a été fait dans une copie donnée, il est irréversible pour cette copie et donc
+la Licence Générale Publique GNU ordinaire s’appliquera à toutes les copies
+suivantes et à tous travaux dérivés effectués à partir de cette copie.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Cette option est
+utile quand vous souhaitez copier une partie du code de la Bibliothèque en un
+programme qui n’est pas une bibliothèque.</span></p>
+
+<p><b><span lang=FR
+>4.</span></b><span
+lang=FR 
+> Vous pouvez copier et distribuer la Bibliothèque (ou une portion
+ou un dérivé de celle-ci, suivant les termes de la Section 2 sous forme de code
+objet ou exécutable suivant les termes des Sections 1 et 2 ci-dessus, pourvu
+que vous l’accompagniez avec le code source correspondant sous forme lisible
+par une machine, qui doit être distribué suivant les termes des Sections 1 et 2
+ci-dessus sur un support utilisé habituellement pour l’échange de logiciels.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Si la distribution du
+code objet se fait en offrant l’accès à la copie depuis un emplacement désigné,
+alors une offre d’accès équivalente pour copier le code source depuis le même
+emplacement satisfait à l’obligation de distribuer le code source, même si des
+parties tierces ne sont pas obligées de copier simultanément le code source en
+même temps que le code objet.</span></p>
+
+<p><b><span lang=FR
+>5.</span></b><span
+lang=FR 
+> Un programme qui ne contient aucun dérivé d’une quelconque
+portion de la Bibliothèque, mais est conçu pour travailler avec la Bibliothèque
+en étant compilé ou lié avec cette Bibliothèque, est appelé un «&nbsp;travail
+utilisant la Bibliothèque&nbsp;». Un tel travail, pris isolément, n’est pas un
+travail dérivé de la Bibliothèque et tombe par conséquent hors du champ
+d’application de cette Licence.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Cependant, la liaison
+avec la Bibliothèque d’un «&nbsp;travail utilisant la Bibliothèque&nbsp;» crée
+un exécutable qui est un «&nbsp;dérivé de la Bibliothèque&nbsp;» (car il
+contient des portions de la Bibliothèque), plutôt qu’un «&nbsp;travail
+utilisant la Bibliothèque&nbsp;». L’exécutable est par conséquent couvert par
+cette Licence. La Section 6 établit les termes de distribution de tels
+exécutables.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Quand un
+«&nbsp;travail utilisant la Bibliothèque&nbsp;» utilise des éléments d’un
+fichier d’entête faisant partie de la Bibliothèque, le code objet de ce travail
+peut être un travail «&nbsp;dérivé de la Bibliothèque&nbsp;» même si son code
+source ne l’est pas. Cette définition prendra son sens tout particulièrement si
+le travail peut être lié sans la Bibliothèque ou si le travail est lui-même une
+bibliothèque. Les délimitations de ce cas ne sont pas définies de façon précise
+par la loi.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Si un tel fichier
+objet utilise uniquement des paramètres numériques, des schémas et accesseurs
+de structures de données et de petites macros et petites fonctions en ligne
+(dix lignes de source ou moins en longueur), alors l’utilisation du fichier
+objet est non restreinte, indépendamment du fait que cela constitue légalement
+un travail «&nbsp;dérivé&nbsp;» (Les règles de la Section 6 s’appliqueront tout
+de même aux exécutables contenant ce code objet plus des portions de la
+Bibliothèque).</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Autrement, si le
+travail est un «&nbsp;dérivé de la Bibliothèque,&nbsp;» vous pouvez distribuer
+le code objet pour le travail suivant les termes de la Section 6. Les règles de
+la section 6 s’appliquent alors à tout exécutable contenant ce travail, que ce
+dernier soit ou ne soit pas lié directement avec la Bibliothèque elle-même.</span></p>
+
+<p><b><span lang=FR
+>6.</span></b><span
+lang=FR 
+> Par exception aux Sections ci-dessus, vous pouvez aussi combiner
+ou lier un «&nbsp;travail utilisant la Bibliothèque&nbsp;» avec la Bibliothèque
+pour produire un travail contenant des portions de la Bibliothèque et
+distribuer ce travail suivant les termes de votre choix, pourvu que ces termes
+permettent la modification du travail pour les besoins propres du client et
+l’ingénierie inverse permettant le déboguage de telles modifications.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Vous devez donner une
+notice explicite et évidente avec chaque copie du travail montrant que la
+Bibliothèque est utilisée dans celui-ci et que la Bibliothèque et son
+utilisation sont couvertes par cette Licence. Vous devez fournir une copie de
+cette Licence. Si le travail lors de son exécution affiche des notices de
+droits et propriétés intellectuelles, vous devez inclure la notice pour la
+Bibliothèque parmi celles-ci, ainsi qu’une référence adressée à l’utilisateur
+vers une copie de cette Licence. Vous devez aussi effectuer l’une des tâches
+suivantes&nbsp;:</span></p>
+
+<p class=MsoNormal margin-left:1.0in;text-indent:-.25in;
+><span lang=FR font-size:10.0pt;font-family:Symbol;>·<span
+font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=FR 
+>a)</span></b><span lang=FR font-family:
+"Times New Roman","serif";> Accompagner le travail avec le code
+source complet correspondant lisible par une machine pour la Bibliothèque
+incluant tout changement quelconque qui ont étés effectués dans le travail (qui
+doit être distribué suivant les Sections 1 et 2 ci-dessus)&nbsp;; et, si le
+travail est un exécutable lié avec la Bibliothèque, fournir la totalité du
+«&nbsp;travail utilisant la Bibliothèque&nbsp;» lisible par une machine, sous
+forme de code objet ou source, de sorte que l’utilisateur puisse modifier la
+Bibliothèque et la relier pour produire un exécutable modifié contenant la
+Bibliothèque modifiée. (Il est admis que l’utilisateur qui change le contenu de
+fichiers de définition dans la Bibliothèque ne sera pas nécessairement capable
+de recompiler l’application pour utiliser les définitions modifiées.) </span></p>
+
+<p class=MsoNormal margin-left:1.0in;text-indent:-.25in;
+><span lang=FR font-size:10.0pt;font-family:Symbol;>·<span
+font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=FR 
+>b)</span></b><span lang=FR font-family:
+"Times New Roman","serif";> Utiliser un mécanisme approprié de
+bibliothèque partagée pour lier avec la Bibliothèque. Un mécanisme approprié
+est celui qui (1) utilise à l’exécution une copie de la Bibliothèque déjà
+présente sur le système de l’ordinateur de l’utilisateur, plutôt que de copier
+les fonctions de bibliothèque dans l’exécutable et (2) fonctionnera
+correctement avec une version modifiée de la Bibliothèque, si l’utilisateur en
+installe une, tant que la version modifiée est compatible au niveau de
+l’interface avec la version avec laquelle le travail a été réalisé. </span></p>
+
+<p class=MsoNormal margin-left:1.0in;text-indent:-.25in;
+><span lang=FR font-size:10.0pt;font-family:Symbol;>·<span
+font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=FR 
+>c)</span></b><span lang=FR font-family:
+"Times New Roman","serif";> Accompagner le travail d’une offre
+écrite, valide pour au moins trois ans, de donner au même utilisateur les
+éléments spécifiés dans la Sous-section 6a, ci-dessus, contre un paiement
+n’excédant pas le coût requis pour effectuer cette distribution. </span></p>
+
+<p class=MsoNormal margin-left:1.0in;text-indent:-.25in;
+><span lang=FR font-size:10.0pt;font-family:Symbol;>·<span
+font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=FR 
+>d)</span></b><span lang=FR font-family:
+"Times New Roman","serif";> Si la distribution du travail est faite
+en offrant l’accès à une copie depuis un emplacement désigné, offrir un accès
+équivalent depuis le même emplacement pour copier les éléments spécifiés
+ci-dessus. </span></p>
+
+<p class=MsoNormal margin-left:1.0in;text-indent:-.25in;
+><span lang=FR font-size:10.0pt;font-family:Symbol;>·<span
+font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=FR 
+>e)</span></b><span lang=FR font-family:
+"Times New Roman","serif";> Vérifier que l’utilisateur a déjà reçu
+une copie de ces éléments ou que vous en avez déjà envoyé une copie à cet
+utilisateur. </span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Pour un exécutable,
+la forme requise du «&nbsp;travail utilisant la Bibliothèque&nbsp;» doit
+inclure toutes les données et programmes utilitaires nécessaires permettant de
+reproduire l’exécutable à partir de ceux-ci. Cependant, par exception, les
+matériels à distribuer n’ont pas besoin d’inclure tout ce qui est normalement
+distribué (sous forme source ou binaire) avec les composants majeurs
+(compilateur, noyau et autres composants similaires) du système d’exploitation
+sur lequel l’exécutable fonctionne, à moins que ce composant lui-même
+accompagne l’exécutable.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Il peut arriver que
+ces conditions nécessaires contredisent les restrictions de licence d’autres
+bibliothèques propriétaires qui n’accompagnent pas normalement le système
+d’exploitation. Une telle contradiction signifie que vous ne pouvez pas les
+utiliser en même temps que la Bibliothèque dans un exécutable que vous
+distribuez.</span></p>
+
+<p><b><span lang=FR
+>7.</span></b><span
+lang=FR 
+> Vous pouvez placer les facilités de bibliothèque qui sont un
+travail basé sur la Bibliothèque côte à côte dans une unique bibliothèque avec
+d’autres facilités de bibliothèque non couvertes par cette Licence et
+distribuer une telle bibliothèque combinée, pourvu que la distribution séparée
+du travail basé sur la Bibliothèque et des autres facilités de bibliothèque
+soient autrement permises et pourvu que vous effectuiez chacune des deux tâches
+suivantes&nbsp;:</span></p>
+
+<p class=MsoNormal margin-left:1.0in;text-indent:-.25in;
+><span lang=FR font-size:10.0pt;font-family:Symbol;>·<span
+font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=FR 
+>a)</span></b><span lang=FR font-family:
+"Times New Roman","serif";> Accompagner la bibliothèque combinée
+avec une copie du même travail basé sur la Bibliothèque, non combinée avec
+d’autres facilités de la Bibliothèque. Cela doit être distribué suivant les
+termes des Sections ci-dessus. </span></p>
+
+<p class=MsoNormal margin-left:1.0in;text-indent:-.25in;
+><span lang=FR font-size:10.0pt;font-family:Symbol;>·<span
+font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=FR 
+>b)</span></b><span lang=FR font-family:
+"Times New Roman","serif";> Donner une notice évidente avec la
+bibliothèque combinée du fait qu’une partie de celle-ci est un travail basé sur
+la Bibliothèque et expliquant où trouver la forme non combinée accompagnante du
+même travail. </span></p>
+
+<p><b><span lang=FR
+>8.</span></b><span
+lang=FR 
+> Vous ne pouvez pas copier, modifier, accorder des sous-licences,
+lier ou distribuer la Bibliothèque autrement que d’une façon décrite
+expressément par cette Licence. Autrement, toute tentative de copier, modifier,
+accorder des sous-licences, lier ou distribuer la Bibliothèque est invalide et
+mettra fin automatiquement à vos droits accordés sous cette Licence. Toutefois,
+toute autre tierce partie qui a reçu des copies ou des droits par vous, suivant
+les termes de cette Licence, ne verra pas sa licence résiliée, aussi longtemps
+que cette partie tierce continuera de s’y conformer pleinement.</span></p>
+
+<p><b><span lang=FR
+>9.</span></b><span
+lang=FR 
+> Vous n’êtes pas obligé d’accepter cette Licence, puisque vous ne
+l’avez pas signée. Cependant, rien d’autre ne vous accorde l’autorisation de
+modifier ou distribuer la Bibliothèque ou ses travaux dérivés. Ces actions sont
+légalement prohibées si vous n’acceptez pas cette Licence. Par conséquent, en
+modifiant ou distribuant la Bibliothèque (ou tout travail basé sur la
+Bibliothèque), vous indiquez votre acceptation de cette Licence pour le faire,
+ainsi que tous ses termes et conditions pour la copie, la distribution ou la
+modification de la Bibliothèque ou des travaux basés sur elle.</span></p>
+
+<p><b><span lang=FR
+>10.</span></b><span
+lang=FR 
+> Chaque fois que vous redistribuez la Bibliothèque (ou tout
+travail basé sur la Bibliothèque), le destinataire reçoit automatiquement une
+licence par l’émetteur d’origine de la licence, permettant de copier,
+distribuer, lier ou modifier la Bibliothèque en accord avec les présents termes
+et conditions. Vous ne pouvez pas imposer davantage de restrictions sur
+l’exercice par le concessionnaire de cette licence des droits accordés dans la
+présente licence. Vous êtes dégagé de la responsabilité de contrôler la
+conformité d’usage de cette Licence par des parties tierces.</span></p>
+
+<p><b><span lang=FR
+>11.</span></b><span
+lang=FR 
+> Si, par suite d’une décision judiciaire ou d’une allégation
+d’infraction à un brevet ou pour toute autre raison (non limitée aux problèmes
+de brevets), des conditions vous sont imposées (que ce soit par une ordonnance
+de justice, une transaction amiable ou contractuelle ou toute autre raison) qui
+contredisent les conditions de cette Licence, elles ne vous dégagent pas des
+obligations de cette Licence. Si vous ne pouvez pas effectuer une distribution
+de façon à satisfaire simultanément vos obligations sous cette Licence et toute
+autre obligation pertinente, alors vous ne pouvez en aucun cas distribuer la
+Bibliothèque. Par exemple, si une licence de brevet ne permettait pas une
+redistribution de la Bibliothèque sans paiement de royalties par tous ceux qui
+en reçoivent des copies directement ou indirectement à travers vous, alors la
+seule façon pour vous de satisfaire à la fois les conditions imposées et cette
+Licence sera de vous abstenir complètement de toute distribution de la
+Bibliothèque.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Si toute portion de
+cette section est jugée invalide ou inapplicable de plein droit dans une
+quelconque circonstance particulière, tout le reste de cette section est
+supposé s’appliquer et la section dans son ensemble est supposée toujours être
+applicable dans toutes les autres circonstances.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Le but de cette
+section n’est pas de vous obliger à enfreindre un quelconque brevet ou d’autres
+prétentions à des droits de propriété ou de contester la validité de telles
+prétentions&nbsp;; cette section a pour seul but de protéger l’intégrité du
+système de distribution des logiciels libres tel qu’il fonctionne au moyen de
+pratiques de licences publiques. De nombreuses personnes ont fait des
+contributions généreuses à la gamme très étendue de logiciels distribués via ce
+système, en comptant sur l’application rigoureuse et cohérente de ce
+système&nbsp;; il appartient seulement à l’auteur ou au donateur de décider si
+il ou elle désire distribuer un logiciel via un autre système et le
+concessionnaire de licence ne peut pas imposer ce choix.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Cette section a pour
+but d’établir de façon très claire ce que l’on croit être une conséquence
+nécessaire du reste de cette Licence.</span></p>
+
+<p><b><span lang=FR
+>12.</span></b><span
+lang=FR 
+> Si la distribution ou l’usage de la Bibliothèque est restreinte
+dans certains pays, que ce soit par des brevets ou des interfaces soumises au
+droit de propriété intellectuelle, le titulaire original de ce droit de
+propriété qui place la Bibliothèque sous la couverture de cette Licence peut
+ajouter une limitation géographique explicite de distribution excluant ces
+pays, afin que la distribution soit permise seulement dans ou parmi les pays
+non exclus. Dans un tel cas, cette Licence incorpore la limitation comme si
+elle était réputée écrite dans le corps de cette Licence.</span></p>
+
+<p><b><span lang=FR
+>13.</span></b><span
+lang=FR 
+> La </span><i><span lang=EN font-family:
+"Times New Roman","serif";>Free Software Foundation</span></i><span
+lang=FR 
+> peut publier des versions révisées ou nouvelles de la Licence
+Générale Publique Limitée de temps en temps. De telles nouvelles versions
+resteront similaires à l’esprit de la présente version, mais peut différer dans
+son détail afin de traiter de nouveaux problèmes ou préoccupations.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Chaque version reçoit
+un numéro de version distinctif. Si la Bibliothèque spécifie un numéro de
+version de cette Licence qui s’applique à celle-ci et à «&nbsp;toute autre
+version future&nbsp;», vous avez l’option de suivre les termes et conditions de
+cette version ou de toute version ultérieure publiées par la </span><i><span
+lang=EN 
+>Free Software Foundation</span></i><span lang=FR font-size:
+13.5pt;>. Si la Bibliothèque
+ne spécifie pas un numéro de version de licence, vous pouvez choisir n’importe
+quelle version publiée par la </span><i><span lang=EN 
+>Free Software Foundation</span></i><span
+lang=FR 
+>.</span></p>
+
+<p><b><span lang=FR
+>14.</span></b><span
+lang=FR 
+> Si vous souhaitez incorporer des parties de la Bibliothèque dans
+tout autre programme libre dont les conditions de distribution sont
+incompatibles avec ces termes, écrivez à l’auteur ou demandez son autorisation.
+Pour les logiciels dont les droits de propriété sont détenus par la </span><i><span
+lang=EN 
+>Free Software Foundation</span></i><span lang=FR font-size:
+13.5pt;>, écrivez à la </span><i><span
+lang=EN 
+>Free Software Foundation</span></i><span lang=FR font-size:
+13.5pt;>&nbsp;; nous faisons
+parfois des exceptions pour celui-ci. Notre décision sera guidée par les deux
+finalités de préserver le statut libre de tous les dérivés de nos logiciels
+libres et de promouvoir le partage et la réutilisation des logiciels en
+général.</span></p>
+
+<p><b><span lang=FR
+>ABSENCE
+DE GARANTIE</span></b></p>
+
+<p><b><span lang=FR
+>15.</span></b><span
+lang=FR 
+> PUISQUE CETTE BIBLIOTHÈQUE FAIT L’OBJET D’UNE LICENCE QUI VOUS
+EST ACCORDÉE SANS FRAIS, IL N’Y A AUCUNE GARANTIE POUR LA BIBLIOTHÈQUE, DANS
+LES LIMITES AUTORISÉES PAR LA LOI APPLICABLE. À MOINS QUE CELA NE SOIT ÉTABLI
+DIFFÉREMMENT PAR ÉCRIT, LES TITULAIRES DE DROITS DE PROPRIÉTÉ OU LES AUTRES
+PARTIES FOURNISSENT LA BIBLIOTHÈQUE «&nbsp;EN L’ÉTAT&nbsp;» SANS GARANTIE
+D’AUCUNE SORTE, QU’ELLE SOIT EXPRIMÉE OU IMPLICITE, CECI INCLUANT, MAIS SANS
+LIMITATION, LES GARANTIES IMPLICITES DE MARCHANDABILITÉ ET D’ADÉQUATION À UN
+OBJECTIF PARTICULIER. VOUS ASSUMEZ SEUL LE RISQUE TOUT ENTIER CONCERNANT LA
+QUALITÉ ET LA PERFORMANCE DE LA BIBLIOTHÈQUE. DANS L’ÉVENTUALITÉ OÙ LA
+BIBLIOTHÈQUE S’AVÉRERAIT DÉFECTUEUSE, VOUS ASSUMEREZ VOUS-MÊME LE COÛT DE TOUS
+LES SERVICES, RÉPARATIONS OU CORRECTIONS NÉCESSAIRES.</span></p>
+
+<p><b><span lang=FR
+>16.</span></b><span
+lang=FR 
+> EN AUCUNE AUTRE CIRCONSTANCE QUE CELLES REQUISES PAR LA LOI
+APPLICABLE OU ACCORDÉES PAR ÉCRIT, UN TITULAIRE DE DROIT DE PROPRIÉTÉ, OU TOUT
+AUTRE PARTIE QUI PEUT MODIFIER OU REDISTRIBUER LA BIBLIOTHÈQUE COMME PERMIS
+CI-DESSUS, NE POURRA ÊTRE TENU POUR RESPONSABLE ENVERS VOUS POUR LES DOMMAGES,
+INCLUANT TOUS DOMMAGE GÉNÉRAL, SPÉCIAL, ACCIDENTEL OU INDUIT SURVENU PAR SUITE
+DE L’UTILISATION OU DE L’INCAPACITÉ D’UTILISER LA BIBLIOTHÈQUE (CECI INCLUANT
+MAIS SANS LIMITATION LA PERTE DE DONNÉES OU L’INEXACTITUDE DES DONNÉES
+RETOURNÉES OU LES PERTES SUBIES PAR VOUS OU DES PARTIES TIERCES OU L’INCAPACITÉ
+DE LA BIBLIOTHÈQUE À FONCTIONNER AVEC TOUT AUTRE LOGICIEL), MÊME SI UN TEL
+TITULAIRE OU TOUTE AUTRE PARTIE A ÉTÉ AVISÉ DE LA POSSIBILITÉ DE TELS DOMMAGES.</span></p>
+
+<p><b><span lang=FR
+>FIN
+DES TERMES ET CONDITIONS.</span></b></p>
+
+<p><a name=SEC4></a><a
+href="http://org.rodage.com/lgpl.fr.html#TOC4"><b><span lang=FR
+color:black;
+text-decoration:none'>Comment appliquer ces termes à Vos nouvelles
+bibliothèques</span></b></a></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Si vous développez
+une nouvelle bibliothèque et voulez qu’elle soit le plus possible utilisable
+par le public, nous recommandons d’en faire un logiciel libre que chacun peut
+redistribuer et changer. Vous pouvez le faire en permettant la redistribution
+suivant ces termes (ou éventuellement les termes de la Licence Générale
+Publique GNU ordinaire).</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Pour appliquer ces
+termes, attachez les notices suivantes à la bibliothèque. Il est plus sûr de
+les attacher au début de chacun des fichiers sources afin de transporter de
+façon la plus effective possible l’exclusion de garantie&nbsp;; et chaque
+fichier devrait comporter au moins la ligne de réservation de droit
+(“copyright”) et une indication permettant de savoir où la notice complète peut
+être trouvée.</span></p>
+
+<p><i><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>&lt;une ligne donnant le nom de la bibliothèque et une idée de ce
+qu’elle fait.&gt;</span></i></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Copyright (C) <i>&lt;année&gt;</i> <i>&lt;nom de l’auteur&gt;</i>
+— Tous droits réservés.</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Cette bibliothèque est un logiciel libre&nbsp;; vous pouvez la
+redistribuer ou</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>la modifier suivant les termes de la Licence Générale Publique
+Limitée</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>GNU telle que publiée par la </span><i><span lang=EN
+font-size:10.0pt;font-family:"Courier New";>Free Software
+Foundation</span></i><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>&nbsp;; soit la</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>version 2.1 de la License, soit (à votre gré) toute version
+ultérieure.</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Cette bibliothèque est distribuée dans l’espoir qu’elle sera
+utile, mais</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>SANS AUCUNE GARANTIE&nbsp;: sans même la garantie implicite de</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>COMMERCIALISABILITÉ ou d’ADÉQUATION À UN OBJECTIF PARTICULIER.
+Consultez</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>la Licence Générale Publique Limitée pour plus de détails.</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Vous devriez avoir reçu une copie de la Licence Générale Publique
+Limitée</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>GNU avec cette bibliothèque&nbsp;; si ce n’est pas le cas, écrivez
+à la&nbsp;:</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+Boston,</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>MA 02110-1301, USA.</span></p>
+
+<p><span lang=FR font-size:12.0pt;font-family:"Verdana","sans-serif";
+>&nbsp;</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Ajoutez également les
+informations permettant de vous contacter par courrier électronique ou papier&nbsp;:</span></p>
+
+<p><span lang=FR font-size:12.0pt;font-family:"Verdana","sans-serif";
+>&nbsp;</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Pour toute demande d’information au sujet de la bibliothèque
+«&nbsp;<i>Frob</i>&nbsp;»,</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>vous pouvez contacter son auteur&nbsp;:</span></p>
+
+<p><i><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Li-Jean Kodeur-Untel &lt;li-jean.kodeur-untel@domaine.exemple&gt;,</span></i></p>
+
+<p><i><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>1 place du Desseim Inconnu, 012345 Lhuile, République de Nulle
+Part.</span></i></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Téléphone&nbsp;: +<i>800(555)0X0-0XX0</i> — Télécopie&nbsp;: +<i>800(555)0X0-0XX1</i></span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Site Internet&nbsp;: <i>http://www.domaine.exemple/frob</i></span></p>
+
+<p><span lang=FR font-size:12.0pt;font-family:"Verdana","sans-serif";
+>&nbsp;</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Vous devriez
+également obtenir de votre employeur (si vous travaillez en tant que
+programmeur) ou de votre école un «&nbsp;renoncement aux droits de
+propriété&nbsp;» pour la Bibliothèque, si nécessaire. Voici un exemple où il
+vous suffit d’en modifier les noms, descriptions ou dates variables&nbsp;:</span></p>
+
+<p><i><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Yoyodyne S.A.,</span></i><span lang=FR font-size:10.0pt;
+font-family:"Courier New";> déclare par la présente renoncer à tous
+droits et intérêts</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>de propriété intellectuelle sur la bibliothèque «&nbsp;<i>Frob</i>&nbsp;»
+(<i>une bibliothèque</i></span></p>
+
+<p><i><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>destinée à déplier les coudes</span></i><span lang=FR
+font-size:10.0pt;font-family:"Courier New";>) écrite par <i>Li-Jean
+Kodeur-Untel</i>.</span></p>
+
+<p><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Fait à <i>Lhuile</i>, le <i>1er avril 1001</i>&nbsp;:   <b><i>&lt;signature
+de Ti Coun&gt;</i></b></span></p>
+
+<p><i><span lang=FR font-size:10.0pt;font-family:"Courier New";
+>Ti Coun, Président de Yoyodyne S.A.</span></i></p>
+
+<p><span lang=FR font-size:12.0pt;font-family:"Verdana","sans-serif";
+>&nbsp;</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;>Voilà tout ce qui est
+nécessaire&nbsp;!</span></p>
+
+<p><span 
+>&nbsp;</span></p>
+
+<p><span 
+><br>
+<br>
+Copyright (C) 2004-2007, Alexander Kellett&nbsp;<br>
+Copyright (C) 1999, 2001, 2004-2008, Alexey Proskuryakov&nbsp;<br>
+Copyright (C) 2004-2008, Alp Toker&nbsp;<br>
+Copyright (C) 1999, 2001, 2004-2007, Antti Koivisto&nbsp;<br>
+Copyright (C) 1999, 2001, 2003-2008, Apple Inc&nbsp;<br>
+Copyright (C) 2007-2008, Brent Fulgham&nbsp;<br>
+Copyright (C) 2006, 2008, Charles Samuels&nbsp;<br>
+Copyright (C) 2006-2008, Christian Dywan&nbsp;<br>
+Copyright (C) 2004-2008, Collabora Ltd&nbsp;<br>
+Copyright (C) 2005-2007, Dave MacLachlan&nbsp;<br>
+Copyright (C) 1999, 2001, 2004-2008, Dirk Mueller&nbsp;<br>
+Copyright (C) 2006, Don Gibson&nbsp;<br>
+Copyright (C) 2003, 2006-2008, Eric Seidel&nbsp;<br>
+Copyright (C) 2005-2007, Frerich Raabe&nbsp;<br>
+Copyright (C) 2006-2008, George Staikos&nbsp;<br>
+Copyright (C) 2003, 2006-2008, Graham Dennis&nbsp;<br>
+Copyright (C) 2003-2008, Henry Mason&nbsp;<br>
+Copyright (C) 2004, 2006-2008, Holger Hans Peter Freyther&nbsp;<br>
+Copyright (C) 2004-2006, James G Speth&nbsp;<br>
+Copyright (C) 2008, Julien Chaffraix&nbsp;<br>
+Copyright (C) 2006-2008, Justin Haygood&nbsp;<br>
+Copyright (C) 2006-2008, Kevin Ollivier&nbsp;<br>
+Copyright (C) 2007, Kevin Watters&nbsp;<br>
+Copyright (C) 2005-2006, Kimmo Kinnunen&nbsp;<br>
+Copyright (C) 1999, 2001, 2004-2007, Lars Knoll&nbsp;<br>
+Copyright (C) 2005-2007, Maksim Orlovich&nbsp;<br>
+Copyright (C) 2004-2008, Michael Emmel&nbsp;<br>
+Copyright (C) 1999, 2001, 2004-2008, Nikolas Zimmermann&nbsp;<br>
+Copyright (C) 2003-2007, Nokia&nbsp;<br>
+Copyright (C) 2006-2008, Nuanti Ltd&nbsp;<br>
+Copyright (C) 2005-2006, Oliver Hunt&nbsp;<br>
+Copyright (C) 2003-2008, Rob Buis&nbsp;<br>
+Copyright (C) 2007, Robin Dunn&nbsp;<br>
+Copyright (C) 2003-2008, Samuel Weinig&nbsp;<br>
+Copyright (C) 2004-2008, Staikos Computing Services Inc&nbsp;<br>
+Copyright (C) 2004-2008, Trolltech ASA&nbsp;<br>
+Copyright (C) 2007, Vaclav Slavik&nbsp;<br>
+Copyright (C) 2006-2008, Zack Rusin</span></p>
+
+<p><span 
+><br>
+La redistribution et l’utilisation des formes source et binaire, avec ou sans
+modification, sont permises dans la mesure où les conditions suivantes sont
+respectées&nbsp;:&nbsp;<br>
+1. Les redistributions du code source doivent conserver l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant.&nbsp;<br>
+2. Les redistributions en forme binaire doivent reproduire l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de non-responsabilité
+suivant dans la documentation et/ou les autres matériaux fournis avec la
+distribution.&nbsp;<br>
+</span><span lang=FR 
+>LE PRÉSENT LOGICIEL EST FOURNI PAR LES DÉTENTEURS DES DROITS </span><span
+lang=FR-CA 
+>D’AUTEUR ET LES COLLABORATEURS «&nbsp;TEL QUEL&nbsp;» ET TOUTE
+GARANTIE EXPRESSE OU IMPLICITE, Y COMPRIS, SANS EN EXCLURE D’AUTRES, LES
+GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D’ADÉQUATION À UN OBJECTIF
+PARTICULIER, EST REFUSÉE. EN AUCUN CAS LES DÉTENTEURS DES DROITS D’AUTEUR OU
+LES COLLABORATEURS NE SERONT RESPONSABLES DE TOUT DOMMAGE DIRECT, INDIRECT,
+ACCESSOIRE, SPÉCIAL, EXEMPLAIRE OU CONSÉCUTIF (Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, L’ACQUISITION DE PRODUITS OU DE SERVICES SUBSTITUTS, LA PERTE
+D’UTILISATION, DE DONNÉES OU DE PROFITS OU L’INTERRUPTION D’ACTIVITÉS) CAUSÉ DE
+QUELQUE FAÇON QUE CE SOIT ET EN FONCTION DE QUELQUE THÉORIE DE RESPONSABILITÉ
+QUE CE SOIT, QU’IL S’AGISSE D’UN CONTRAT, D’UNE RESPONSABILITÉ OBJECTIVE OU
+D’UN DÉLIT CIVIL (Y COMPRIS NÉGLIGENCE OU AUTRE) QUI S’ENSUIT DE QUELQUE FAÇON
+QUE CE SOIT DE L’UTILISATION DU PRÉSENT LOGICIEL, MÊME S’IL Y A EU
+AVERTISSEMENT DE LA POSSIBILITÉ DE PAREIL DOMMAGE.<br>
+<br>
+</span></p>
+
+<p><span 
+><br>
+<br>
+Copyright (C) 2005-2008, Alexey Proskuryakov&nbsp;<br>
+Copyright (C) 1997-2008, Apple Inc&nbsp;<br>
+Copyright (C) 2007-2008, Cameron Zwarich&nbsp;<br>
+Copyright (C) 2007-2008, Collabora Ltd&nbsp;<br>
+Copyright (C) 2007-2008, David Smith&nbsp;<br>
+Copyright (C) 2001, 2003-2005, 2008-2009, Electronic Arts Inc&nbsp;<br>
+Copyright (C) 1997-2007, Eric Seidel&nbsp;<br>
+Copyright (C) 2005-2007, Google Inc&nbsp;<br>
+Copyright (C) 2006-2007, Graham Dennis&nbsp;<br>
+Copyright (C) 2007-2008, Holger Hans Peter Freyther&nbsp;<br>
+Copyright (C) 2007-2008, Justin Haygood&nbsp;<br>
+Copyright (C) 2006-2007, Kevin Ollivier&nbsp;<br>
+Copyright (C) 2006-2008, Matt Lilek&nbsp;<br>
+Copyright (C) 2006-2008, Nicholas Shanks&nbsp;<br>
+Copyright (C) 2006, Nokia Corporation&nbsp;<br>
+Copyright (C) 2008, Nuanti Ltd&nbsp;<br>
+Copyright (C) 2008, Paul Pedriana&nbsp;<br>
+Copyright (C) 2007-2008, Pleyo&nbsp;<br>
+Copyright (C) 2007-2008, Staikos Computing Services Inc&nbsp;<br>
+Copyright (C) 2004, The Mozilla Foundation&nbsp;<br>
+Copyright (C) 2007-2008, Tony Chang&nbsp;<br>
+Copyright (C) 2006-2008, Trolltech ASA&nbsp;<br>
+Copyright (C) 1997-2008, University of Cambridge</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span lang=FR-CA 
+>La redistribution et l’utilisation des formes source et binaire,
+avec ou sans modification, sont permises dans la mesure où les conditions
+suivantes sont respectées&nbsp;:&nbsp;<br>
+1. Les redistributions du code source doivent conserver l’avis de droit
+d’auteur ci&#8209;dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant.&nbsp;<br>
+2. Les redistributions en forme binaire doivent reproduire l’avis de droit
+d’auteur ci&#8209;dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant dans la documentation et/ou les autres matériaux
+fournis avec la distribution.&nbsp;<br>
+3. Ni les noms des détenteurs de droit d'auteur, ni les noms de leurs
+collaborateurs ne peuvent être utilisés pour endosser ou promouvoir des
+produits dérivés de ce logiciel sans une autorisation écrite préalable
+spécifique.&nbsp;<br>
+LE PRÉSENT LOGICIEL EST FOURNI PAR LES DÉTENTEURS DES DROITS D’AUTEUR ET LES
+COLLABORATEURS «&nbsp;TEL QUEL&nbsp;» ET TOUTE GARANTIE EXPRESSE OU IMPLICITE,
+Y COMPRIS, SANS EN EXCLURE D’AUTRES, LES GARANTIES IMPLICITES DE QUALITÉ
+MARCHANDE ET D’ADÉQUATION À UN OBJECTIF PARTICULIER, EST REFUSÉE. EN AUCUN CAS
+LES DÉTENTEURS DES DROITS D’AUTEUR OU LES COLLABORATEURS NE SERONT RESPONSABLES
+DE TOUT DOMMAGE DIRECT, INDIRECT, ACCESSOIRE, SPÉCIAL, EXEMPLAIRE OU CONSÉCUTIF
+(Y COMPRIS, SANS EN EXCLURE D’AUTRES, L’ACQUISITION DE PRODUITS OU DE SERVICES
+SUBSTITUTS, LA PERTE D’UTILISATION, DE DONNÉES OU DE PROFITS OU L’INTERRUPTION
+D’ACTIVITÉS) CAUSÉ DE QUELQUE FAÇON QUE CE SOIT ET EN FONCTION DE QUELQUE
+THÉORIE DE RESPONSABILITÉ QUE CE SOIT, QU’IL S’AGISSE D’UN CONTRAT, D’UNE
+RESPONSABILITÉ OBJECTIVE OU D’UN DÉLIT CIVIL (Y COMPRIS NÉGLIGENCE OU AUTRE)
+QUI S’ENSUIT DE QUELQUE FAÇON QUE CE SOIT DE L’UTILISATION DU PRÉSENT LOGICIEL,
+MÊME S’IL Y A EU AVERTISSEMENT DE LA POSSIBILITÉ DE PAREIL DOMMAGE.<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<br>
+Copyright (C) 1991, 2000-2002, 2005-2008, Apple Inc&nbsp;<br>
+Copyright (C) 1991, 2000-2002, 2005-2008, Lucent Technologies<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>La
+permission d'utiliser, de modifier, de copier et de distribuer ce logiciel pour
+tout usage et sans frais est par les présentes accordée à condition que cet
+avis complet soit inclus dans toutes les copies de tout logiciel qui est ou qui
+inclut une copie ou une modification de ce logiciel et dans toutes les copies
+de la documentation connexe dudit logiciel. CE LOGICIEL EST DISTRIBUÉ
+«&nbsp;TEL QUEL&nbsp;», SANS GARANTIE EXPRESSE OU IMPLICITE. PLUS
+PARTICULIÈREMENT, NI L'AUTEUR, NI LUCENT NE FERONT DE REPRÉSENTATION OU
+GARANTIE D'AUCUNE SORTE CONCERNANT LA QUALITÉ MARCHANDE DE CE LOGICIEL OU DE
+SON ADÉQUATION POUR UNE FIN PARTICULIÈRE.<br>
+</span><span 
+><br>
+<br>
+Copyright (C) 2000-2004, 2007, Apple Inc&nbsp;<br>
+Copyright (C) 2000-2004, 2007, International Business Machines<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>La
+permission est par la présente accordée, sans frais, à toute personne obtenant
+une copie de ce logiciel et des fichiers de documentation connexes (le
+«&nbsp;Logiciel&nbsp;») de manipuler le Logiciel sans restriction, incluant,
+sans s'y limiter, le droit d'utiliser, de modifier, de copier, de grouper, de
+publier, de distribuer et/ou de vendre des copies du Logiciel et de permettre
+aux personnes à qui le logiciel est fourni de le faire dans la mesure où l'avis
+ou les avis de droit d'auteur susmentionné(s) et cet avis de permission
+apparaissent sur toutes les copies du Logiciel et que l'avis ou les avis de
+droit d'auteur susmentionné(s), ainsi que l'avis de permission apparaissent
+dans la documentation connexe. <br>
+LE PRÉSENT LOGICIEL EST FOURNI «&nbsp;TEL QUEL&nbsp;» SANS GARANTIE D'AUCUNE
+SORTE, EXPRESSE OU IMPLICITE, COMPRENANT, MAIS SANS EXCLURE LES GARANTIES
+IMPLICITES DE QUALITÉ MARCHANDE ET D’APTITUDE À UNE FIN PARTICULIÈRE ET DE
+NON-VIOLATION DES DROITS DES TIERCES PARTIES.                                                                 
+ EN AUCUN CAS LE OU LES DÉTENTEUR(S) DE DROITS D'AUTEUR INCLUS DANS CET AVIS NE
+SERA (SERONT) TENU(S) RESPONSABLE(S) POUR TOUT DOMMAGE DIRECT, INDIRECT,
+ACCESSOIRE, SPÉCIAL, CONSÉCUTIF OU TOUT DOMMAGE RÉSULTANT DE LA PERTE
+D’UTILISATION, DE DONNÉES OU DE PROFITS, QU’IL S’AGISSE D’UN CONTRAT, D’UNE
+NÉGLIGENCE OU AUTRE DÉLIT CIVIL, QUI S’ENSUIT DE QUELQUE FAÇON QUE CE SOIT DE
+L’UTILISATION OU DE LA PERFORMANCE DU PRÉSENT LOGICIEL.&nbsp;<br>
+A l'exception de ce qui est contenu dans cet avis, le nom du détenteur d'un
+droit d'auteur ne doit pas être utilisé pour la publicité ou pour la promotion
+de la vente, de l'utilisation ou autres manipulations de ce Logiciel sans une
+autorisation écrite préalable du détenteur de droit d'auteur. Modelage des
+caractères arabes conçu par Ayman Roshdy<br>
+<br>
+<br>
+Copyright (C) 1995-2005, Jean-loup Gailly&nbsp;<br>
+Copyright (C) 1995-2005, Mark Adler</span></p>
+
+<p><span lang=FR-CA
+><br>
+Ce logiciel est fourni «&nbsp;tel quel&nbsp;» sans garantie expresse ou
+implicite d'aucune sorte. En aucun cas l'auteur ne sera tenu responsable de
+tout dommage résultant de l'utilisation de ce logiciel.  La permission
+d'utiliser ce logiciel à quelque fin que ce soit est accordée à toute personne,
+incluant les applications commerciales, de le modifier et de le redistribuer
+librement, sous réserve des restrictions suivantes :&nbsp;<br>
+1. L'origine de ce logiciel ne doit pas être faussement représentée; vous ne
+devez pas prétendre avoir écrit le logiciel original. Si vous utilisez ce
+logiciel dans un produit, une mention de reconnaissance à cet effet dans la
+documentation du produit serait appréciée, quoique non requise.&nbsp;<br>
+2. Les versions avec une source altérée doivent être clairement indiquées comme
+telles et ne doivent pas être faussement présentées comme étant le logiciel
+original.&nbsp;<br>
+3. Cet avis ne peut être enlevé, ni modifié d'aucune distribution de
+source.&nbsp;<br>
+Jean-loup Gailly Mark Adler&nbsp;<br>
+jloup@gzip.org madler@alumni.caltech.edu&nbsp;<br>
+Le format de données utilisé par la bibliothèque zlib est décrit dans des RFC
+(«&nbsp;demandes de commentaires&nbsp;») 1950 à 1952 dans les fichiers
+http:www.ietf.orgrfcrfc1950.txt (format zlib), rfc1951.txt (format deflate) et
+rfc1952.txt (format gzip).<br>
+</span><span 
+><br>
+<br>
+Copyright (C) 1984, 1989-1990, 2000-2006, Free Software Foundation Inc<br>
+<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Ce
+programme est un logiciel libre; vous pouvez le redistribuer et/ou le modifier
+en vertu des conditions de la GNU (licence publique générale) publiée par la
+Free Software Foundation en version 2 ou (à votre choix) dans toute version
+plus récente. Ce programme est distribué avec l'espoir qu'il sera utile, mais
+SANS GARANTIE D'AUCUNE SORTE, sans même la garantie implicite de QUALITÉ
+MARCHANDE ou D'ADÉQUATION À UNE FIN PARTICULIÈRE. Voir la GNU (licence publique
+générale) pour de plus amples informations. Vous devez avoir reçu une copie de
+la GNU (licence publique générale) avec ce programme; si ce n'est pas le cas,
+écrivez à la Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+Boston, MA 02110-1301, É.-U.<br>
+<br>
+</span><span 
+><br>
+<br>
+Copyright (C) 2001-2002, 2007, Alexey Proskuryakov&nbsp;<br>
+Copyright (C) 2001-2002, 2007, Charlie Bozeman&nbsp;<br>
+Copyright (C) 2001-2002, 2007, Daniel Veillard&nbsp;<br>
+Copyright (C) 2001-2002, 2007, Thomas Broyer<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>La
+permission est par la présente accordée, sans frais, à toute personne obtenant
+une copie de ce logiciel et des fichiers de documentation connexes (le
+«&nbsp;Logiciel&nbsp;»), de manipuler logiciel sans restriction, incluant, sans
+s'y limiter, le droit d'utiliser, de modifier, de copier, de grouper, de
+publier, de distribuer et/ou de vendre des copies du Logiciel et de permettre
+aux personnes à qui le Logiciel est fourni de le faire et ce, aux conditions
+suivantes : l'avis de droit d'auteur susmentionné et cet avis de permission
+doivent être inclus dans toutes les copies ou parties substantielles du
+Logiciel. <br>
+LE PRÉSENT LOGICIEL EST FOURNI «&nbsp;TEL QUEL&nbsp;» SANS GARANTIE D'AUCUNE
+SORTE, EXPRESSE OU IMPLICITE, COMPRENANT, MAIS SANS EXCLURE LES GARANTIES
+IMPLICITES DE QUALITÉ MARCHANDE ET D’ADÉQUATION À UN OBJECTIF PARTICULIER ET DE
+NON-VIOLATION DES DROITS. EN AUCUN CAS LES AUTEURS NE SERONT TENUS RESPONSABLES
+POUR TOUTES RÉCLAMATIONS, TOUS DOMMAGES OU AUTRES DEMANDES RÉSULTANT D'UN BRIS
+DE CONTRAT, DE DÉLIT CIVIL OU AUTRE DÉCOULANT DIRECTEMENT OU INDIRECTEMENT DU
+LOGICIEL, DE SON UTILISATION OU DE SA MANIPULATION.&nbsp;<br>
+À l'exception de ce qui est contenu dans cet avis, le nom des auteurs ne doit
+pas être utilisé à des fins de publicité, ou autrement pour la promotion de la
+vente, de l'utilisation ou autres manipulations de ce Logiciel sans une
+autorisation préalable écrite desdits auteurs.<br>
+<br>
+<br>
+Copyright (C) 2007, David Cantrell<br>
+<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Tous
+droits réservés. Ce programme est un logiciel libre; vous pouvez le distribuer
+et/ou le modifier selon les conditions, soit : a) de la GNU (licence publique
+générale) telle que publiée par la Free Software Foundation en version 1 ou (à
+votre choix) toute autre version plus récente, soit b) de la «&nbsp;Licence
+artistique&nbsp;» qui est incluse dans ce kit. Ce programme est distribué avec
+l'espoir qu'il sera utile, mais SANS GARANTIE D'AUCUNE SORTE, sans même la
+garantie implicite de QUALITÉ MARCHANDE ou D'ADÉQUATION À UNE FIN PARTICULIÈRE.
+Veuillez consulter la GNU (licence publique générale) ou la Licence artistique
+pour plus d'informations.<br>
+<br>
+</span><span lang=FR 
+><br>
+<br>
+</span><b><span 
+>Licence artistique 2.0</span></b></p>
+
+<p><span 
+>Copyright (c) 2000-2006, The
+Perl Foundation.</span></p>
+
+<p><span lang=FR-CA
+>Il
+est permis à chacun de copier et de distribuer des copies conformes de ce
+document de licence, mais les changements ne sont autorisés.</span></p>
+
+<p><b><span lang=FR-CA
+>Préambule</span></b></p>
+
+<p><span lang=FR-CA
+>Cette
+licence établit les conditions selon lesquelles un Progiciel libre donné peut
+être copié, modifié, distribué et/ou redistribué. L'intention est de permettre
+au détenteur d'un droit d'auteur de maintenir un certain contrôle artistique
+sur le développement du Progiciel tout en le gardant disponible comme logiciel
+libre et code source ouvert. </span></p>
+
+<p><span lang=FR-CA
+>Il
+est toujours permis de prendre des arrangements en dehors de cette licence
+directement avec le détenteur des droits d'auteur pour un Progiciel donné. Si
+les conditions de cette licence ne permettent pas l'utilisation complète que vous
+vous proposez de faire du Progiciel, vous devriez communiquer avec le détenteur
+du droit d'auteur pour conclure un arrangement différent en ce qui concerne
+l'octroi de licence.</span></p>
+
+<p><b><span lang=FR-CA
+>Définitions</span></b></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Détenteur
+de droits d'auteur&nbsp;» signifie le ou les individus ou organisations
+figurant dans l'avis de droits d'auteur pour le Progiciel dans son entier.</span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Collaborateur&nbsp;»
+signifie toute personne ou groupe de personnes ayant contribué aux codes ou
+autre matériel du Progiciel en accord avec les procédures du détenteur des
+droits d'auteur.</span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Vous&nbsp;»
+et «&nbsp;votre/vos&nbsp;» signifient toute personne désirant copier,
+distribuer ou modifier le Progiciel.</span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Progiciel&nbsp;»
+se réfère à l'ensemble des fichiers distribués par le détenteur des droits
+d'auteur, des dérivés de l'ensemble de ces fichiers et/ou de ces fichiers. Un
+Progiciel donné peut être aussi bien la version standard qu'une version
+modifiée.</span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Distribuer&nbsp;»
+signifie fournir une copie du Progiciel ou le rendre accessible à n'importe qui
+d'autre ou, dans le cas d'un organisme ou d'une compagnie, de le rendre
+accessible à d'autres en dehors de votre compagnie ou de votre organisme.</span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Frais
+de distributeur&nbsp;» signifient tous frais imposés à quelqu'un d'autre pour
+distribuer ce Progiciel ou pour fournir une aide relative à ce Progiciel. Cela
+ne signifie pas des frais de licence.</span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Version
+standard&nbsp;» fait référence au Progiciel n'ayant pas été modifié ou ayant
+été modifié seulement en fonction d'une demande explicite du détenteur des
+droits d’auteur.</span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Version
+modifiée&nbsp;» signifie que le Progiciel a été modifié et que ces changements
+n'ont pas été explicitement demandés par le détenteur des droits d'auteur.</span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Licence
+originale&nbsp;» signifie que cette licence artistique est distribuée avec la
+version standard du Progiciel, dans sa version courante ou pouvant être
+modifiée ultérieurement par The Perl Foundation.</span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Forme
+source&nbsp;» signifie le code source, la documentation source et les fichiers
+de configuration du Progiciel.</span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Forme
+compilée&nbsp;» signifie les codoctets compilés, les codes objets, les codes
+binaires, ou toute autre forme résultant de la transformation mécanique ou de
+la traduction de la forme source.</span></p>
+
+<p><b><span lang=FR-CA
+>Permission
+d'utilisation et modification sans distribution</span></b></p>
+
+<p><span lang=FR-CA
+>(1)
+Il vous est permis d'utiliser la version standard et de créer et d'utiliser des
+versions modifiées pour quelque motif que ce soit et ce, sans restriction à
+condition que vous ne distribuiez pas la version ainsi modifiée.</span></p>
+
+<p><b><span lang=FR-CA
+>Permissions
+de redistribution de la version standard</span></b></p>
+
+<p><span lang=FR-CA
+>(2)
+Vous pouvez distribuer des copies conformes de la forme source de la version
+standard du Progiciel dans n'importe quel média sans restriction, soit
+gratuitement soit moyennant des Frais de distribution pour autant que vous
+reproduisiez tous les avis originaux des droits d'auteur et des renonciations
+afférentes. De telles copies conformes peuvent inclure ou non, à votre
+discrétion, une forme compilée du Progiciel.</span></p>
+
+<p><span lang=FR-CA
+>(3)
+Vous pouvez y apporter tous débogages, changements de portabilité ou autres
+modifications offertes par le détenteur des droits d'auteur. Le Progiciel
+résultant de ces changements demeurera la version standard et, à ce titre, sera
+assujetti à la licence originale.</span></p>
+
+<p><b><span lang=FR-CA
+>Distribution
+des versions modifiées du Progiciel comme source</span></b></p>
+
+<p><span lang=FR-CA
+>(4)
+Vous pouvez distribuer votre version modifiée comme source (soit gratuitement,
+soit moyennant des Frais de distributeur avec ou sans la forme compilée de la
+version modifiée) à condition que vous indiquiez clairement de quelle façon
+elle diffère de la version standard, incluant, mais sans s'y limiter, une
+documentation sur toutes les caractéristiques non-standard, exécutables ou
+modules et à condition que vous fassiez au moins UNE des démarches suivantes : </span></p>
+
+<p><span lang=FR-CA
+>(a)
+rendre la version modifiée accessible au détenteur des droits d'auteur de la
+version standard en vertu de la licence originale afin que le détenteur des
+droits d'auteur puisse inclure vos modifications dans la version standard. </span></p>
+
+<p><span lang=FR-CA
+>(b)
+vous assurer que l'installation de votre version modifiée n'empêche pas
+l'utilisateur d'installer ou d'utiliser la version standard. De plus, la
+version modifiée doit porter un nom différent de la version standard.</span></p>
+
+<p><span lang=FR-CA
+>(c)
+permettre à quiconque reçoit une copie de la version modifiée de rendre
+accessible à d'autres la forme source de la version modifiée selon </span></p>
+
+<p><span lang=FR-CA
+>(i)
+la licence originale ou</span></p>
+
+<p><span lang=FR-CA
+>(ii)
+une licence permettant au détenteur de licence de librement copier, modifier et
+redistribuer la version modifiée selon les mêmes conditions de licence qui
+s'appliquent à la copie reçue par le détenteur de licence et stipulant que la
+forme source de la version modifiée et de toute réalisation en découlant soit
+librement disponible sans frais de licence, mais en autorisant les Frais de
+distributeur. </span></p>
+
+<p><b><span lang=FR-CA
+>Distribution
+des formes compilées de la version standard ou des versions modifiées sans la
+source</span></b></p>
+
+<p><span lang=FR-CA
+>(5)
+Vous pouvez distribuer la forme compilée de la version standard sans la source
+pour autant que vous y incluiez les instructions complètes sur la manière de se
+procurer la source de la version standard. De telles instructions doivent être
+valides au moment de votre distribution. Si ces instructions, à tout moment en
+cours de distribution, devenaient invalides, vous devrez, sur demande, fournir
+de nouvelles instructions ou cesser toute activité de distribution. Si vous
+fournissez des instructions valides ou cessez la distribution dans un délai de
+30 jours après vous être rendu compte que les instructions étaient invalides,
+vous ne perdrez aucun de vos droits en vertu de cette licence.</span></p>
+
+<p><span lang=FR-CA
+>(6)
+Vous pouvez distribuer une version modifiée dans une forme compilée sans la source
+à condition que vous vous conformiez à la section&nbsp;4 concernant la source
+de la version modifiée.</span></p>
+
+<p><b><span lang=FR-CA
+>Agréger
+ou lier le Progiciel </span></b></p>
+
+<p><span lang=FR-CA
+>(7)
+Vous pouvez agréger le Progiciel (soit la version standard, soit la version
+modifiée) avec d'autres progiciels et distribuer le résultat agrégé à condition
+que vous ne facturiez pas de frais de licence pour le Progiciel. Les Frais de
+distributeur sont autorisés et les frais de licence pour d'autres composants de
+l'agrégation sont permis.  Les conditions de cette licence s'appliquent à
+l'utilisation et à la Distribution des Versions standard ou modifiées telles
+qu'elles sont incluses dans l'agrégation.</span></p>
+
+<p><span lang=FR-CA
+>(8)
+Vous avez la permission de lier les Versions standard et modifiées à d'autres
+réalisations, d'intégrer le Progiciel dans un logiciel plus vaste qui vous
+appartient ou d'élaborer des versions binaires autonomes ou codoctets
+d'applications incluant le Progiciel et de distribuer le résultat sans
+restriction, pour autant que ce résultat n'expose pas une interface directe au
+Progiciel. </span></p>
+
+<p><b><span lang=FR-CA
+>Éléments
+considérés comme ne faisant pas partie d'une version modifiée </span></b></p>
+
+<p><span lang=FR-CA
+>(9)
+Les logiciels (incluant, mais sans s'y limiter, les modules et les scripts) qui
+ne font qu'élargir ou qu'utiliser le Progiciel, ne constituent pas en soi une
+Version modifiée du Progiciel.  De plus, de tels logiciels ne sont pas
+considérés des parties du Progiciel lui-même et ne sont pas soumis aux
+conditions de la présente licence. </span></p>
+
+<p><b><span lang=FR-CA
+>Dispositions
+générales </span></b></p>
+
+<p><span lang=FR-CA
+>(10)
+Toute utilisation, modification et distribution des Versions standard ou
+modifiées est régie par la présente Licence artistique. En utilisant, modifiant
+ou distribuant le Progiciel, vous acceptez la présente licence. Abstenez-vous
+d'utiliser, de modifier ou de distribuer le Progiciel si vous n'acceptez pas la
+présente licence.</span></p>
+
+<p><span lang=FR-CA
+>(11)
+Si votre Version modifiée est dérivée d'une Version modifiée effectuée par
+quelqu'un d'autre, vous êtes néanmoins tenu de vous assurer que votre Version
+modifiée est conforme aux exigences de la présente licence. </span></p>
+
+<p><span lang=FR-CA
+>(12)
+La présente licence ne vous concède pas le droit d'utiliser toute marque de
+commerce, toute marque de service, tout nom commercial ou tout logo du
+Détenteur des droits d'auteur. </span></p>
+
+<p><span lang=FR-CA
+>(13)
+La présente licence inclut la licence de brevet non exclusive, mondiale et
+gratuite pour faire, avoir fait, utiliser, offrir de vendre, vendre, importer
+et autrement transférer le Progiciel en ce qui a trait à toute réclamation
+portant sur les brevets donnant lieu à une licence par le Détenteur des droits
+d'auteur et selon lesquels le Progiciel constituerait une violation.  Si vous
+intentez une plainte concernant un brevet (y compris une demande entre
+défendeurs ou une demande reconventionnelle) à l'encontre de toute partie
+alléguant que le Progiciel constitue une violation de brevet directe ou accessoire,
+la présente Licence artistique qui vous est concédée prendra fin à la date du
+dépôt d'une telle action. </span></p>
+
+<p><span lang=FR-CA
+>(14)
+Clause de non garantie : LE PROGICIEL EST FOURNI PAR LE DÉTENTEUR DES DROITS
+D'AUTEUR ET LES COLLABORATEURS «&nbsp;TEL QUEL&nbsp;» ET SANS AUCUNE GARANTIE
+EXPRESSE OU IMPLICITE.  LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE,
+D'ADÉQUATION À UNE FIN PARTICULIÈRE OU DE NON-VIOLATION DES DROITS SONT
+REFUSÉES DANS LA MESURE PERMISE PAR VOTRE LÉGISLATION LOCALE. SAUF SI LA LOI
+L'EXIGE, AUCUN DÉTENTEUR DE DROITS D'AUTEUR OU COLLABORATEUR NE SERA
+RESPONSABLE DE TOUS DOMMAGES DIRECTS, INDIRECTS, ACCESSOIRES OU CONSÉCUTIFS
+DÉCOULANT D'UNE QUELCONQUE FAÇON DE L'UTILISATION DU PROGICIEL, MÊME SI UN
+AVERTISSEMENT A ÉTÉ ÉMIS CONCERNANT LA POSSIBILITÉ DE PAREIL DOMMAGE. </span></p>
+
+<p><span lang=FR-CA
+><br>
+Copyright (C) 2007, 2008 Apple Inc. Tous droits réservés. &nbsp;<br>
+Copyright (C) 2007 Justin Haygood<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Licence
+de logiciel Boost - Version 1.0 - 17 août 2003<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Par
+la présente, la permission est octroyée, sans frais, à toute personne ou
+organisation obtenant une copie du logiciel et de la documentation connexe
+couverts par cette licence (le «&nbsp;Logiciel&nbsp;») d'utiliser, de
+reproduire, d'afficher, de distribuer, d'exécuter et de transférer le Logiciel
+et de préparer des produits dérivés du Logiciel et de permettre à des tierces
+parties auxquelles le Logiciel est fourni de le faire, le tout étant soumis aux
+conditions suivantes : <br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Les
+avis de droits d'auteur dans le Logiciel et cet énoncé dans son intégralité, y
+compris l'octroi de licence susmentionné, cette restriction et l'avis de
+non-responsabilité suivants doivent être inclus dans toutes les copies du
+Logiciel, en entier ou en partie, et tous les produits dérivés du Logiciel,
+excepté si lesdites copies ou réalisations dérivées sont uniquement sous forme
+de code objet machine exécutable généré par un processeur de langage source. <br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<b>Informations concernant les droits d'auteur et l'octroi de licence pour
+coreallocator </b></span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span 
+>Copyright (C) 2009, Electronic Arts inc.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span lang=FR-CA 
+>La redistribution et l’utilisation des formes source et binaire,
+avec ou sans modification, sont permises dans la mesure où les conditions
+suivantes sont respectées&nbsp;:&nbsp;<br>
+1. Les redistributions du code source doivent conserver l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de non-responsabilité
+suivants.&nbsp;<br>
+2. Les redistributions en forme binaire doivent reproduire l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant dans la documentation et/ou les autres matériaux
+fournis avec la distribution.&nbsp;<br>
+3. Ni le nom de Electronic Arts inc. («&nbsp;EA&nbsp;»), ni le nom des
+collaborateurs ne peuvent être utilisés pour recommander ou faire la promotion
+des produits dérivés du présent logiciel sans une permission écrite préalable
+spécifique.&nbsp;<br>
+LE PRÉSENT LOGICIEL EST FOURNI PAR ELECTRONIC ARTS ET SES COLLABORATEURS
+«&nbsp;TEL QUEL&nbsp;» ET TOUTE GARANTIE EXPRESSE OU IMPLICITE, Y COMPRIS, SANS
+EN EXCLURE D’AUTRES, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET
+D’ADÉQUATION À UN OBJECTIF PARTICULIER, EST REFUSÉE. EN AUCUN CAS ELECTRONIC
+ARTS OU SES COLLABORATEURS NE SERONT RESPONSABLES DE TOUT DOMMAGE DIRECT,
+INDIRECT, ACCESSOIRE, SPÉCIAL, EXEMPLAIRE OU CONSÉCUTIF (Y COMPRIS, SANS EN
+EXCLURE D’AUTRES, L’ACQUISITION DE PRODUITS OU DE SERVICES SUBSTITUTS, LA PERTE
+D’UTILISATION, DE DONNÉES OU DE PROFITS OU L’INTERRUPTION D’ACTIVITÉS) CAUSÉ DE
+QUELQUE FAÇON QUE CE SOIT ET EN FONCTION DE QUELQUE THÉORIE DE RESPONSABILITÉ
+QUE CE SOIT, QU’IL S’AGISSE D’UN CONTRAT, D’UNE RESPONSABILITÉ OBJECTIVE OU
+D’UN DÉLIT CIVIL (Y COMPRIS NÉGLIGENCE OU AUTRE) QUI S’ENSUIT DE QUELQUE FAÇON
+QUE CE SOIT DE L’UTILISATION DU PRÉSENT LOGICIEL, MÊME S’IL Y A EU
+AVERTISSEMENT DE LA POSSIBILITÉ DE PAREIL DOMMAGE.<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<b>Informations concernant les droits d'auteur et l'octroi de licence pour
+ppmalloc</b></span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span 
+>Copyright (C) 2004, 2009, Electronic Arts inc.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span lang=FR-CA 
+>La redistribution et l’utilisation des formes source et binaire,
+avec ou sans modification, sont permises dans la mesure où les conditions
+suivantes sont respectées&nbsp;:&nbsp;<br>
+1. Les redistributions du code source doivent conserver l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant.&nbsp;<br>
+2. Les redistributions en forme binaire doivent reproduire l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant dans la documentation et/ou les autres matériaux
+fournis avec la distribution.&nbsp;<br>
+3. Ni le nom de Electronic Arts inc. («&nbsp;EA&nbsp;»), ni le nom des
+collaborateurs ne peuvent être utilisés pour recommander ou faire la promotion
+des produits dérivés du présent logiciel sans une permission écrite préalable
+spécifique.&nbsp;<br>
+LE PRÉSENT LOGICIEL EST FOURNI PAR ELECTRONIC ARTS ET SES COLLABORATEURS «&nbsp;TEL
+QUEL&nbsp;» ET TOUTE GARANTIE EXPRESSE OU IMPLICITE, Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D’ADÉQUATION À UN
+OBJECTIF PARTICULIER, EST REFUSÉE. EN AUCUN CAS ELECTRONIC ARTS OU SES
+COLLABORATEURS NE SERONT RESPONSABLES DE TOUT DOMMAGE DIRECT, INDIRECT,
+ACCESSOIRE, SPÉCIAL, EXEMPLAIRE OU CONSÉCUTIF (Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, L’ACQUISITION DE PRODUITS OU DE SERVICES SUBSTITUTS, LA PERTE
+D’UTILISATION, DE DONNÉES OU DE PROFITS OU L’INTERRUPTION D’ACTIVITÉS) CAUSÉ DE
+QUELQUE FAÇON QUE CE SOIT ET EN FONCTION DE QUELQUE THÉORIE DE RESPONSABILITÉ
+QUE CE SOIT, QU’IL S’AGISSE D’UN CONTRAT, D’UNE RESPONSABILITÉ OBJECTIVE OU
+D’UN DÉLIT CIVIL (Y COMPRIS NÉGLIGENCE OU AUTRE) QUI S’ENSUIT DE QUELQUE FAÇON
+QUE CE SOIT DE L’UTILISATION DU PRÉSENT LOGICIEL, MÊME S’IL Y A EU
+AVERTISSEMENT DE LA POSSIBILITÉ DE PAREIL DOMMAGE.<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<b>Informations concernant les droits d'auteur et l'octroi de licence pour EAIO</b></span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span 
+>Copyright (C) 2003, 2007, 2009, Electronic Arts inc.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span lang=FR-CA 
+>La redistribution et l’utilisation des formes source et binaire,
+avec ou sans modification, sont permises dans la mesure où les conditions
+suivantes sont respectées&nbsp;:&nbsp;<br>
+1. Les redistributions du code source doivent conserver l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant.&nbsp;<br>
+2. Les redistributions en forme binaire doivent reproduire l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant dans la documentation et/ou les autres matériaux
+fournis avec la distribution.&nbsp;<br>
+3. Ni le nom de Electronic Arts inc. («&nbsp;EA&nbsp;»), ni le nom des
+collaborateurs ne peuvent être utilisés pour recommander ou faire la promotion
+des produits dérivés du présent logiciel sans une permission écrite préalable
+spécifique.&nbsp;<br>
+LE PRÉSENT LOGICIEL EST FOURNI PAR ELECTRONIC ARTS ET SES COLLABORATEURS «&nbsp;TEL
+QUEL&nbsp;» ET TOUTE GARANTIE EXPRESSE OU IMPLICITE, Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D’ADÉQUATION À UN
+OBJECTIF PARTICULIER, EST REFUSÉE. EN AUCUN CAS ELECTRONIC ARTS OU SES
+COLLABORATEURS NE SERONT RESPONSABLES DE TOUT DOMMAGE DIRECT, INDIRECT,
+ACCESSOIRE, SPÉCIAL, EXEMPLAIRE OU CONSÉCUTIF (Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, L’ACQUISITION DE PRODUITS OU DE SERVICES SUBSTITUTS, LA PERTE
+D’UTILISATION, DE DONNÉES OU DE PROFITS OU L’INTERRUPTION D’ACTIVITÉS) CAUSÉ DE
+QUELQUE FAÇON QUE CE SOIT ET EN FONCTION DE QUELQUE THÉORIE DE RESPONSABILITÉ
+QUE CE SOIT, QU’IL S’AGISSE D’UN CONTRAT, D’UNE RESPONSABILITÉ OBJECTIVE OU
+D’UN DÉLIT CIVIL (Y COMPRIS NÉGLIGENCE OU AUTRE) QUI S’ENSUIT DE QUELQUE FAÇON
+QUE CE SOIT DE L’UTILISATION DU PRÉSENT LOGICIEL, MÊME S’IL Y A EU
+AVERTISSEMENT DE LA POSSIBILITÉ DE PAREIL DOMMAGE.<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<b>Informations concernant les droits d'auteur et l'octroi de licence pour
+EAAssert</b></span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span 
+>Copyright (C) 2009, Electronic Arts inc.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span lang=FR-CA 
+>La redistribution et l’utilisation des formes source et binaire,
+avec ou sans modification, sont permises dans la mesure où les conditions
+suivantes sont respectées&nbsp;:&nbsp;<br>
+1. Les redistributions du code source doivent conserver l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant.&nbsp;<br>
+2. Les redistributions en forme binaire doivent reproduire l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant dans la documentation et/ou les autres matériaux
+fournis avec la distribution.&nbsp;<br>
+3. Ni le nom de Electronic Arts inc. («&nbsp;EA&nbsp;»), ni le nom des
+collaborateurs ne peuvent être utilisés pour recommander ou faire la promotion
+des produits dérivés du présent logiciel sans une permission écrite préalable
+spécifique.&nbsp;<br>
+LE PRÉSENT LOGICIEL EST FOURNI PAR ELECTRONIC ARTS ET SES COLLABORATEURS «&nbsp;TEL
+QUEL&nbsp;» ET TOUTE GARANTIE EXPRESSE OU IMPLICITE, Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D’ADÉQUATION À UN
+OBJECTIF PARTICULIER, EST REFUSÉE. EN AUCUN CAS ELECTRONIC ARTS OU SES
+COLLABORATEURS NE SERONT RESPONSABLES DE TOUT DOMMAGE DIRECT, INDIRECT,
+ACCESSOIRE, SPÉCIAL, EXEMPLAIRE OU CONSÉCUTIF (Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, L’ACQUISITION DE PRODUITS OU DE SERVICES SUBSTITUTS, LA PERTE
+D’UTILISATION, DE DONNÉES OU DE PROFITS OU L’INTERRUPTION D’ACTIVITÉS) CAUSÉ DE
+QUELQUE FAÇON QUE CE SOIT ET EN FONCTION DE QUELQUE THÉORIE DE RESPONSABILITÉ
+QUE CE SOIT, QU’IL S’AGISSE D’UN CONTRAT, D’UNE RESPONSABILITÉ OBJECTIVE OU
+D’UN DÉLIT CIVIL (Y COMPRIS NÉGLIGENCE OU AUTRE) QUI S’ENSUIT DE QUELQUE FAÇON
+QUE CE SOIT DE L’UTILISATION DU PRÉSENT LOGICIEL, MÊME S’IL Y A EU
+AVERTISSEMENT DE LA POSSIBILITÉ DE PAREIL DOMMAGE.<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<b>Informations concernant les droits d'auteur et l'octroi de licence pour
+DirtySDK</b></span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span 
+>Copyright (C) 1999-2007, 2009, Electronic Arts inc.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span lang=FR-CA 
+>La redistribution et l’utilisation des formes source et binaire,
+avec ou sans modification, sont permises dans la mesure où les conditions
+suivantes sont respectées&nbsp;:&nbsp;<br>
+1. Les redistributions du code source doivent conserver l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant.&nbsp;<br>
+2. Les redistributions en forme binaire doivent reproduire l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant dans la documentation et/ou les autres matériaux
+fournis avec la distribution.&nbsp;<br>
+3. Ni le nom de Electronic Arts inc. («&nbsp;EA&nbsp;»), ni le nom des
+collaborateurs ne peuvent être utilisés pour recommander ou faire la promotion
+des produits dérivés du présent logiciel sans une permission écrite préalable
+spécifique.&nbsp;<br>
+LE PRÉSENT LOGICIEL EST FOURNI PAR ELECTRONIC ARTS ET SES COLLABORATEURS «&nbsp;TEL
+QUEL&nbsp;» ET TOUTE GARANTIE EXPRESSE OU IMPLICITE, Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D’ADÉQUATION À UN
+OBJECTIF PARTICULIER, EST REFUSÉE. EN AUCUN CAS ELECTRONIC ARTS OU SES
+COLLABORATEURS NE SERONT RESPONSABLES DE TOUT DOMMAGE DIRECT, INDIRECT,
+ACCESSOIRE, SPÉCIAL, EXEMPLAIRE OU CONSÉCUTIF (Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, L’ACQUISITION DE PRODUITS OU DE SERVICES SUBSTITUTS, LA PERTE
+D’UTILISATION, DE DONNÉES OU DE PROFITS OU L’INTERRUPTION D’ACTIVITÉS) CAUSÉ DE
+QUELQUE FAÇON QUE CE SOIT ET EN FONCTION DE QUELQUE THÉORIE DE RESPONSABILITÉ
+QUE CE SOIT, QU’IL S’AGISSE D’UN CONTRAT, D’UNE RESPONSABILITÉ OBJECTIVE OU
+D’UN DÉLIT CIVIL (Y COMPRIS NÉGLIGENCE OU AUTRE) QUI S’ENSUIT DE QUELQUE FAÇON
+QUE CE SOIT DE L’UTILISATION DU PRÉSENT LOGICIEL, MÊME S’IL Y A EU
+AVERTISSEMENT DE LA POSSIBILITÉ DE PAREIL DOMMAGE.<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<b>Informations concernant les droits d'auteur et l'octroi de licence pour
+libjpeg </b></span></p>
+
+<p><span lang=FR-CA
+><br>
+Copyright (C) 1989, Jef Poskanzer<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Par
+les présentes, permission est octroyée, à quelque fin que ce soit et sans
+frais, d'utiliser, de copier, de modifier et de distribuer ce logiciel et la
+documentation connexe à condition que l'avis de droits d'auteur ci-dessus
+apparaisse sur toutes les copies et que l'avis de droits d'auteur et le présent
+avis de permission apparaissent dans la documentation connexe. Ce logiciel est
+fourni «&nbsp;tel quel&nbsp;» sans garantie expresse ou implicite. Nous sommes
+également tenus de stipuler que «&nbsp;The Graphics Interchange Format(c) est
+la propriété sous droits d'auteur de CompuServe Incorporated. GIF(sm) est une
+marque de service propriété de CompuServe Incorporated.&nbsp;»<br>
+</span><span 
+><br>
+<br>
+Copyright (C) 1991-1998, Thomas G Lane<br>
+<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Ce
+fichier fait partie du logiciel de Independent JPEG Group.  Pour connaître les
+modalités de distribution et d'utilisation, consultez le fichier README en
+annexe.  Ce fichier contient des routines pour écrire des images de sortie en
+format Targa. Ces routines peuvent nécessiter des modifications pour des
+environnements non-Unix ou des applications spécialisées. Tels que livrés, il y
+a présomption que la sortie est un flux stdio ordinaire. Basés sur un code
+contribué par Lee Daniel Crocker.<br>
+<br>
+<br>
+<br>
+Copyright (C) 1988, Jef Poskanzer<br>
+<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Par
+les présentes, permission est octroyée, à quelque fin que ce soit et sans
+frais, d'utiliser, de copier, de modifier et de distribuer ce logiciel et la
+documentation connexe à condition que l'avis de droits d'auteur ci-dessus
+apparaisse sur toutes les copies et que l'avis de droits d'auteur et le présent
+avis de permission apparaissent dans la documentation connexe. Ce logiciel est
+fourni «&nbsp;tel quel&nbsp;» sans garantie expresse ou implicite. <br>
+<br>
+<br>
+<br>
+<b>Informations concernant les droits d'auteur et l'octroi de licence pour
+UTFXml </b></span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span 
+>Copyright (C) 2009, Electronic Arts inc.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span lang=FR-CA 
+>La redistribution et l’utilisation des formes source et binaire,
+avec ou sans modification, sont permises dans la mesure où les conditions
+suivantes sont respectées&nbsp;</span><span lang=FR-CA font-family:"Times New Roman","serif"'>:</span><span
+lang=FR-CA 
+>&nbsp;<br>
+1. Les redistributions du code source doivent conserver l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant.&nbsp;<br>
+2. Les redistributions en forme binaire doivent reproduire l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant dans la documentation et/ou les autres matériaux
+fournis avec la distribution.&nbsp;<br>
+3. Ni le nom de Electronic Arts inc. («&nbsp;EA&nbsp;»), ni le nom des
+collaborateurs ne peuvent être utilisés pour recommander ou faire la promotion
+des produits dérivés du présent logiciel sans une permission écrite préalable
+spécifique.&nbsp;<br>
+LE PRÉSENT LOGICIEL EST FOURNI PAR ELECTRONIC ARTS ET SES COLLABORATEURS «&nbsp;TEL
+QUEL&nbsp;» ET TOUTE GARANTIE EXPRESSE OU IMPLICITE, Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D’ADÉQUATION À UN
+OBJECTIF PARTICULIER, EST REFUSÉE. EN AUCUN CAS ELECTRONIC ARTS OU SES
+COLLABORATEURS NE SERONT RESPONSABLES DE TOUT DOMMAGE DIRECT, INDIRECT,
+ACCESSOIRE, SPÉCIAL, EXEMPLAIRE OU CONSÉCUTIF (Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, L’ACQUISITION DE PRODUITS OU DE SERVICES SUBSTITUTS, LA PERTE
+D’UTILISATION, DE DONNÉES OU DE PROFITS OU L’INTERRUPTION D’ACTIVITÉS) CAUSÉ DE
+QUELQUE FAÇON QUE CE SOIT ET EN FONCTION DE QUELQUE THÉORIE DE RESPONSABILITÉ
+QUE CE SOIT, QU’IL S’AGISSE D’UN CONTRAT, D’UNE RESPONSABILITÉ OBJECTIVE OU
+D’UN DÉLIT CIVIL (Y COMPRIS NÉGLIGENCE OU AUTRE) QUI S’ENSUIT DE QUELQUE FAÇON
+QUE CE SOIT DE L’UTILISATION DU PRÉSENT LOGICIEL, MÊME S’IL Y A EU
+AVERTISSEMENT DE LA POSSIBILITÉ DE PAREIL DOMMAGE.<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<b>Informations concernant les droits d'auteur et l'octroi de licence pour zlib</b></span></p>
+
+<p><span 
+><br>
+Copyright (C) 1995-1998, Jean-loup Gailly&nbsp;<br>
+Copyright (C) 1995-1998, Mark Adler<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Ce
+logiciel est fourni «&nbsp;tel quel&nbsp;» sans garantie expresse ou implicite
+d'aucune sorte. En aucun cas l'auteur ne sera tenu responsable de tout dommage
+résultant de l'utilisation de ce logiciel.  La permission d'utiliser ce
+logiciel à quelque fin que ce soit est accordée à toute personne, incluant les
+applications commerciales, de le modifier et de le redistribuer librement, sous
+réserve des restrictions suivantes :&nbsp;<br>
+1. L'origine de ce logiciel ne doit pas être faussement représentée; vous ne
+devez pas prétendre avoir écrit le logiciel original. Si vous utilisez ce
+logiciel dans un produit, une mention de reconnaissance à cet effet dans la
+documentation du produit serait appréciée, quoique non requise.&nbsp;<br>
+2. Les versions avec une source altérée doivent être clairement indiquées comme
+telles et ne doivent pas être faussement présentées comme étant le logiciel
+original.&nbsp;<br>
+3. Cet avis ne peut être enlevé, ni modifié d'aucune distribution de
+source.&nbsp;<br>
+Jean-loup Gailly Mark Adler&nbsp;<br>
+jloup@gzip.org madler@alumni.caltech.edu&nbsp;<br>
+Le format de données utilisé par la bibliothèque zlib est décrit dans des RFC
+(«&nbsp;Demande de commentaires&nbsp;») 1950 à 1952 dans les fichiers
+ftp:ds.internic.netrfcrfc1950.txt (format zlib), rfc1951.txt (format deflate)
+et rfc1952.txt (format gzip).<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<b>Informations concernant les droits d'auteur et l'octroi de licence pour
+FreeType</b></span></p>
+
+<p><span lang=FR-CA
+><br>
+Copyright (C) 2000-2007, 2009, Computing Research Labs&nbsp;<br>
+Copyright (C) 2000-2009, Francesco Zappa Nardelli&nbsp;<br>
+Copyright (C) 2000-2007, 2009, Université du Nouveau-Mexique<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Par
+les présentes, permission est octroyée, sans frais, à toute personne obtenant
+une copie de ce logiciel et des fichiers de documentation connexes (le
+«&nbsp;Logiciel&nbsp;»), de manipuler le Logiciel sans restriction, incluant et
+sans s'y limiter, les droits d'utiliser, de copier, de modifier, de grouper, de
+publier, de distribuer, de sous-traiter et/ou de vendre des copies du Logiciel
+et de permettre aux personnes auxquelles le Logiciel est fourni de le faire
+sous réserve des conditions suivantes&nbsp;: l'avis de droits d'auteur
+ci-dessus et le présent avis de permission doivent être inclus dans toutes les
+copies ou parties substantielles du Logiciel. &nbsp;<br>
+LE PRÉSENT LOGICIEL EST FOURNI «&nbsp;TEL QUEL&nbsp;» SANS GARANTIE D'AUCUNE SORTE
+EXPRESSE OU IMPLICITE, Y COMPRIS, SANS EN EXCLURE D’AUTRES, LES GARANTIES IMPLICITES
+DE QUALITÉ MARCHANDE, D’ADÉQUATION À UN OBJECTIF PARTICULIER ET DE
+NON-VIOLATION DES DROITS. EN AUCUN CAS LE COMPUTING RESEARCH LAB OU
+L'UNIVERSITÉ DU NOUVEAU-MEXIQUE NE SERA RESPONSABLE DE TOUTE RÉCLAMATION, DE
+TOUS DOMMAGES OU AUTRES DÉLITS CIVILS, QU’IL S’AGISSE D’UN BRIS DE CONTRAT,
+D’UNE RESPONSABILITÉ OBJECTIVE OU D’UN DÉLIT CIVIL OU AUTRE, DÉCOULANT
+DIRECTEMENT OU INDIRECTEMENT DU LOGICIEL OU DE SON UTILISATION OU AUTRES
+MANIPULATIONS Y AFFÉRENTES. <br>
+</span><span 
+><br>
+<br>
+Copyright (C) 1995-2002, Jean-loup Gailly&nbsp;<br>
+Copyright (C) 1995-2002, Mark Adler<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Ce
+logiciel est fourni «&nbsp;tel quel&nbsp;» sans garantie expresse ou implicite
+d'aucune sorte. En aucun cas l'auteur ne sera tenu responsable de tout dommage
+résultant de l'utilisation de ce logiciel.  La permission d'utiliser ce
+logiciel à quelque fin que ce soit est accordée à toute personne, incluant les
+applications commerciales, de le modifier et de le redistribuer librement, sous
+réserve des restrictions suivantes :&nbsp;<br>
+1. L'origine de ce logiciel ne doit pas être faussement représentée; vous ne
+devez pas prétendre avoir écrit le logiciel original. Si vous utilisez ce
+logiciel dans un produit, une mention de reconnaissance à cet effet dans la
+documentation du produit serait appréciée, quoique non requise.&nbsp;<br>
+2. Les versions avec une source altérée doivent être clairement indiquées comme
+telles et ne doivent pas être faussement présentées comme étant le logiciel
+original.&nbsp;<br>
+3. Cet avis ne peut être enlevé, ni modifié d'aucune distribution de
+source.&nbsp;<br>
+Jean-loup Gailly Mark Adler&nbsp;<br>
+jloup@gzip.org madler@alumni.caltech.edu&nbsp;<br>
+Le format de données utilisé par la bibliothèque zlib est décrit dans des RFC
+(«&nbsp;Demande de commentaires&nbsp;») 1950 à 1952 dans les fichiers
+ftp:ds.internic.netrfcrfc1950.txt (format zlib), rfc1951.txt (format deflate)
+et rfc1952.txt (format gzip).<br>
+<br>
+<br>
+Copyright (C) 2005, 2007-2008, George Williams<br>
+<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>La
+redistribution et l’utilisation des formes source et binaire, avec ou sans
+modification, sont permises dans la mesure où les conditions suivantes sont
+respectées&nbsp;: les redistributions du code source doivent reproduire l’avis
+de droits d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant. Les redistributions en forme binaire doivent
+reproduire l’avis de droit d’auteur ci-dessus, la présente liste des modalités
+et l’avis de non-responsabilité suivant dans la documentation et/ou les autres
+matériaux fournis avec la distribution. Le nom de l'auteur ne peut pas être
+utilisé pour recommander ou faire la promotion des produits dérivés du présent
+logiciel sans une permission écrite préalable spécifique.&nbsp;<br>
+LE PRÉSENT LOGICIEL EST FOURNI PAR L'AUTEUR «&nbsp;TEL QUEL&nbsp;» ET TOUTE
+GARANTIE EXPRESSE OU IMPLICITE, Y COMPRIS, SANS EN EXCLURE D’AUTRES, LES
+GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D’ADÉQUATION À UN OBJECTIF
+PARTICULIER, EST REFUSÉE. EN AUCUN CAS L'AUTEUR NE SERA RESPONSABLE DE TOUT
+DOMMAGE DIRECT, INDIRECT, ACCESSOIRE, SPÉCIAL, EXEMPLAIRE OU CONSÉCUTIF (Y
+COMPRIS, SANS EN EXCLURE D’AUTRES, L’ACQUISITION DE PRODUITS OU DE SERVICES
+SUBSTITUTS, LA PERTE D’UTILISATION, DE DONNÉES OU DE PROFITS OU L’INTERRUPTION
+D’ACTIVITÉS) CAUSÉ DE QUELQUE FAÇON QUE CE SOIT ET EN FONCTION DE QUELQUE
+THÉORIE DE RESPONSABILITÉ QUE CE SOIT, QU’IL S’AGISSE D’UN CONTRAT, D’UNE
+RESPONSABILITÉ OBJECTIVE OU D’UN DÉLIT CIVIL (Y COMPRIS NÉGLIGENCE OU AUTRE)
+QUI S’ENSUIT DE QUELQUE FAÇON QUE CE SOIT DE L’UTILISATION DU PRÉSENT LOGICIEL,
+MÊME S’IL Y A EU AVERTISSEMENT DE LA POSSIBILITÉ DE PAREIL DOMMAGE.<br>
+</span><span 
+><br>
+<br>
+Copyright (C) 1990, 1994, 1998, The Open Group<br>
+<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Par
+les présentes, permission est octroyée, à quelque fin que ce soit et sans
+frais, d'utiliser, de copier, de modifier, de distribuer et de vendre ce logiciel
+et la documentation connexe à condition que l'avis de droits d'auteur ci-dessus
+apparaisse dans toutes les copies et l'avis de droits d'auteur et que le
+présent avis de permission apparaisse dans la documentation connexe. L'avis de
+droits d'auteur ci-dessus et le présent avis de permission doivent être inclus
+dans toutes les copies ou les parties substantielles du Logiciel. <br>
+LE PRÉSENT LOGICIEL EST FOURNI «&nbsp;TEL QUEL&nbsp;» SANS GARANTIE D'AUCUNE SORTE
+EXPRESSE OU IMPLICITE, Y COMPRIS, SANS EN EXCLURE D’AUTRES, LES GARANTIES IMPLICITES
+DE QUALITÉ MARCHANDE, D’ADÉQUATION À UN OBJECTIF PARTICULIER ET DE
+NON-VIOLATION DES DROITS. EN AUCUN CAS THE OPEN GROUP NE SERA RESPONSABLE DE
+TOUTE RÉCLAMATION, DE TOUS DOMMAGES OU AUTRES RESPONSABILITÉS OBJECTIVES, QU’IL
+S’AGISSE D’UN BRIS DE CONTRAT, D’UN DÉLIT CIVIL OU AUTRE, DÉCOULANT DIRECTEMENT
+OU INDIRECTEMENT DU LOGICIEL OU DE SON UTILISATION OU D'AUTRES MANIPULATIONS
+RELATIVES AU LOGICIEL. <br>
+À l'exception de ce que contient le présent avis, le nom de The Open Group ne
+pourra pas être utilisé pour annoncer ou autrement promouvoir la vente,
+l'utilisation ou d'autres manipulations liées à ce Logiciel sans une permission
+écrite préalable de The Open Group. <br>
+<br>
+<br>
+Copyright (C) 2004-2006, 2009, Albert Chin-A-Young&nbsp;<br>
+Copyright (C) 1996-2009, David Turner&nbsp;<br>
+Copyright (C) 2007, 2009, Dereg Clegg&nbsp;<br>
+Copyright (C) 2007, 2009, Derek Clegg&nbsp;<br>
+Copyright (C) 1996-2001, 2003, 2007, Dmitry Timoshkov pour Codeweavers&nbsp;<br>
+Copyright (C) 2004-2008, George Williams&nbsp;<br>
+Copyright (C) 1996-2001, 2003, 2007, Huw D M Davies pour Codeweavers&nbsp;<br>
+Copyright (C) 1996-2001, Just van Rossum&nbsp;<br>
+Copyright (C) 2003-2009, Masatake YAMATO&nbsp;<br>
+Copyright (C) 2007, 2009, Michael Toftdal&nbsp;<br>
+Copyright (C) 2007, Rahul Bhalerao&nbsp;<br>
+Copyright (C) 2003-2009, Redhat KK&nbsp;<br>
+Copyright (C) 1996-2009, Robert Wilhelm&nbsp;<br>
+Copyright (C) 2002-2009, Roberto Alameda&nbsp;<br>
+Copyright (C) 1996-2009, Werner Lemberg&nbsp;<br>
+Copyright (C) 2004-2008, Suzuki Toshiya<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Ce
+fichier fait partie du projet FreeType et ne peut être utilisé, modifié et
+distribué en vertu des conditions de la licence du projet FreeType,
+LICENSE.TXT. En continuant d'utiliser, de modifier ou de distribuer ce fichier,
+vous indiquez que vous avez lu le texte de la licence, l'avez compris et
+l'acceptez dans son intégralité. <br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<b>LICENCE du projet FreeType </b></span></p>
+
+<p><span lang=FR-CA
+>2006-Jan-27<br>
+Copyright 1996-2002, 2006 par David Turner, Robert Wilhelm et Werner Lemberg</span></p>
+
+<p><b><span lang=FR-CA
+>Introduction</span></b><span
+lang=FR-CA 
+><br>
+ Le projet FreeType est distribué dans plusieurs progiciels d'archives;
+certains peuvent contenir, hormis le moteur de caractères FreeType, divers
+outils et contributions qui dépendent du FreeType ou qui y sont afférents.<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Cette
+licence s'applique à tous les fichiers contenus dans de tels progiciels et qui
+ne sont pas régis explicitement par leur propre licence. La licence porte ainsi
+au minimum sur le moteur de caractères FreeType, les programmes tests, la
+documentation et les fichiers makefile.<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>La
+présente licence s'est inspirée des licences BSD, Artistic et IJG (Independent
+JPEG Group) qui encouragent toutes l'inclusion et l'utilisation de logiciels
+libres aussi bien dans les produits commerciaux que dans les graticiels. </span><span
+>Par
+conséquent, les principaux points à relever sont&nbsp;: <br>
+<br>
+</span></p>
+
+<ul type=disc>
+ <li class=MsoNormal color:black;><span lang=FR-CA
+     font-family:"Times New Roman","serif"'>Nous ne
+     promettons pas que le logiciel fonctionne.  Toutefois, nous accueillerons
+     volontiers toute forme de rapports sur des bogues. </span><span
+     font-family:"Times New Roman","serif"'>(distribution
+     «&nbsp;tel quel&nbsp;»)</span></li>
+ <li class=MsoNormal color:black;><span lang=FR-CA
+     font-family:"Times New Roman","serif"'>Vous pouvez
+     utiliser ce logiciel comme vous le souhaitez, en partie ou en entier, sans
+     devoir nous verser quoi que ce soit.  </span><span 
+     font-family:"Times New Roman","serif"'>(utilisation « libre de redevance
+     »)</span></li>
+ <li class=MsoNormal color:black;><span lang=FR-CA
+     font-family:"Times New Roman","serif"'>Vous ne
+     pouvez pas prétendre que vous avez créé ce logiciel. Si vous l'utilisez
+     dans un programme, même partiellement, vous devez reconnaître dans votre
+     documentation que vous avez utilisé le code FreeType. </span><span
+     font-family:"Times New Roman","serif"'>(« mention
+     de source »)</span></li>
+</ul>
+
+<p><span lang=FR-CA 
+>Nous permettons et encourageons particulièrement l'inclusion de ce
+logiciel, avec ou sans modifications, dans les produits commerciaux.  Nous
+déclinons toute garantie couvrant le projet FreeType et n'assumons aucune
+responsabilité liée au projet FreeType. </span></p>
+
+<p><span lang=FR-CA
+>Enfin,
+on nous demande souvent quelle est la meilleure forme de mention de source/avis
+de non-responsabilité à utiliser en conformité avec cette licence. Nous vous
+invitons donc à utiliser le texte suivant :</span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Des
+parties de ce logiciel sont protégées par copyright © 2009 The FreeType Project
+(www.freetype.org). Tous droits réservés.&nbsp;»<br>
+<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Veuillez
+insérer la valeur de la version FreeType que vous utilisez actuellement. </span></p>
+
+<p><b><span lang=FR-CA
+>Termes
+juridiques</span></b></p>
+
+<p><b><span lang=FR-CA
+>0.
+Définitions</span></b></p>
+
+<p><span lang=FR-CA
+>Dans
+le cadre de cette licence, les termes «&nbsp;progiciel&nbsp;», «&nbsp;projet
+FreeType&nbsp;» et «&nbsp;archive FreeType&nbsp;» renvoient à l'ensemble des
+fichiers distribués à l'origine par les auteurs (David Turner, Robert Wilhelm
+et Werner Lemberg) sous le nom de «&nbsp;FreeType Project&nbsp;», qu'il
+s'agisse des versions alpha, bêta ou finale. </span></p>
+
+<p><span lang=FR-CA
+>«&nbsp;Vous&nbsp;»
+désigne le détenteur de licence ou la personne utilisant le projet,
+«&nbsp;utilisant&nbsp;» étant un terme générique qui inclut la compilation du
+code source du projet, ainsi que le lien pour former un «&nbsp;programme&nbsp;»
+ou «&nbsp;module exécutable&nbsp;». Ce programme est désigné «&nbsp;un
+programme utilisant le moteur FreeType&nbsp;».</span></p>
+
+<p><span lang=FR-CA
+>Cette
+licence s'applique à tous les fichiers distribués dans le projet original
+FreeType, incluant tout le code source, tout le code binaire et toute la
+documentation, sauf indication contraire dans le fichier sous sa forme
+originale non modifiée tel que distribué dans l'archive originale. </span><span
+lang=FR-CA font-family:"Microsoft Sans Serif","sans-serif";
+>&#8201;</span><span lang=FR-CA font-family:
+"Times New Roman","serif";> Si vous n'êtes pas certain qu'un
+fichier particulier soit couvert par cette licence, vous devez communiquer avec
+nous pour le vérifier. </span></p>
+
+<p><span lang=FR-CA
+>Le
+projet FreeType est protégé par copyright (C) 1996-2000 par David Turner,
+Robert Wilhelm et Werner Lemberg. Tous droits réservés, excepté ce qui est
+spécifié ci-dessous. </span></p>
+
+<p><b><span lang=FR-CA
+>1.
+Aucune garantie</span></b></p>
+
+<p><span lang=FR-CA
+>LE
+PROJET FREETYPE EST FOURNI «&nbsp;TEL QUEL&nbsp;» SANS GARANTIE D'AUCUNE SORTE
+EXPRESSE OU IMPLICITE, Y COMPRIS, SANS EN EXCLURE D’AUTRES, LES GARANTIES
+IMPLICITES DE QUALITÉ MARCHANDE ET D’ADÉQUATION À UN OBJECTIF PARTICULIER. EN
+AUCUN CAS AUCUN DES AUTEURS OU DES DÉTENTEURS DE DROITS D'AUTEUR NE SERA
+RESPONSABLE DE TOUT DOMMAGE CAUSÉ PAR L’UTILISATION DU PROJET FREETYPE OU
+L'INCAPACITÉ DE L'UTILISER. </span></p>
+
+<p><b><span lang=FR-CA
+>2.
+Redistribution</span></b></p>
+
+<p><span lang=FR-CA
+>Cette
+licence concède un droit mondial, libre de redevances, perpétuel et irrévocable
+et une licence pour utiliser, exécuter, effectuer, compiler, afficher, copier,
+créer des produits dérivés du projet Free Type, distribuer et attribuer en
+sous-licence le projet Free Type (sous la forme de code source et de code
+objet) et des produits dérivés de ce dernier pour quelque objectif que ce soit
+et pour autoriser d'autres personnes à exercer certains droits ou tous les
+droits concédés par les présentes sous réserve des conditions suivantes&nbsp;:</span></p>
+
+<ul type=disc>
+ <li class=MsoNormal color:black;><span lang=FR-CA
+     font-family:"Times New Roman","serif"'>La
+     redistribution du code source doit conserver ce fichier de licence
+     («&nbsp;FTL.TXT&nbsp;») non modifié; tout ajout, retrait ou changement
+     apporté aux fichiers originaux doit être clairement indiqué dans la
+     documentation annexée. Les avis de droits d'auteur des fichiers originaux
+     non modifiés doivent être préservés dans toutes les copies des fichiers
+     sources. </span></li>
+ <li class=MsoNormal color:black;><span lang=FR-CA
+     font-family:"Times New Roman","serif"'>La
+     redistribution sous forme binaire doit présenter un avis de
+     non-responsabilité stipulant dans la documentation annexée à la
+     distribution que le logiciel est basé en partie sur le travail de l'équipe
+     FreeType.  Nous vous invitons aussi à indiquer l'adresse URL de la page
+     Web FreeType dans votre documentation, bien que cela ne soit pas
+     obligatoire. </span></li>
+</ul>
+
+<p><span lang=FR-CA
+>Ces
+conditions s'appliquent à tout logiciel dérivé du ou basé sur le projet
+FreeType, pas seulement aux fichiers non modifiés. Si vous utilisez notre
+travail, vous devez en faire mention. Toutefois, il n'est pas nécessaire de
+nous verser des frais. </span></p>
+
+<p><b><span lang=FR-CA
+>3.
+Publicité </span></b></p>
+
+<p><span lang=FR-CA
+>Ni
+les auteurs de FreeType, ni les collaborateurs ne peuvent utiliser le nom des
+autres pour des motifs commerciaux, publicitaires ou promotionnels sans
+permission écrite préalable spécifique.</span></p>
+
+<p><span lang=FR-CA
+>Nous
+suggérons, mais n'exigeons pas, que vous utilisiez une ou plusieurs des
+expressions suivantes pour mentionner ce logiciel dans votre documentation ou
+matériel publicitaire : «&nbsp;Projet FreeType&nbsp;», «&nbsp;Moteur
+FreeType&nbsp;», «&nbsp;Bibliothèque FreeType&nbsp;» ou «&nbsp;Distribution
+FreeType&nbsp;».</span></p>
+
+<p><span lang=FR-CA
+>Étant
+donné que vous n'avez pas signé cette licence, nous n'êtes pas obligé de l'accepter.
+Cependant, comme le projet FreeType est protégé par droits d'auteur, seule
+cette licence ou une autre conclue avec les auteurs vous décerne le droit de
+l'utiliser, le distribuer et le modifier. Par conséquent, en utilisant, en
+distribuant ou en modifiant le projet FreeType, vous indiquez que vous
+comprenez et acceptez toutes les conditions de la présente licence. </span></p>
+
+<p><b><span lang=FR-CA
+>4.
+Contacts</span></b></p>
+
+<p><span lang=FR-CA
+>Il
+existe deux listes de diffusion liées à FreeType&nbsp;:</span></p>
+
+<ul type=disc>
+ <li class=MsoNormal color:black;><span lang=FR-CA
+     font-family:"Times New Roman","serif"'>freetype@nongnu.org
+     Au sujet de l'utilisation générale et des applications de FreeType, ainsi
+     que des ajouts futurs et souhaités à la bibliothèque et la distribution.
+     Si vous avez besoin d'aide, commencez par cette liste au cas où vous
+     n'auriez pas trouvé les renseignements nécessaires dans la documentation.</span></li>
+ <li class=MsoNormal color:black;><span lang=FR-CA
+     font-family:"Times New Roman","serif"'>freetype-devel@nongnu.org
+     Au sujet des bogues, ainsi que des questions inhérentes au moteur, des
+     problèmes de conception, de licences spécifiques, de portage, etc.</span></li>
+</ul>
+
+<p><span lang=FR-CA
+>L'adresse
+de notre page d'accueil est http://www.freetype.org</span></p>
+
+<p><b><span lang=FR-CA
+>Informations
+concernant les droits d'auteur et l'octroi de licence pour libpng</span></b></p>
+
+<p><span 
+><br>
+Copyright (C) 1995-2002, 2006-2008, Andreas Dilger&nbsp;<br>
+Copyright (C) 1995-2002, 2006-2008, Glenn Randers-Pehrson&nbsp;<br>
+Copyright (C) 1995-2002, 2006-2008, Group 42 Inc&nbsp;<br>
+Copyright (C) 1995-2002, 2006-2008, Guy Eric Schalnat<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Aux
+fins de ces droits d'auteur et de cette licence, «&nbsp;Auteurs
+participants&nbsp;» désigne le groupe de personnes suivant&nbsp;:&nbsp;<br>
+Andreas Dilger&nbsp;<br>
+Dave Martindale&nbsp;<br>
+Guy Eric Schalnat&nbsp;<br>
+Paul Schmidt&nbsp;<br>
+Tim Wegner&nbsp;<br>
+La bibliothèque de référence PNG est fournie «&nbsp;TELLE QUELLE&nbsp;». Les
+Auteurs collaborateurs et Group 42, Inc. déclinent toute garantie, expresse ou
+implicite, y compris, sans en exclure d’autres, les garanties implicites de
+qualité marchande et d’adéquation à un objectif particulier. Les Auteurs
+collaborateurs et Group 42, Inc. n'assument aucune responsabilité pour les
+dommages directs, indirects, accessoires, spéciaux, exemplaires ou consécutifs
+pouvant découler de l'utilisation de la bibliothèque de référence PNG, même si
+un avertissement a été émis concernant la possibilité de pareil dommage. Par
+les présentes, la permission est octroyée, à quelque fin que ce soit et sans
+frais, d'utiliser, de copier et de distribuer ce code source ou des parties de
+celui-ci sous réserve des conditions suivantes&nbsp;:&nbsp;<br>
+1. L'origine de ce code source ne doit pas être faussement représentée.&nbsp;<br>
+2. Les versions modifiées doivent être clairement indiquées comme telles et ne
+doivent pas être faussement représentées comme étant le logiciel
+original.&nbsp;<br>
+3. Cet avis de droits d'auteur ne doit pas être enlevé ou modifié de toute
+distribution source ou source modifiée.&nbsp;<br>
+Les Auteurs collaborateurs et Group 42, Inc. permettent, sans frais, et
+encouragent spécifiquement l'utilisation de ce code source en tant qu'appui au
+format de fichier PNG dans des produits commerciaux.  Si vous utilisez ce code
+source dans un produit, une mention de reconnaissance à cet effet serait
+appréciée, quoique non requise. <br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<b>Informations concernant les droits d'auteur et l'octroi de licence pour
+EAText</b></span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span 
+>Copyright (C) 2004, 2006-2007, 2009, Electronic Arts inc.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+</span><span lang=FR-CA 
+>La redistribution et l’utilisation des formes source et binaire,
+avec ou sans modification, sont permises dans la mesure où les conditions
+suivantes sont respectées&nbsp;:&nbsp;<br>
+1. Les redistributions du code source doivent conserver l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant.&nbsp;<br>
+2. Les redistributions en forme binaire doivent reproduire l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de non-responsabilité
+suivant dans la documentation et/ou les autres matériaux fournis avec la
+distribution.&nbsp;<br>
+3. Ni le nom de Electronic Arts inc. («&nbsp;EA&nbsp;»), ni le nom des
+collaborateurs ne peuvent être utilisés pour recommander ou faire la promotion
+des produits dérivés du présent logiciel sans une permission écrite préalable
+spécifique.&nbsp;<br>
+LE PRÉSENT LOGICIEL EST FOURNI PAR ELECTRONIC ARTS ET SES COLLABORATEURS
+«&nbsp;TEL QUEL&nbsp;» ET TOUTE GARANTIE EXPRESSE OU IMPLICITE, Y COMPRIS, SANS
+EN EXCLURE D’AUTRES, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET
+D’ADÉQUATION À UN OBJECTIF PARTICULIER, EST REFUSÉE. EN AUCUN CAS ELECTRONIC
+ARTS OU SES COLLABORATEURS NE SERONT RESPONSABLES DE TOUT DOMMAGE DIRECT,
+INDIRECT, ACCESSOIRE, SPÉCIAL, EXEMPLAIRE OU CONSÉCUTIF (Y COMPRIS, SANS EN
+EXCLURE D’AUTRES, L’ACQUISITION DE PRODUITS OU DE SERVICES SUBSTITUTS, LA PERTE
+D’UTILISATION, DE DONNÉES OU DE PROFITS OU L’INTERRUPTION D’ACTIVITÉS) CAUSÉ DE
+QUELQUE FAÇON QUE CE SOIT ET EN FONCTION DE QUELQUE THÉORIE DE RESPONSABILITÉ
+QUE CE SOIT, QU’IL S’AGISSE D’UN CONTRAT, D’UNE RESPONSABILITÉ OBJECTIVE OU
+D’UN DÉLIT CIVIL (Y COMPRIS NÉGLIGENCE OU AUTRE) QUI S’ENSUIT DE QUELQUE FAÇON
+QUE CE SOIT DE L’UTILISATION DU PRÉSENT LOGICIEL, MÊME S’IL Y A EU
+AVERTISSEMENT DE LA POSSIBILITÉ DE PAREIL DOMMAGE.<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+><br>
+<b>Informations concernant les droits d'auteur et l'octroi de licence pour
+EASTL</b></span></p>
+
+<p><span 
+><br>
+Copyright (C) 1994, Hewlett-Packard Company<br>
+<br>
+</span></p>
+
+<p><span lang=FR-CA
+>Par
+les présentes, permission est octroyée, à quelque fin que ce soit et sans
+frais, d'utiliser, de copier, de modifier et de distribuer ce logiciel et la
+documentation connexe à condition que l'avis de droits d'auteur ci-dessus
+apparaisse sur toutes les copies et que l'avis de droits d'auteur et le présent
+avis de permission apparaissent dans la documentation connexe. Hewlett-Packard
+Company ne fait aucune représentation quant à l'adéquation de ce logiciel à
+quelque fin que ce soit.  Ce logiciel est fourni «&nbsp;tel quel&nbsp;» sans
+garantie expresse ou implicite. <br>
+</span><span lang=FR 
+><br>
+<br>
+</span><span 
+>Copyright (C) 2005, 2009, Electronic Arts inc.</span></p>
+
+<p><span lang=FR font-size:
+13.5pt;><br>
+<br>
+</span><span lang=FR-CA 
+>La redistribution et l’utilisation des formes source et binaire,
+avec ou sans modification, sont permises dans la mesure où les conditions
+suivantes sont respectées&nbsp;:&nbsp;<br>
+1. Les redistributions du code source doivent conserver l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant.&nbsp;<br>
+2. Les redistributions en forme binaire doivent reproduire l’avis de droit
+d’auteur ci-dessus, la présente liste des modalités et l’avis de
+non-responsabilité suivant dans la documentation et/ou les autres matériaux
+fournis avec la distribution.&nbsp;<br>
+3. Ni le nom de Electronic Arts inc. («&nbsp;EA&nbsp;»), ni le nom des
+collaborateurs ne peuvent être utilisés pour recommander ou faire la promotion
+des produits dérivés du présent logiciel sans une permission écrite préalable
+spécifique.&nbsp;<br>
+LE PRÉSENT LOGICIEL EST FOURNI PAR ELECTRONIC ARTS ET SES COLLABORATEURS «&nbsp;TEL
+QUEL&nbsp;» ET TOUTE GARANTIE EXPRESSE OU IMPLICITE, Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D’ADÉQUATION À UN
+OBJECTIF PARTICULIER, EST REFUSÉE. EN AUCUN CAS ELECTRONIC ARTS OU SES
+COLLABORATEURS NE SERONT RESPONSABLES DE TOUT DOMMAGE DIRECT, INDIRECT,
+ACCESSOIRE, SPÉCIAL, EXEMPLAIRE OU CONSÉCUTIF (Y COMPRIS, SANS EN EXCLURE
+D’AUTRES, L’ACQUISITION DE PRODUITS OU DE SERVICES SUBSTITUTS, LA PERTE
+D’UTILISATION, DE DONNÉES OU DE PROFITS OU L’INTERRUPTION D’ACTIVITÉS) CAUSÉ DE
+QUELQUE FAÇON QUE CE SOIT ET EN FONCTION DE QUELQUE THÉORIE DE RESPONSABILITÉ
+QUE CE SOIT, QU’IL S’AGISSE D’UN CONTRAT, D’UNE RESPONSABILITÉ OBJECTIVE OU
+D’UN DÉLIT CIVIL (Y COMPRIS NÉGLIGENCE OU AUTRE) QUI S’ENSUIT DE QUELQUE FAÇON
+QUE CE SOIT DE L’UTILISATION DU PRÉSENT LOGICIEL, MÊME S’IL Y A EU
+AVERTISSEMENT DE LA POSSIBILITÉ DE PAREIL DOMMAGE.<br>
+<br>
+</span></p>
+
+</div>
+
+</body>
+
+</html>

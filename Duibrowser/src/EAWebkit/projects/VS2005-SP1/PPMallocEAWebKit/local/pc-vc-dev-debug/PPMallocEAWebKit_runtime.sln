@@ -1,0 +1,16 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PPMallocEAWebKit", "..\PPMallocEAWebKit.vcproj", "{A26C9DC8-03A1-EFE6-1436-277FDCB9757B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		pc-vc-dev-debug|Win32 = pc-vc-dev-debug|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A26C9DC8-03A1-EFE6-1436-277FDCB9757B}.pc-vc-dev-debug|Win32.ActiveCfg = pc-vc-dev-debug|Win32
+		{A26C9DC8-03A1-EFE6-1436-277FDCB9757B}.pc-vc-dev-debug|Win32.Build.0 = pc-vc-dev-debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+1. 浏览EAWebkit中Resource Loader相关代码；
+2. 浏览EAWebkit中关于图片解码相关的代码；
+3. 浏览Webkit中生成DOM的过程以及由DOM Tree生成Render Tree的过程；
+4. 浏览Webkit中Layout的过程；

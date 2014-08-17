@@ -1,0 +1,4 @@
+LIBRARY      EAWebkit.dll
+EXPORTS
+    CreateEAWebkitInstance			@1
+    CreateWebkitLayoutInstance	@2

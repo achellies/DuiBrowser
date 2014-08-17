@@ -1,0 +1,17 @@
+PPC2003/Windows compile:
+1. Create system variable 'WEBKITISEEDIR=D:\WebKit.iSee'
+2. Download cygwin, intall cygwin to 'D:\cygwin'.
+3. Start VS2008, open 'iSee\iSee.project\iSee.sln'.
+4. Select platform 'WIN32(Debug)' for windows; Select platform 'Pocket PC 2003(Release)' for Windows CE.
+5. Build the project.
+6. Create directory 'D:\iSeeBrowser';
+7. Copy 'iSee\iSee.project\iSee_EN.xml' to 'D:\iSeeBrowser\iSee.xml'.
+8. Copy 'iSee\iSee.project\Pocket PC 2003 (ARMV4)\Release\iSee.exe' to 'D:\iSeeBrowser\iSee.exe'.
+9. Copy any TTF font file to 'D:\iSeeBrowser\sunglobe.ttf'.
+10.Copy directory 'D:\iSeeBrowser' to a PDA or PPC2003 emulator.
+11.Run iSeeBrowser\iSee.exe.
+
+WIN32 Debug:
+1. Copy 'iSee\iSee.project\iSee_EN.xml' to 'iSee\iSee.project\Debug\iSee.xml'.
+2. Copy any TTF font file to 'iSee\iSee.project\Debug\sunglobe.ttf'.
+3. Build and debug the project.

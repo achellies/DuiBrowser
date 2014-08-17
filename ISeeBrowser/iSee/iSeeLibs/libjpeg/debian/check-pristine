@@ -1,0 +1,14 @@
+#! /bin/sh
+if test ! -d debian; then 
+  echo "cannot find debian dir" >&2
+  exit 2
+fi
+set -e
+fakeroot debian/rules clean
+debian/rules unpatch
+cd ..
+tar zxf libjpeg6b_6b.orig.tar.gz 
+cd jpeg-6b
+find . -path debian -prune -o -exec diff -u '{}' '../libjpeg6b-6b/{}' ';'
+cd ..
+rm -r jpeg-6b

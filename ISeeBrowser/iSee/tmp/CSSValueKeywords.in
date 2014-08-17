@@ -1,0 +1,600 @@
+# these are all values accepted for css2.
+#
+# warning:
+# --------
+#
+# the values are sorted according to the properties they belong to,
+# and have to be in the same order as the enums in renderstyle.h.
+#
+# if not, the optimizations in the cssparser and style selector will fail,
+# and produce incorrect results.
+#
+inherit
+initial
+#
+# css_prop_outline_style
+# css_prop_border_top_style
+# css_prop_border_bottom_style
+# css_prop_border_left_style
+none
+hidden
+inset
+groove
+ridge
+outset
+dotted
+dashed
+solid
+double
+#
+# css_prop_font:
+#
+caption
+icon
+menu
+message-box
+small-caption
+-webkit-mini-control
+-webkit-small-control
+-webkit-control
+status-bar
+
+#
+# css_prop_font_style:
+#
+#normal
+italic
+oblique
+# the following is only allowed in @font-face:
+all
+#
+# css_prop_font_variant:
+#
+#normal
+small-caps
+#
+# css_prop_font_weight:
+#
+normal
+bold
+bolder
+lighter
+100
+200
+300
+400
+500
+600
+700
+800
+900
+#
+# css_prop_font_size:
+#
+xx-small
+x-small
+small
+medium
+large
+x-large
+xx-large
+-webkit-xxx-large
+smaller
+larger
+#
+# css_prop_font_stretch:
+#
+#normal
+wider
+narrower
+ultra-condensed
+extra-condensed
+condensed
+semi-condensed
+semi-expanded
+expanded
+extra-expanded
+ultra-expanded
+#
+# css_prop_generic_font_family:
+#
+serif
+sans-serif
+cursive
+fantasy
+monospace
+-webkit-body
+#
+#
+# css_prop_*_color
+#
+aqua
+black
+blue
+fuchsia
+gray
+green
+lime
+maroon
+navy
+olive
+orange
+purple
+red
+silver
+teal
+white
+yellow
+transparent
+-webkit-link
+-webkit-activelink
+activeborder
+activecaption
+appworkspace
+background
+buttonface
+buttonhighlight
+buttonshadow
+buttontext
+captiontext
+graytext
+highlight
+highlighttext
+inactiveborder
+inactivecaption
+inactivecaptiontext
+infobackground
+infotext
+match
+menutext
+scrollbar
+threeddarkshadow
+threedface
+threedhighlight
+threedlightshadow
+threedshadow
+window
+windowframe
+windowtext
+-webkit-focus-ring-color
+currentcolor
+#
+# colors in non strict mode
+grey
+-webkit-text
+#
+# css_prop_background_repeat:
+#
+repeat
+repeat-x
+repeat-y
+no-repeat
+#
+# css_prop__webkit_background_composite:
+#
+clear
+copy
+source-over
+source-in
+source-out
+source-atop
+destination-over
+destination-in
+destination-out
+destination-atop
+xor
+plus-darker
+# highlight
+plus-lighter
+#
+# css_prop_vertical_align:
+#
+baseline
+middle
+sub
+super
+text-top
+text-bottom
+top
+bottom
+# html alignment middle has no corresponding css alignment
+-webkit-baseline-middle
+#
+# css_prop_text_align:
+#
+-webkit-auto
+left
+right
+center
+justify
+-webkit-left
+-webkit-right
+-webkit-center
+#
+# css_prop_list_style_position:
+#
+outside
+inside
+#
+# css_prop_list_style_type:
+#
+disc
+circle
+square
+decimal
+decimal-leading-zero
+lower-roman
+upper-roman
+lower-greek
+lower-alpha
+lower-latin
+upper-alpha
+upper-latin
+hebrew
+armenian
+georgian
+cjk-ideographic
+hiragana
+katakana
+hiragana-iroha
+katakana-iroha
+#none
+#
+# css_prop_display:
+#
+inline
+block
+list-item
+run-in
+compact
+inline-block
+table
+inline-table
+table-row-group
+table-header-group
+table-footer-group
+table-row
+table-column-group
+table-column
+table-cell
+table-caption
+-webkit-box
+-webkit-inline-box
+#none
+#
+# css_prop_cursor:
+#
+auto
+crosshair
+default
+pointer
+move
+vertical-text
+cell
+context-menu
+alias
+# copy
+progress
+no-drop
+not-allowed
+-webkit-zoom-in
+-webkit-zoom-out
+e-resize
+ne-resize
+nw-resize
+n-resize
+se-resize
+sw-resize
+s-resize
+w-resize
+ew-resize
+ns-resize
+nesw-resize
+nwse-resize
+col-resize
+row-resize
+text
+wait
+help
+all-scroll
+# none
+#
+# css_prop_direction:
+#
+ltr
+rtl
+#
+# css_prop_text_transform:
+#
+capitalize
+uppercase
+lowercase
+#none
+#
+# css_prop_visibility:
+#
+visible
+#hidden
+collapse
+#
+# unordered rest
+#
+above
+absolute
+always
+avoid
+below
+bidi-override
+blink
+both
+close-quote
+crop
+cross
+embed
+fixed
+hand
+hide
+higher
+invert
+landscape
+level
+line-through
+loud
+lower
+-webkit-marquee
+mix
+no-close-quote
+no-open-quote
+nowrap
+open-quote
+overlay
+overline
+portrait
+pre
+pre-line
+pre-wrap
+relative
+scroll
+separate
+show
+static
+thick
+thin
+underline
+-webkit-nowrap
+
+# css3 values
+# css_prop_box_align
+stretch
+start
+end
+#center
+#baseline
+
+# css_prop_box_direction
+# normal
+reverse
+
+# css_prop_box_orient
+horizontal
+vertical
+inline-axis
+block-axis
+
+# css_prop_box_pack
+# start
+# end
+# center
+# justify
+
+# css_prop_box_lines
+single
+multiple
+
+# css_prop_marquee_direction
+forwards
+backwards
+ahead
+# reverse
+# left
+# right
+up
+down
+# auto
+
+# css_prop_marquee_speed
+slow
+# normal
+fast
+
+# css_prop_marquee_repetition
+infinite
+
+# css_prop_marquee_style
+# none
+slide
+# scroll
+alternate
+
+#
+# css_prop__khtml_user_modify
+#
+read-only
+read-write
+read-write-plaintext-only
+
+#
+# css_prop__khtml_user_drag
+#
+element
+
+#
+# css_prop__khtml_user_select
+#
+ignore
+
+#
+# css_prop_width/min_width/max_width
+#
+intrinsic
+min-intrinsic
+
+#
+# css_prop_text_overflow
+#
+clip
+ellipsis
+
+#
+# css_prop__khtml_margin_collapse
+#
+# collapse
+# separate
+discard
+
+#
+# css_prop_text_*_color
+#
+dot-dash
+dot-dot-dash
+wave
+
+#
+# css_prop_text_*_mode
+#
+continuous
+skip-white-space
+
+#
+# css_prop_word_break
+#
+break-all
+
+#
+# css_prop_word_wrap
+#
+break-word
+
+#
+# css_prop__khtml_nbsp_mode
+#
+space
+
+#
+# css_prop__khtml_line_break
+#
+after-white-space
+
+#
+# css_prop__khtml_appearance
+#
+checkbox
+radio
+push-button
+square-button
+button
+button-bevel
+default-button
+listbox
+listitem
+media-fullscreen-button
+media-mute-button
+media-play-button
+media-seek-back-button
+media-seek-forward-button
+media-slider
+media-sliderthumb
+menulist
+menulist-button
+menulist-text
+menulist-textfield
+scrollbarbutton-up
+scrollbarbutton-down
+scrollbarbutton-left
+scrollbarbutton-right
+scrollbartrack-horizontal
+scrollbartrack-vertical
+scrollbarthumb-horizontal
+scrollbarthumb-vertical
+scrollbargripper-horizontal
+scrollbargripper-vertical
+slider-horizontal
+slider-vertical
+sliderthumb-horizontal
+sliderthumb-vertical
+caret
+searchfield
+searchfield-decoration
+searchfield-results-decoration
+searchfield-results-button
+searchfield-cancel-button
+textfield
+textarea
+
+#
+# css_prop_border_image
+#
+# stretch
+# repeat
+round
+
+#
+# css_prop_background_clip/origin
+#
+border
+content
+padding
+
+#
+# css_prop_box_sizing
+#
+border-box
+content-box
+
+#
+# css_prop__khtml_rtl_ordering
+#
+logical
+visual
+
+#
+# css_prop__webkit_border_fit
+#
+lines
+
+#
+# css_prop__webkit_transition_delay
+# css_prop__webkit_animation_delay
+#
+now
+
+#
+# css_prop__webkit_animation_direction
+#
+# alternate
+
+#
+# css_prop__webkit_animation_iteration_count
+#
+# infinite
+
+#
+# css_prop__webkit_animation_play_state
+#
+running
+paused
+
+#
+# css_prop__webkit_transition_timing_function
+# css_prop__webkit_animation_timing_function
+#
+ease
+linear
+ease-in
+ease-out
+ease-in-out
+
+#
+# css_prop_zoom
+#
+reset

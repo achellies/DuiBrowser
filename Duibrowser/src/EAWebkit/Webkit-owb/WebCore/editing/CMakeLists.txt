@@ -1,0 +1,53 @@
+LIST (APPEND EDITING_SRC
+    editing/AppendNodeCommand.cpp
+    editing/ApplyStyleCommand.cpp
+    editing/BreakBlockquoteCommand.cpp
+    editing/CompositeEditCommand.cpp
+    editing/CreateLinkCommand.cpp
+    editing/DeleteButton.cpp
+    editing/DeleteButtonController.cpp
+    editing/DeleteFromTextNodeCommand.cpp
+    editing/DeleteSelectionCommand.cpp
+    editing/EditCommand.cpp
+    editing/Editor.cpp
+    editing/EditorCommand.cpp
+    editing/FormatBlockCommand.cpp
+    editing/HTMLInterchange.cpp
+    editing/IndentOutdentCommand.cpp
+    editing/InsertIntoTextNodeCommand.cpp
+    editing/InsertLineBreakCommand.cpp
+    editing/InsertListCommand.cpp
+    editing/InsertNodeBeforeCommand.cpp
+    editing/InsertParagraphSeparatorCommand.cpp
+    editing/InsertTextCommand.cpp
+    editing/JoinTextNodesCommand.cpp
+    editing/MergeIdenticalElementsCommand.cpp
+    editing/ModifySelectionListLevel.cpp
+    editing/MoveSelectionCommand.cpp
+    editing/RemoveCSSPropertyCommand.cpp
+    editing/RemoveFormatCommand.cpp
+    editing/RemoveNodeAttributeCommand.cpp
+    editing/RemoveNodeCommand.cpp
+    editing/RemoveNodePreservingChildrenCommand.cpp
+    editing/ReplaceSelectionCommand.cpp
+    editing/Selection.cpp
+    editing/SelectionController.cpp
+    editing/SetNodeAttributeCommand.cpp
+    editing/SmartReplace.cpp
+    editing/SplitElementCommand.cpp
+    editing/SplitTextNodeCommand.cpp
+    editing/SplitTextNodeContainingElementCommand.cpp
+    editing/TextIterator.cpp
+    editing/TypingCommand.cpp
+    editing/UnlinkCommand.cpp
+    editing/VisiblePosition.cpp
+    editing/WrapContentsInDummySpanCommand.cpp
+    editing/htmlediting.cpp
+    editing/markup.cpp
+    editing/visible_units.cpp
+)
+IF (${WEBKIT_USE_I18N} STREQUAL "ICU")
+    LIST (APPEND EDITING_SRC
+        editing/SmartReplaceICU.cpp
+    )
+ENDIF (${WEBKIT_USE_I18N} STREQUAL "ICU")

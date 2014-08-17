@@ -1,0 +1,4 @@
+static void
+pcre_printint(real_pcre *re, FILE *f)
+{
+}

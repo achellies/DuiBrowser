@@ -1,0 +1,18 @@
+This is the libjpeg-progs Debian package.
+This package contains programs for manipulating JPEG files:
+   cjpeg/djpeg: convert to/from the JPEG file format
+   rdjpgcom/wrjpgcom: read/write comments in JPEG files
+   jpegtran: lossless transformations of JPEG files
+       
+The following patchs has been applied:
+
+-- Combined EXIF/Lossless-crop patch from 
+<http://sylvana.net/jpegcrop/croppatch.tar.gz> by <guido@jpegclub.org>.
+
+-- Patch for rdjpgcom to honor locale setting.
+
+-- Patch for jpegtran for better error messages when opening files.
+
+-- Patch for jpegtran to implement the -perfect option.
+
+Bill Allombert <ballombe@debian.org>  Sat, 14 Jun 2003 19:37:57 +0200

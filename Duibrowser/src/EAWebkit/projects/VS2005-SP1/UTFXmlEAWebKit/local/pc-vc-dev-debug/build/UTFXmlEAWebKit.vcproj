@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioProject ProjectType="Visual C++" Version="8.00" Name="UTFXmlEAWebKit" ProjectGUID="{FC019A03-151E-13A3-FBEF-F672B5606B80}" Keyword="Win32Proj">
+  <Platforms>
+    <Platform Name="Win32" />
+  </Platforms>
+  <ToolFiles />
+  <Configurations>
+    <Configuration Name="pc-vc-dev-debug|Win32" OutputDirectory=".\UTFXmlEAWebKit" IntermediateDirectory=".\UTFXmlEAWebKit\vcproj" CharacterSet="2" ConfigurationType="4">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="MASM" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" PreprocessorDefinitions="WIN32;_SECURE_SCL=1;EA_DEBUG;_DEBUG;UTF_USE_EAASSERT=1;_WIN32_WINNT=0x0501;WINVER=0x501" AdditionalIncludeDirectories="&quot;..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\include&quot;;&quot;..\..\..\..\..\..\EAWebKitSupportPackages\coreallocatorEAWebKit\local\include&quot;;&quot;..\..\..\..\..\..\EAWebKitSupportPackages\EABaseEAWebKit\local\include\common&quot;;&quot;..\..\..\..\..\..\EAWebKitSupportPackages\EASTLEAWebKit\local\include&quot;;&quot;..\..\..\..\..\..\EAWebKitSupportPackages\EAAssertEAWebKit\local\include&quot;;&quot;..\..\..\..\..\..\EAWebKitSupportPackages\EAIOEAWebKit\local\include&quot;;&quot;..\..\..\..\..\..\EAWebKitSupportPackages\EAIOEAWebKit\local\include\EAIO\Wii&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\ATLMFC\INCLUDE&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\INCLUDE&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\include&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\INCLUDE&quot;" AdditionalOptions="-Wall " MinimalRebuild="FALSE" BufferSecurityCheck="FALSE" Optimization="0" CompileOnly="TRUE" BasicRuntimeChecks="3" WarnAsError="TRUE" CompileAs="0" RuntimeLibrary="3" SuppressStartupBanner="TRUE" DebugInformationFormat="3" DisableSpecificWarnings="4996; 4692; 4826; 4819; 4826; 4820; 4738; 4711; 4710; 4668; 4640; 4514; 4619; 4324; 4100; 4062; 4061; " WarningLevel="4" ForceConformanceInForLoopScope="TRUE" ExceptionHandling="0" RuntimeTypeInfo="FALSE" ProgramDataBaseFileName="..\..\..\..\..\..\projects\VS2005-SP1\UTFXmlEAWebKit\local/pc-vc-dev-debug/lib\\UTFXmlEAWebKit.pdb" />
+      <Tool Name="VCLibrarianTool" OutputFile="..\..\..\..\..\..\projects\VS2005-SP1\UTFXmlEAWebKit\local\pc-vc-dev-debug\lib\UTFXmlEAWebKit.lib" AdditionalDependencies="" SuppressStartupBanner="TRUE" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+  </Configurations>
+  <References>
+  </References>
+  <Files>
+    <Filter Name="include" Filter="">
+      <Filter Name="UTFXml" Filter="">
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\include\UTFXml\XmlCallbackReader.h">
+        </File>
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\include\UTFXml\XmlCharClasses.inl">
+        </File>
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\include\UTFXml\XmlDomReader.h">
+        </File>
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\include\UTFXml\XmlEncoding.h">
+        </File>
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\include\UTFXml\XmlReader.h">
+        </File>
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\include\UTFXml\XmlTokenBuffer.h">
+        </File>
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\include\UTFXml\XmlWriter.h">
+        </File>
+      </Filter>
+    </Filter>
+    <Filter Name="source" Filter="">
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\source\XmlCallbackReader.cpp">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\UTFXmlEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\source\XmlDomReader.cpp">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\UTFXmlEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\source\XmlEncoding.cpp">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\UTFXmlEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\source\XmlReader.cpp">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\UTFXmlEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\source\XmlReaderErrors.cpp">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\UTFXmlEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\source\XmlTokenBuffer.cpp">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\UTFXmlEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\source\XmlWriter.cpp">
+        <FileConfiguration Name="pc-vc-dev-debug|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\UTFXmlEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <Filter Name="internal" Filter="">
+        <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\UTFXmlEAWebKit\local\source\internal\UTFXmlCoreAllocator.cpp">
+          <FileConfiguration Name="pc-vc-dev-debug|Win32">
+            <Tool Name="VCCLCompilerTool" ObjectFile=".\UTFXmlEAWebKit\vcproj\source\internal\" />
+          </FileConfiguration>
+        </File>
+      </Filter>
+    </Filter>
+  </Files>
+  <Globals>
+    <Global Name="vc-compiler" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\cl.exe" />
+    <Global Name="vc-linker" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\link.exe" />
+    <Global Name="vc-asm" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\ml.exe" />
+    <Global Name="vc-librarian" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\lib.exe" />
+    <Global Name="vc-postlink.program" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\mt.exe" />
+    <Global Name="build.env.PATH" Value="C:\Program Files\Microsoft Visual Studio 8\\Common7\IDE" />
+  </Globals>
+</VisualStudioProject>

@@ -1,0 +1,59 @@
+#!/bin/sh -e
+## debian/patches/203_rdppm.dpatch by Bill Allombert <ballombe@debian.org>
+##
+## DP: Fix byte order issue with 16bit PPM/PGM files in rdppm.c
+
+if [ $# -ne 1 ]; then
+    echo >&2 "`basename $0`: script expects -patch|-unpatch as argument"
+    exit 1
+fi
+
+[ -f debian/patches/00patch-opts ] && . debian/patches/00patch-opts
+patch_opts="${patch_opts:--f --no-backup-if-mismatch}"
+
+case "$1" in
+       -patch) patch $patch_opts -p1 < $0;;
+       -unpatch) patch $patch_opts -p1 -R < $0;;
+        *)
+                echo >&2 "`basename $0`: script expects -patch|-unpatch as argument"
+                exit 1;;
+esac
+
+exit 0
+
+@DPATCH@
+diff -urNad /home/bill/debian/libjpeg/libjpeg6b-6b/rdppm.c libjpeg6b-6b/rdppm.c
+--- /home/bill/debian/libjpeg/libjpeg6b-6b/rdppm.c	2003-09-08 16:44:20.000000000 +0200
++++ libjpeg6b-6b/rdppm.c	2003-09-08 16:47:19.000000000 +0200
+@@ -250,8 +250,8 @@
+   bufferptr = source->iobuffer;
+   for (col = cinfo->image_width; col > 0; col--) {
+     register int temp;
+-    temp  = UCH(*bufferptr++);
+-    temp |= UCH(*bufferptr++) << 8;
++    temp  = UCH(*bufferptr++) << 8;
++    temp |= UCH(*bufferptr++);
+     *ptr++ = rescale[temp];
+   }
+   return 1;
+@@ -274,14 +274,14 @@
+   bufferptr = source->iobuffer;
+   for (col = cinfo->image_width; col > 0; col--) {
+     register int temp;
+-    temp  = UCH(*bufferptr++);
+-    temp |= UCH(*bufferptr++) << 8;
++    temp  = UCH(*bufferptr++) << 8;
++    temp |= UCH(*bufferptr++);
+     *ptr++ = rescale[temp];
+-    temp  = UCH(*bufferptr++);
+-    temp |= UCH(*bufferptr++) << 8;
++    temp  = UCH(*bufferptr++) << 8;
++    temp |= UCH(*bufferptr++);
+     *ptr++ = rescale[temp];
+-    temp  = UCH(*bufferptr++);
+-    temp |= UCH(*bufferptr++) << 8;
++    temp  = UCH(*bufferptr++) << 8;
++    temp |= UCH(*bufferptr++);
+     *ptr++ = rescale[temp];
+   }
+   return 1;

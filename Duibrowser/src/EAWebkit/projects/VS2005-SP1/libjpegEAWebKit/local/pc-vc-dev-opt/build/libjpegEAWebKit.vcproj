@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioProject ProjectType="Visual C++" Version="8.00" Name="libjpegEAWebKit" ProjectGUID="{1897D99C-A19E-A4AD-280D-BC5CAB5814D5}" Keyword="Win32Proj">
+  <Platforms>
+    <Platform Name="Win32" />
+  </Platforms>
+  <ToolFiles />
+  <Configurations>
+    <Configuration Name="pc-vc-dev-opt|Win32" OutputDirectory=".\libjpegEAWebKit" IntermediateDirectory=".\libjpegEAWebKit\vcproj" CharacterSet="2" ConfigurationType="4">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="MASM" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" RuntimeTypeInfo="FALSE" RuntimeLibrary="2" AdditionalIncludeDirectories="&quot;..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\include&quot;;&quot;..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\ATLMFC\INCLUDE&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\INCLUDE&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\include&quot;;&quot;C:\Program Files\Microsoft Visual Studio 8\INCLUDE&quot;" DebugInformationFormat="3" ExceptionHandling="0" WarningLevel="0" CompileAs="0" MinimalRebuild="FALSE" ForceConformanceInForLoopScope="TRUE" ProgramDataBaseFileName="..\..\..\..\..\..\projects\VS2005-SP1\libjpegEAWebKit\local/pc-vc-dev-opt/lib\\libjpegEAWebKit.pdb" CompileOnly="TRUE" Optimization="1" PreprocessorDefinitions="WIN32;_SECURE_SCL=0;NDEBUG;_WIN32_WINNT=0x0501;WINVER=0x501" SuppressStartupBanner="TRUE" BufferSecurityCheck="FALSE" WarnAsError="TRUE" />
+      <Tool Name="VCLibrarianTool" OutputFile="..\..\..\..\..\..\projects\VS2005-SP1\libjpegEAWebKit\local\pc-vc-dev-opt\lib\libjpegEAWebKit.lib" AdditionalDependencies="" SuppressStartupBanner="TRUE" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+  </Configurations>
+  <References>
+  </References>
+  <Files>
+    <Filter Name="include" Filter="">
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\include\jconfig.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\include\jmemsys.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\include\jmorecfg.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\include\jpeglib.h">
+      </File>
+    </Filter>
+    <Filter Name="source" Filter="">
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\cderror.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\cdjpeg.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcapimin.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcapistd.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jccoefct.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jccolor.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcdctmgr.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jchuff.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jchuff.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcinit.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcmainct.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcmarker.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcmaster.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcomapi.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcparam.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcphuff.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcprepct.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jcsample.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jctrans.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdapimin.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdapistd.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdatadst.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdatasrc.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdcoefct.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdcolor.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdct.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jddctmgr.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdhuff.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdhuff.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdinput.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdmainct.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdmarker.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdmaster.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdmerge.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdphuff.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdpostct.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdsample.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jdtrans.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jerror.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jerror.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jfdctflt.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jfdctfst.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jfdctint.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jidctflt.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jidctfst.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jidctint.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jidctred.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jinclude.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jmemmgr.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jpegint.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jquant1.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jquant2.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jutils.c">
+        <FileConfiguration Name="pc-vc-dev-opt|Win32">
+          <Tool Name="VCCLCompilerTool" ObjectFile=".\libjpegEAWebKit\vcproj\source\" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\jversion.h">
+      </File>
+      <File RelativePath="..\..\..\..\..\..\EAWebKitSupportPackages\libjpegEAWebKit\local\source\transupp.h">
+      </File>
+    </Filter>
+  </Files>
+  <Globals>
+    <Global Name="vc-compiler" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\cl.exe" />
+    <Global Name="vc-linker" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\link.exe" />
+    <Global Name="vc-asm" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\ml.exe" />
+    <Global Name="vc-librarian" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\\lib.exe" />
+    <Global Name="vc-postlink.program" Value="C:\Program Files\Microsoft Visual Studio 8\\VC\BIN\mt.exe" />
+    <Global Name="build.env.PATH" Value="C:\Program Files\Microsoft Visual Studio 8\\Common7\IDE" />
+  </Globals>
+</VisualStudioProject>

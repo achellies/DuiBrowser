@@ -1,0 +1,93 @@
+-WINCE5-ARMV4I
+
+
+*****************************************************************************************************************
+******************************************************lib¿â******************************************************
+*****************************************************************************************************************
+
+Name="Debug|STANDARDSDK_500 (ARMV4I)"
+
+			PreprocessorDefinitions="_DEBUG;_WIN32_WCE=$(CEVER);UNDER_CE;$(PLATFORMDEFINES);WINCE;DEBUG;_LIB;$(ARCHFAM);$(_ARCHFAM_);_UNICODE;UNICODE;ARMV4I;_MSC_VER=1400"
+
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG;_WIN32_WCE=$(CEVER);UNDER_CE;$(PLATFORMDEFINES)"
+				Culture="1033"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				AdditionalOptions="/subsystem:windowsce,5.00"
+				OutputFile="$(OutDir)\lib\$(ProjectName).lib"
+				AdditionalLibraryDirectories=""
+			/>
+
+
+Name="Release|STANDARDSDK_500 (ARMV4I)"
+
+			PreprocessorDefinitions="NDEBUG;_WIN32_WCE=$(CEVER);UNDER_CE;$(PLATFORMDEFINES);WINCE;_LIB;$(ARCHFAM);$(_ARCHFAM_);_UNICODE;UNICODE;ARMV4I"
+
+
+			<Tool
+				Name="VCResourceCompilerTool"			
+				PreprocessorDefinitions="NDEBUG;_WIN32_WCE=$(CEVER);UNDER_CE;$(PLATFORMDEFINES)"
+				Culture="1033"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				AdditionalOptions="/subsystem:windowsce,5.00"
+				OutputFile="$(OutDir)\lib\$(ProjectName).lib"
+			/>
+
+
+*****************************************************************************************************************
+******************************************************DLL********************************************************
+*****************************************************************************************************************
+
+Name="Debug|STANDARDSDK_500 (ARMV4I)"
+
+			PreprocessorDefinitions="_DEBUG;_WIN32_WCE=$(CEVER);UNDER_CE;$(PLATFORMDEFINES);WINCE;DEBUG;_USRDLL;$(ARCHFAM);$(_ARCHFAM_);_UNICODE;UNICODE;ARMV4I"
+
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG;_WIN32_WCE=$(CEVER);UNDER_CE;$(PLATFORMDEFINES)"
+				Culture="1033"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				AdditionalOptions="/subsystem:windowsce,5.00"
+				OutputFile="$(OutDir)\lib\$(ProjectName).lib"
+				AdditionalLibraryDirectories=""
+			/>
+
+
+Name="Release|STANDARDSDK_500 (ARMV4I)"
+
+			PreprocessorDefinitions="NDEBUG;_WIN32_WCE=$(CEVER);UNDER_CE;$(PLATFORMDEFINES);WINCE;_USRDLL;$(ARCHFAM);$(_ARCHFAM_);_UNICODE;UNICODE;ARMV4I"
+
+
+			<Tool
+				Name="VCResourceCompilerTool"			
+				PreprocessorDefinitions="NDEBUG;_WIN32_WCE=$(CEVER);UNDER_CE;$(PLATFORMDEFINES)"
+				Culture="1033"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				AdditionalOptions="/subsystem:windowsce,5.00"
+				OutputFile="$(OutDir)\lib\$(ProjectName).lib"
+			/>
